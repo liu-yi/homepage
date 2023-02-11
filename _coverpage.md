@@ -5,6 +5,6 @@
 
 <div style="font-size: var(--cover-blockquote-font-size); font-weight: 100;">一个记录神奇内容的地方</div>
 
-[马上进入](/index)
+[马上进入](#home)
 [个人主页](https://imliuyi.com)
 
