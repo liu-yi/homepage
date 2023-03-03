@@ -8,7 +8,10 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"> -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/buble.css" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-defaults.css"> -->
+
   <link rel="shortcut icon" href="public/logo.ico" type="image/ico" />
 
 
@@ -35,7 +38,7 @@
       chat: {
         title: '聊天记录',
         users: [
-          {nickname: 'Yi', avatar: './_media/logo.png'}
+          {nickname: 'Yi', avatar: './_media/logo.jpg'}
         ],
         myself: 'Yi',
         animation: 50,
@@ -62,12 +65,14 @@
   <!-- Docsify Chat -->
   <script src="//cdn.jsdelivr.net/npm/docsify-chat/lib/docsify-chat.min.js"></script>
 
+  <script src="//cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
+
 
   <style>
     :root {
 
-      --theme-color: #36ad6a;
-      --cover-background-color: #b4d4c3;
+      /* --theme-color: #36ad6a;
+      --cover-background-color: #85cca6;
       --cover-button-primary-background--hover: #5bc286;
       --cover-button-primary-background: #4bb376;
       --cover-button-primary-color: #ffffff;
@@ -82,9 +87,9 @@
       --cover-heading-color: #000;
 
       --link-color--hover: #5bc286;
-      --link-color: #36ad6a;
-      --link-text-decoration-color: #36ad6a;
-      --link-text-decoration-color--hover: #5bc286;
+      --link-color: #36ad6a; */
+      /* --link-text-decoration-color: #36ad6a;
+      --link-text-decoration-color--hover: #5bc286; */
 
     }
   </style>
