@@ -1,15 +1,16 @@
 
-## About Me
+# About Me
+<div id="intro"></div>
 
-I am Yi Liu (刘逸), a Ph.D. candidate at Computer Science Department of The University of Hong Kong (HKU). My research interests cryptography and network security, in particular: **secure two-party/multi-party computation**, **zero-knowledge proofs**, **timed cryptography**, **blockchain-related applications**, etc.
+> I am Yi Liu (刘逸), a Ph.D. candidate at Computer Science Department of The University of Hong Kong (HKU). My research interests cryptography and network security, in particular: **secure two-party/multi-party computation**, **zero-knowledge proofs**, **timed cryptography**, **blockchain-related applications**, etc.
 
-> [![Google Scholar](../icons/google-scholar.svg ':size=20')](https://scholar.google.com.hk/citations?user=pKOcyg0AAAAJ/)
-> [![Github](../icons/github.svg ':size=20')](https://github.com/liu-yi)
-> [![Linkedin](../icons/linkedin-mono.svg ':size=20')](https://www.linkedin.com/in/%E9%80%B8-%E5%88%98-363764114/)
-> [![知乎](../icons/zhihu.svg ':size=20')](https://www.zhihu.com/people/imliuyi/)
-> [![豆瓣](../icons/douban.svg ':size=20')](https://www.douban.com/people/imliuyi/)
+>[![Google Scholar](../icons/google-scholar.svg ':size=20')](https://scholar.google.com.hk/citations?user=pKOcyg0AAAAJ/)
+[![Github](../icons/github.svg ':size=20')](https://github.com/liu-yi)
+[![Linkedin](../icons/linkedin-mono.svg ':size=20')](https://www.linkedin.com/in/%E9%80%B8-%E5%88%98-363764114/)
+[![知乎](../icons/zhihu.svg ':size=20')](https://www.zhihu.com/people/imliuyi/)
+[![豆瓣](../icons/douban.svg ':size=20')](https://www.douban.com/people/imliuyi/)
 >
-> Email: mail@imliuyi.com
+>Email: mail@imliuyi.com
 
 ## Education
 
@@ -26,35 +27,35 @@ I am Yi Liu (刘逸), a Ph.D. candidate at Computer Science Department of The Un
 
 ## Publications
 
-- **Towards Practical Homomorphic Time-Lock Puzzles: Applicability and Verifiability**
-
-  - <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
-
-  -  In European Symposium on Research in Computer Security. **ESORICS 2022**. [[ePrint](https://eprint.iacr.org/2022/585)]
-
-- **Making Private Function Evaluation Safer, Faster, and Simpler**
+- **Towards Practical Homomorphic Time-Lock Puzzles: Applicability and Verifiability** [:link:](https://link.springer.com/chapter/10.1007/978-3-031-17140-6_21)
   
-  - <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
+    <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
-  - In Public-Key Cryptography. **PKC 2022**. [[ePrint](https://eprint.iacr.org/2021/1682)]
+    The 27th European Symposium on Research in Computer Security. **ESORICS 2022**. [[ePrint](https://eprint.iacr.org/2022/585)]
 
-- **Improved Zero-Knowledge Argument of Encrypted Extended Permutation**
+- **Making Private Function Evaluation Safer, Faster, and Simpler** [:link:](https://link.springer.com/chapter/10.1007/978-3-030-97121-2_13)
   
-  - <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
+    <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
-  - In Information Security and Cryptology. **Inscrypt 2021**. [[ePrint](https://eprint.iacr.org/2021/1430)] 
+    The 25th International Conference on Practice and Theory of Public-Key Cryptography. **PKC 2022**. [[ePrint](https://eprint.iacr.org/2021/1682)]
+
+- **Improved Zero-Knowledge Argument of Encrypted Extended Permutation** [:link:](https://link.springer.com/chapter/10.1007/978-3-030-88323-2_15)
+  
+    <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
+
+    The 17th International Conference on International Conference on Information Security and Cryptology. **Inscrypt 2021**. [[ePrint](https://eprint.iacr.org/2021/1430)] 
     
-- **Blind Polynomial Evaluation and Data Trading**
+- **Blind Polynomial Evaluation and Data Trading** [:link:](https://link.springer.com/chapter/10.1007/978-3-030-78372-3_5)
   
-  - <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
+    <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
-  - In Applied Cryptography and Network Security. **ACNS 2021**. [[ePrint](https://eprint.iacr.org/2021/413)]
+    The 19th International Conference on Applied Cryptography and Network Security. **ACNS 2021**. [[ePrint](https://eprint.iacr.org/2021/413)]
 
-- **An Improvement of Multi-Exponentiation with Encrypted Bases Argument: Smaller and Faster**
+- **An Improvement of Multi-Exponentiation with Encrypted Bases Argument: Smaller and Faster** [:link:](https://link.springer.com/chapter/10.1007/978-3-030-71852-7_27)
   
-  - <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
+    <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
-  - In Information Security and Cryptology. **Inscrypt 2020**. [[ePrint](https://eprint.iacr.org/2020/567)] 
+    The 16th International Conference on International Conference on Information Security and Cryptology. **Inscrypt 2020**. [[ePrint](https://eprint.iacr.org/2020/567)] 
 
     
 
@@ -73,33 +74,35 @@ I am Yi Liu (刘逸), a Ph.D. candidate at Computer Science Department of The Un
 
 - **Towards Practical Homomorphic Time-Lock Puzzles: Applicability and Verifiability**
 
-  - In European Symposium on Research in Computer Security. **ESORICS 2022**.
+    The 27th European Symposium on Research in Computer Security. **ESORICS 2022**.
 
-  - Virtual. Sept. 2022. 
+    Virtual. Sept. 2022. 
 
 - **Making Private Function Evaluation Safer, Faster, and Simpler**
   
-  - In Public-Key Cryptography. **PKC 2022**. 
+    The 25th International Conference on Practice and Theory of Public-Key Cryptography. **PKC 2022**. 
 
-  - Virtual. March. 2022. [[Video](https://www.youtube.com/watch?v=Pv8zVTxacr0)] 
+    Virtual. March. 2022. [[Video](https://www.youtube.com/watch?v=Pv8zVTxacr0)] 
 
 - **Improved Zero-Knowledge Argument of Encrypted Extended Permutation**
 
-  - In Information Security and Cryptology. **Inscrypt 2021**. 
+    The 17th International Conference on International Conference on Information Security and Cryptology. **Inscrypt 2021**.
     
-  - Virtual. Aug. 2021. 
+    Virtual. Aug. 2021. 
+
 
 - **Blind Polynomial Evaluation and Data Trading**
 
-  - In Applied Cryptography and Network Security. **ACNS 2021**. 
+    The 19th International Conference on Applied Cryptography and Network Security. **ACNS 2021**.
 
-  - Virtual. June 2021. 
+    Virtual. June 2021. 
     
+
 - **An Improvement of Multi-Exponentiation with Encrypted Bases Argument: Smaller and Faster**
 
-  - In Information Security and Cryptology. **Inscrypt 2020**. 
+    The 16th International Conference on International Conference on Information Security and Cryptology. **Inscrypt 2020**.
 
-  - Guangzhou, China. Dec. 2020. 
+    Guangzhou, China. Dec. 2020. 
 
 ## Awards & Honors
 - **Best Thesis Award** Department of Computer Science and Engineering of SUSTech **2018**
@@ -136,7 +139,12 @@ C/C++, Python, LaTeX, Java, HTML/CSS, JavaScript
 .markdown-section ul {
     margin: 0.6em 0 0.6em 0;
 }
-.markdown-section h1 {
+.markdown-section h2 {
     margin: 1.5rem 0 1rem;
+    padding: 0;
+}
+
+#about-me {
+  display: none
 }
 </style>

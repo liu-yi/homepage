@@ -5,7 +5,8 @@
 
 <div style="font-size: 16px; font-weight: 100;">一个记录神奇内容的地方</div>
 
-[马上进入](#about-me)
 [个人主页](https://imliuyi.com)
+[马上进入](#intro)
+
 
 ![color](#f1f1f1)
