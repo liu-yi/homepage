@@ -3,13 +3,13 @@
 
 This is the page for my notes :tada: ！
 
-- [Zero Knowledge](./zero-knowledge.md)
+- [Zero Knowledge](notes/zero-knowledge.md)
 
-- [English Pronunciation](./pronunciation.md)
+- [English Pronunciation](notes/pronunciation.md)
 
-- [Top Conference](./top-conference.md)
+- [Top Conference](notes/top-conference.md)
 
-- [English Tips](./en_tips.md)
+- [English Tips](notes/en_tips.md)
 
 
 
