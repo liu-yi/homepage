@@ -101,11 +101,11 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, Jinan University 
 
 ## Education
 
-- **The University of Hong Kong (HKU)**  <div style="float:right;">*Sept. 2018 – Feb. 2023*</div>
+- **The University of Hong Kong (HKU)**  <div class="duration">*Sept. 2018 – Feb. 2023*</div>
   - Ph.D. Candidate in Cryptography 
   - Joint Ph.D. Programme with SUSTech
   - Supervisor: [Siu-Ming Yiu](https://www.cs.hku.hk/index.php/people/academic-staff/smyiu) (HKU) and [Qi Wang](http://cse.sustech.edu.cn/faculty/~wangqi/) (SUSTech)
-- **Southern University of Science and Technology (SUSTech)** <div style="float:right;">*Sept. 2014 – July 2018*</div>
+- **Southern University of Science and Technology (SUSTech)** <div class="duration">*Sept. 2014 – July 2018*</div>
   - B.Eng. in Computer Science and Technology
   - GPA: **3.84/4.00** (Core); **3.70/4.00** (Overall)
   - Thesis: An Evaluation System Based on Blockchain and Linkable Ring Signature. [[Slides](https://imliuyi.com/ugthesis_slide.pdf)]
@@ -209,9 +209,9 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, Jinan University 
   - CS302: Operating System (SUSTech Spring 2016)
 
 - **Research Assistant**
-  - CoCrypto Lab (Adviser: Qi Wang) <div style="float:right;">*Sept. 2016 – Aug. 2018*</div>
-  - SUSTech Innovation Center for Data Science (Adviser: Rusong Zheng) <div style="float:right;">*July 2017 – Aug. 2017*</div>
-  - UAV and Sensor Network Lab (Adviser: Qi Hao) <div style="float:right;">*July 2015 – Sept. 2016*</div>
+  - CoCrypto Lab (Adviser: Qi Wang) <div class="duration">*Sept. 2016 – Aug. 2018*</div>
+  - SUSTech Innovation Center for Data Science (Adviser: Rusong Zheng) <div class="duration">*July 2017 – Aug. 2017*</div>
+  - UAV and Sensor Network Lab (Adviser: Qi Hao) <div class="duration">*July 2015 – Sept. 2016*</div>
 
 
 
@@ -229,6 +229,9 @@ C/C++, Python, LaTeX, Java, HTML/CSS, JavaScript
 .markdown-section h2 {
     margin: 1.5rem 0 1rem;
     padding: 0;
+}
+.duration {
+  float: right;
 }
 
 /* #about-me {
@@ -300,7 +303,10 @@ C/C++, Python, LaTeX, Java, HTML/CSS, JavaScript
   }
   .profile .info .cv{
     font-size: 0.9rem 
-}
+  }
+  .duration {
+    float: none;
+  }
 }
 
       
