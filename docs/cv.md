@@ -4,10 +4,9 @@
 <div id="intro">
   <div class="profile">
     <div class="image">
-      <!-- <a href="/"><img src="_media/logo.jpg" alt=""></a> -->
       <div id="avatar">
-        <img v-on="{ mouseenter: mouseEnter, mouseleave: mouseLeave }"
-          :src="logo_list[here_logo]">
+        <a href="/"><img v-on="{ mouseenter: mouseEnter, mouseleave: mouseLeave }"
+          :src="logo_list[here_logo]"></a>
       </div>
     </div>
     <div class="info">
@@ -257,7 +256,7 @@ C/C++, Python, LaTeX, Java, HTML/CSS, JavaScript
 }
 .profile .info .name{
     font-size: 2.5rem; 
-    padding-bottom: 10px;
+    padding-bottom: 8px;
     /* font-weight: 600;  */
 }
 .profile .info .socials{
@@ -288,7 +287,7 @@ C/C++, Python, LaTeX, Java, HTML/CSS, JavaScript
         max-width: 180px
     }
   .profile .info .name{
-    font-size: 1.35rem; 
+    font-size: 1.8rem; 
     /* font-weight: 600;  */
     }
   .profile .info .socials img{

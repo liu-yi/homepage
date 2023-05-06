@@ -14,7 +14,6 @@ This is the page for my notes :tada: ！
 
 
 
-
 <style lang="stylus">
 
 .theme-container.notes .page
