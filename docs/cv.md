@@ -102,7 +102,7 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University
 ## Education
 
 - **The University of Hong Kong (HKU)**  <div class="duration">*Sept. 2018 – Feb. 2023*</div>
-  - Ph.D. Candidate in Cryptography 
+  - Ph.D. in Cryptography 
   - Joint Ph.D. Programme with SUSTech
   - Supervisor: [Siu-Ming Yiu](https://www.cs.hku.hk/index.php/people/academic-staff/smyiu) (HKU) and [Qi Wang](http://cse.sustech.edu.cn/faculty/~wangqi/) (SUSTech)
 - **Southern University of Science and Technology (SUSTech)** <div class="duration">*Sept. 2014 – July 2018*</div>
