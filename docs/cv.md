@@ -1,13 +1,22 @@
 
 # About Me
+
 <div id="intro">
   <div class="profile">
     <div class="image">
-      <img src="_media/logo.jpg" alt="">
+      <!-- <a href="/"><img src="_media/logo.jpg" alt=""></a> -->
+      <div id="avatar">
+        <img v-on="{ mouseenter: mouseEnter, mouseleave: mouseLeave }"
+          :src="logo_list[here_logo]">
+      </div>
     </div>
     <div class="info">
       <div class="name">
-        Yi Liu（刘逸）
+        <span
+          @mouseenter="hover_name = true"
+          @mouseleave="hover_name = false"
+          >{{ hover_name ? "刘 逸" : "Yi Liu" }}</span
+        >
       </div>
       <!-- <div style="padding: 8px"></div> -->
       <div class="socials">
@@ -35,23 +44,56 @@
         </div>
       </div>
       <div class="contact">
-        <div class="email" title="Contact me">i@liuyi.pro, mail@imliuyi.com, liuyipro@qq.com</div>
+        <div class="email" title="Contact me">i@liuyi.pro</div>
       </div>
-      <div v-if="data.cv">
-        [<a target="_blank" style="font-size: 1em" href="data.cv" title="Download my CV">
+      <div class="cv">
+        [<a target="_blank" style="font-size: 1em" href="_media/cv/YiLIU-CV-en.pdf" title="Download my CV">
           CV
         </a>]
-        [<a target="_blank" style="font-size: 1em" href="data.cv_cn" title="下载我的中文版简历">
+        [<a target="_blank" style="font-size: 1em" href="_media/cv/YiLIU-CV-cn.pdf" title="下载我的中文版简历">
           简历
         </a>]
       </div>
     </div>
   </div>
 </div>
-
+<script>
+  Vue.createApp({
+    data: function(){
+      return {
+        hover_avatar: false,
+        hover_name: false,
+        logo_list: ["_media/logo.jpg", "_media/logo1.jpg", "_media/logo2.jpg"],
+      }
+    },
+    methods: {
+      mouseEnter(event) {
+        // console.log(event)
+        this.hover_avatar = true;
+        this.hover_name = true; 
+      },
+      mouseLeave(event) {
+        // console.log(event)
+        this.hover_avatar = false;
+        this.hover_name = false; 
+      },
+    }, 
+    computed: {
+      here_logo() {
+        if (this.hover_avatar) {
+          return 2;
+        } else if (this.here) {
+          return 1;
+        } else {
+          return 0;
+        }
+      },
+  },
+  }).mount('#intro');
+</script>
 
 ## About Me
-I am Yi Liu (刘逸), a Ph.D. candidate at Computer Science Department of The University of Hong Kong (HKU). My research interests cryptography and network security, in particular: **secure two-party/multi-party computation**, **zero-knowledge proofs**, **timed cryptography**, **blockchain-related applications**, etc.
+I am Yi Liu (刘逸), a lecturer at College of Cyber Security, Jinan University (JNU). My research interests cryptography and network security, in particular: **secure two-party/multi-party computation**, **zero-knowledge proofs**, **timed cryptography**, **blockchain-related applications**, etc.
 
 ## Education
 
@@ -194,7 +236,7 @@ C/C++, Python, LaTeX, Java, HTML/CSS, JavaScript
     align-items: stretch;
 }
 .profile .image{
-    max-width: 150px;
+    max-width: 180px;
     padding: 2px; 
     border: 1px solid #f2f3f3;
 }
@@ -209,7 +251,8 @@ C/C++, Python, LaTeX, Java, HTML/CSS, JavaScript
 
 }
 .profile .info .name{
-    font-size: 2.6rem; 
+    font-size: 2.5rem; 
+    padding-bottom: 10px;
     /* font-weight: 600;  */
 }
 .profile .info .socials{
@@ -222,25 +265,37 @@ C/C++, Python, LaTeX, Java, HTML/CSS, JavaScript
     margin: 0 0.6rem 0 0;
     cursor: pointer; 
 }
-.profile .info .socials b{
+/* .profile .info .socials b{
     margin-left: 1rem; 
 }
 .profile .info .contact .title{
     font-size: 1.2rem;
     font-weight: 400;
-}
+} */
+
 .profile .info .contact .email{
     font-family: Courier New, Courier, monospace; 
 }
 /* @import './styles/config.styl' */
 
 @media (max-width: 480px){
-    .profile .image{
-        max-width: 100px
+  .profile .image{
+        max-width: 180px
     }
-    .profile .info .name{
+  .profile .info .name{
     font-size: 1.35rem; 
     /* font-weight: 600;  */
+    }
+  .profile .info .socials img{
+    width: 1rem; 
+    margin: 0 0.6rem 0 0;
+    cursor: pointer; 
+  }
+  .profile .info .contact .email{
+    font-size: 0.8rem; 
+  }
+  .profile .info .cv{
+    font-size: 0.8rem 
 }
 }
 
