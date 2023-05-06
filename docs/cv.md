@@ -97,7 +97,7 @@
 </script>
 
 ## About Me
-I am Yi Liu (刘逸), a lecturer at College of Cyber Security, Jinan University (JNU). My research interests are cryptography and network security, in particular: **secure two-party/multi-party computation**, **zero-knowledge proofs**, **timed cryptography**, **blockchain-related applications**, etc.
+I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University (JNU)](https://english.jnu.edu.cn/). My research interests are cryptography and network security, in particular: **secure two-party/multi-party computation**, **zero-knowledge proofs**, **timed cryptography**, **blockchain-related applications**, etc.
 
 ## Education
 
