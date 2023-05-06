@@ -238,7 +238,7 @@ C/C++, Python, LaTeX, Java, HTML/CSS, JavaScript
 .profile .image{
     max-width: 180px;
     padding: 2px; 
-    border: 1px solid #f2f3f3;
+    /* border: 1px solid #f2f3f3; */
 }
 .profile .image img{
     border-radius: 50%;
@@ -295,7 +295,7 @@ C/C++, Python, LaTeX, Java, HTML/CSS, JavaScript
     font-size: 0.8rem; 
   }
   .profile .info .cv{
-    font-size: 0.8rem 
+    font-size: 0.9rem 
 }
 }
 
