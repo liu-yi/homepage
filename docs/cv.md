@@ -1,5 +1,5 @@
 
-# About Me
+<!-- # About Me -->
 
 <div id="intro">
   <div class="profile">
@@ -88,7 +88,12 @@
           return 0;
         }
       },
-  },
+    },
+    // beforeCreate(){
+    //   if (window.matchMedia('(max-device-width: 767px)').matches){
+    //     document.body.classList.remove('close')
+    //   } 
+    // }
   }).mount('#intro');
 </script>
 
@@ -227,9 +232,9 @@ C/C++, Python, LaTeX, Java, HTML/CSS, JavaScript
     padding: 0;
 }
 
-#about-me {
+/* #about-me {
   display: none
-}
+} */
 .profile{
     display: flex;
     flex-direction: row; 
