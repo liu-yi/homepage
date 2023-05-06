@@ -272,18 +272,11 @@ C/C++, Python, LaTeX, Java, HTML/CSS, JavaScript
     margin: 0 0.6rem 0 0;
     cursor: pointer; 
 }
-/* .profile .info .socials b{
-    margin-left: 1rem; 
-}
-.profile .info .contact .title{
-    font-size: 1.2rem;
-    font-weight: 400;
-} */
 
 .profile .info .contact .email{
     font-family: Courier New, Courier, monospace; 
 }
-/* @import './styles/config.styl' */
+
 
 @media (max-width: 480px){
   .profile .image{
