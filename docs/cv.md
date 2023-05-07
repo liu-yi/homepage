@@ -88,11 +88,11 @@
         }
       },
     },
-    // beforeCreate(){
-    //   if (window.matchMedia('(max-device-width: 767px)').matches){
-    //     document.body.classList.remove('close')
-    //   } 
-    // }
+    beforeCreate(){
+      // if (window.matchMedia('(max-device-width: 767px)').matches){
+      //   document.body.classList.remove('close')
+      // } 
+    }
   }).mount('#intro');
 </script>
 
@@ -301,6 +301,13 @@ C/C++, Python, LaTeX, Java, HTML/CSS, JavaScript
     float: none;
   }
 }
+body[data-page="docs/cv.md"] .sidebar,
+body[data-page="docs/cv.md"] .sidebar-toggle {
+  display: none !important;
+}
 
+body[data-page="docs/cv.md"] .content {
+  margin-left: 0px !important;
+}
       
 </style>
