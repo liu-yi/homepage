@@ -5,8 +5,8 @@
   <div class="profile">
     <div class="image">
       <div id="avatar">
-        <a href="/"><img v-on="{ mouseenter: mouseEnter, mouseleave: mouseLeave }"
-          :src="logo_list[here_logo]"></a>
+        <img v-on="{ mouseenter: mouseEnter, mouseleave: mouseLeave }"
+          :src="logo_list[here_logo]">
       </div>
     </div>
     <div class="info">
