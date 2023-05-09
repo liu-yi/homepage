@@ -17,7 +17,6 @@
           >{{ hover_name ? "刘 逸" : "Yi Liu" }}</span
         >
       </div>
-      <!-- <div style="padding: 8px"></div> -->
       <div class="socials">
         <div>
             <a href="https://scholar.google.com.hk/citations?user=pKOcyg0AAAAJ/" target="_blank">
