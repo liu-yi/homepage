@@ -19,7 +19,7 @@
       </div>
       <div class="socials">
         <div>
-            <a href="https://scholar.google.com.hk/citations?user=pKOcyg0AAAAJ/" target="_blank">
+            <a href="https://scholar.google.com.hk/citations?user=pKOcyg0AAAAJ" target="_blank">
               <img src="_media/icons/google-scholar.svg" alt="Google Scholar"
               title="Google Scholar" />
             </a>
@@ -27,15 +27,15 @@
               <img src="_media/icons/github.svg" alt="Github"
               title="Github" />
             </a>
-            <a href="https://www.linkedin.com/in/%E9%80%B8-%E5%88%98-363764114/" target="_blank">
+            <a href="https://www.linkedin.com/in/%E9%80%B8-%E5%88%98-363764114" target="_blank">
               <img src="_media/icons/linkedin-mono.svg" alt="LinkedIn"
               title="LinkedIn" />
             </a>
-            <a href="https://www.zhihu.com/people/imliuyi/" target="_blank">
+            <a href="https://www.zhihu.com/people/imliuyi" target="_blank">
               <img src="_media/icons/zhihu.svg" alt="知乎"
               title="知乎" />
             </a>
-            <a href="https://www.douban.com/people/imliuyi/" target="_blank">
+            <a href="https://www.douban.com/people/imliuyi" target="_blank">
               <img src="_media/icons/douban.svg" alt="豆瓣"
               title="豆瓣" />
             </a>
