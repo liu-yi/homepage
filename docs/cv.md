@@ -42,7 +42,7 @@
         </div>
       </div>
       <div class="contact">
-        <div class="email" title="Contact me">i@liuyi.pro</div>
+        <div class="email" title="Contact me">i@liuyi.pro, liuyi@jnu.edu.cn</div>
       </div>
       <div class="cv">
         [<a target="_blank" style="font-size: 1em" href="_media/cv/YiLIU-CV-en.pdf" title="Download my CV">
