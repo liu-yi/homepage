@@ -53,6 +53,8 @@
   <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
 
   <script src="//cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
+  <script src="/js/docsify-scroll-to-top.js"></script>
+
 
 
 
@@ -71,8 +73,18 @@
       --navbar-root-transition: all var(--duration-medium);
       --navbar-menu-link-color--hover: var(--theme-color);
       --navbar-menu-link-color--active: var(--theme-color);
-      --navbar-menu-link-border-radius                : 6px;
+      --navbar-menu-link-border-radius: 6px;
 
+    }
+
+    span.scroll-to-top:hover {
+      color: var(--theme-color);
+      border-color: var(--theme-color);
+    }
+
+    span.scroll-to-top {
+      border: 1px solid #ddd;
+      transition: color, 0.25s;
     }
 
     /* .app-nav>ul>li ul {
@@ -84,6 +96,7 @@
       text-decoration-color: var(--theme-color);
       text-underline-offset: 10px;
       text-decoration-thickness: 3px;
+      transition: none;
     }
 
     .markdown-section a {
