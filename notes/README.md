@@ -14,7 +14,7 @@ This is the page for my notes :tada: ！
 
 
 
-<style lang="stylus">
+<!-- <style lang="stylus">
 
 .theme-container.notes .page
   font-size 17px
@@ -26,4 +26,4 @@ This is the page for my notes :tada: ！
   a
     color black
 
-</style>
+</style> -->
