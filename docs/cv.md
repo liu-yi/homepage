@@ -5,7 +5,7 @@
   <div class="profile">
     <div class="image">
       <div id="avatar">
-        <img v-on="{ mouseenter: mouseEnter, mouseleave: mouseLeave }"
+        <img v-on="{ mouseenter: mouseEnter, mouseleave: mouseLeave }" @click="todo"
           :src="logo_list[here_logo]">
       </div>
     </div>
@@ -45,6 +45,7 @@
         <div class="email" title="Contact me">i@liuyi.pro, liuyi@jnu.edu.cn</div>
       </div>
       <div class="cv">
+        <span v-if="display_todo">[</span><a v-if="display_todo" href="#/miscellaneous/todo">Todo List</a><span v-if="display_todo">]</span>
         [<a target="_blank" style="font-size: 1em" href="_media/cv/YiLIU-CV-en.pdf" title="Download my CV">
           CV
         </a>]
@@ -62,6 +63,8 @@
         hover_avatar: false,
         hover_name: false,
         logo_list: ["_media/logo.jpg", "_media/logo1.jpg", "_media/logo2.jpg"],
+        todo_num : 0,
+        display_todo: false
       }
     },
     methods: {
@@ -75,6 +78,13 @@
         this.hover_avatar = false;
         this.hover_name = false; 
       },
+      todo(){
+        this.todo_num++; 
+        console.log(this.$router)
+        if(this.todo_num == 5){
+          this.display_todo = true
+        }
+      }
     }, 
     computed: {
       here_logo() {

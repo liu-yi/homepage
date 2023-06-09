@@ -1,6 +1,7 @@
 * [Home](/)
 <!-- * My -->
 * [Research](/research/)
+* [Miscellaneous](/miscellaneous/)
 
 <!-- * Notes
   * [Zero Knowledge](notes/zero-knowledge.md)
