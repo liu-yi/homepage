@@ -10,24 +10,25 @@
 
 ### Cryptography
 
-- [x] Cryptography and Network Security *Forouzan*
+- [x] Cryptography and Network Security *Behrouz A. Forouzan*
 - [x] Introduction to Modern Cryptography *Katz & Lindell*
-- [x] [Sequences of Games: A Tool for Taming Complexity in Security Proofs](http://www.shoup.net/papers/games.pdf) *Shoup*
+- [x] [Sequences of Games: A Tool for Taming Complexity in Security Proofs](http://www.shoup.net/papers/games.pdf) *Victor Shoup*
 - [x] An Introduction to Mathematical Cryptography *Hoffstein, Pipher & Silverman*
-- [x] [How to Simulate It - A Tutorial on the Simulation Proof Technique](https://eprint.iacr.org/2016/046.pdf) *Lindell*
+- [x] [How to Simulate It - A Tutorial on the Simulation Proof Technique](https://eprint.iacr.org/2016/046.pdf) *Yehuda Lindell*
 - [x] Digital Signature *Jonathan Katz*
 - [x] Efficient Secure Two-Party Protocols *Hazay & Lindell* **Finished all but chapter 9.**
-- [x] [Security and Composition of Cryptographic Protocols: A Tutorial](https://eprint.iacr.org/2006/465) *Canetti*
+- [x] [Security and Composition of Cryptographic Protocols: A Tutorial](https://eprint.iacr.org/2006/465) *Ran Canetti*
 - [x] Concurrent Zero-Knowledge *Alon Rosen* **Finished all but lower bound part.** 
 - [x] Secure Multiparty Computation and Secret Sharing: An Information Theoretic Approach *Cramer, Damgard, Nielsen* **Finished MPC part.**
 - [x] A Pragmatic Introduction to Secure Multi-Party Computation *David Evans, Vladimir Kolesnikov and Mike Rosulek* 
 - [x] Secure multi-party computation *Prabhakaran, Sahai, et al.*
 - [x] [Proofs, Arguments, and Zero-Knowledge](http://people.cs.georgetown.edu/jthaler/ProofsArgsAndZK.pdf) *Justin Thaler*
 - [x] Engineering Secure Two-Party Computation Protocols *Thomas Schneider* 
+- [x] Foundations of Cryptography, Volume 1 *Oded Goldreich*
+- [x] Foundations of Cryptography, Volume 2 *Oded Goldreich*
+- [x] 数字签名密史:从急需到有趣 *Fuchun Guo, Willy Susilo, Xiaofeng Chen, Peng Jiang, Jianchang Lai, Zhen Zhao*
+- [ ] Introduction to Security Reduction *Fuchun Guo, Willy Susilo, Yi Mu*
 - [ ] Tutorials on the Foundations of Cryptography *Lindell et al.*
-- [x] Foundations of Cryptography, Volume 1 *Goldreich*
-- [x] Foundations of Cryptography, Volume 2 *Goldreich*
-
 
 
 ### Computer Theory
@@ -38,6 +39,11 @@
 ### Mathematics
 
 - [ ] A Computational Introduction to Number Theory and Algebra, 2nd Edition *Victor Shoup* 
+
+
+### Programming Language
+
+- [ ] C++ Primer *Stanley Lippman, Josée Lajoie, Barbara Moo*
 
 ## Course
 
