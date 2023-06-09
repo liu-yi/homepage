@@ -35,17 +35,13 @@
               <img src="_media/icons/zhihu.svg" alt="知乎"
               title="知乎" />
             </a>
-            <a href="https://www.douban.com/people/imliuyi" target="_blank">
-              <img src="_media/icons/douban.svg" alt="豆瓣"
-              title="豆瓣" />
-            </a>
         </div>
       </div>
       <div class="contact">
         <div class="email" title="Contact me">i@liuyi.pro, liuyi@jnu.edu.cn</div>
       </div>
       <div class="cv">
-        <span v-if="display_todo">[</span><a v-if="display_todo" href="#/miscellaneous/todo">Todo List</a><span v-if="display_todo">]</span>
+        <span v-if="display_todo">[</span><a v-if="display_todo" href="#/miscellaneous/todo">Todo</a><span v-if="display_todo">]</span>
         [<a target="_blank" style="font-size: 1em" href="_media/cv/YiLIU-CV-en.pdf" title="Download my CV">
           CV
         </a>]
