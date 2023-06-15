@@ -1,11 +1,7 @@
 
 # 信息安全各类会议总结
 
-<!-- Top Conference for Information Security -->
-
-<!-- more -->
-
-本文转自http://wangdingg.weebly.com/miscellanea.html，由于原网站打不开，故在此存档。
+本文转自http://wangdingg.weebly.com/miscellanea.html，<s>由于原网站打不开，故在此存档</s>。
 
 A. 信息安全国际学术会议讨论
  (Part of this blog is my personal opinion,  while part of it comes from http://loccs.sjtu.edu.cn/typecho/index.php/category/conf/.   部分为个人见解，部分转自：http://loccs.sjtu.edu.cn/typecho/index.php/category/conf/,  一介学生眼光，三五好友讨论结果，不妥不当之处难免，欢迎批评指正。 )
@@ -107,6 +103,7 @@ http://faculty.cs.tamu.edu/guofei/sec_conf_stat.htm
 - MOST MOBILE SECURITY TECHNOLOGIES（和IEEE S&P一起举行）
 
 在云安全方面
+
 - EEE CLOUD: IEEE International Conference on Cloud Computing
 - ACM SOCC: ACM Symposium on Cloud Computing
 - HotCloud: USENIX Workshop on Hot Topics in Cloud Computing

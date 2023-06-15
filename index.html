@@ -11,6 +11,13 @@
 
   <link rel="shortcut icon" href="_media/logo.ico" type="image/ico" />
 
+  <link rel="stylesheet" href="//unpkg.com/heti/umd/heti.min.css">
+  <script src="//unpkg.com/heti/umd/heti-addon.min.js"></script>
+  <script>
+    const heti = new Heti('.heti');
+    heti.autoSpacing(); // 自动进行中西文混排美化和标点挤压
+  </script>
+
 
 </head>
 
@@ -107,6 +114,18 @@
       .markdown-section {
         padding: 2rem 15px;
       }
+    }
+
+    .markdown-section s {
+      color: transparent;
+      background: rgba(187, 187, 187, .7);
+      transition: all .3s ease-in-out;
+      text-decoration: none;
+    }
+
+    .markdown-section s:hover {
+      color: var(--base-color);
+      background: transparent;
     }
   </style>
 </body>
