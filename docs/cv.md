@@ -257,7 +257,7 @@ C/C++, Python, LaTeX, Java, HTML/CSS, JavaScript -->
 
 @media (max-width: 480px){
   .profile .image{
-        max-width: 180px
+        max-width: 150px
     }
   .profile .info .name{
     font-size: 1.8rem; 
