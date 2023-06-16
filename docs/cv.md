@@ -127,7 +127,7 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University
 
     The 27th European Symposium on Research in Computer Security. **ESORICS 2022**. [[ePrint](https://eprint.iacr.org/2022/585)]
 
-    Virtual. Sept. 2022. 
+    Copenhagen, Denmark. Sept. 2022.
 
 - **Making Private Function Evaluation Safer, Faster, and Simpler** [:link:](https://link.springer.com/chapter/10.1007/978-3-030-97121-2_13)
   
@@ -135,7 +135,7 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University
 
     The 25th International Conference on Practice and Theory of Public-Key Cryptography. **PKC 2022**. [[ePrint](https://eprint.iacr.org/2021/1682)]
 
-    Virtual. March. 2022. [[Video](https://www.youtube.com/watch?v=Pv8zVTxacr0)] 
+    Virtual. March 2022. [[Video](https://www.youtube.com/watch?v=Pv8zVTxacr0)] 
 
 - **Improved Zero-Knowledge Argument of Encrypted Extended Permutation** [:link:](https://link.springer.com/chapter/10.1007/978-3-030-88323-2_15)
   
@@ -165,51 +165,11 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University
 
 ## Manuscripts
 
-
-
 - **An E-voting Protocol Based on Blockchain**
   
   <u>**Yi Liu**</u>, Qi Wang
 
   Manuscript, 2017. [[ePrint](https://eprint.iacr.org/2017/1043)]
-
-
-<!-- ## Talks
-
-- **Towards Practical Homomorphic Time-Lock Puzzles: Applicability and Verifiability**
-
-    The 27th European Symposium on Research in Computer Security. **ESORICS 2022**.
-
-    Virtual. Sept. 2022. 
-
-- **Making Private Function Evaluation Safer, Faster, and Simpler**
-  
-    The 25th International Conference on Practice and Theory of Public-Key Cryptography. **PKC 2022**. 
-
-    Virtual. March. 2022. [[Video](https://www.youtube.com/watch?v=Pv8zVTxacr0)] 
-
-- **Improved Zero-Knowledge Argument of Encrypted Extended Permutation**
-
-    The 17th International Conference on International Conference on Information Security and Cryptology. **Inscrypt 2021**.
-    
-    Virtual. Aug. 2021. 
-
-
-- **Blind Polynomial Evaluation and Data Trading**
-
-    The 19th International Conference on Applied Cryptography and Network Security. **ACNS 2021**.
-
-    Virtual. June 2021. 
-    
-
-- **An Improvement of Multi-Exponentiation with Encrypted Bases Argument: Smaller and Faster**
-
-    The 16th International Conference on International Conference on Information Security and Cryptology. **Inscrypt 2020**.
-
-    Guangzhou, China. Dec. 2020.  -->
-
-
-
 
 ## Experience
 
