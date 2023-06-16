@@ -4,7 +4,7 @@
 ## Book
 
 <a href="https://www.douban.com/people/imliuyi" target="_blank">
-    <img src="_media/icons/douban.svg" alt="豆瓣" style="max-width:40px"
+    <img src="public/icons/douban.svg" alt="豆瓣" style="max-width:40px"
     title="豆瓣" />
 </a>
 
