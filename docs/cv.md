@@ -169,7 +169,7 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University
   
   <u>**Yi Liu**</u>, Qi Wang
 
-  Manuscript, 2017. <a class="pubtag btn btn-outline-primary" href="https://eprint.iacr.org/2017/1043" target="_blank">ePrint</a>
+  Manuscript, 2017. <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2017/1043" target="_blank">ePrint</a></span>
 
 </div>
 
