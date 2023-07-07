@@ -98,7 +98,8 @@
       .markdown-section {
         padding: 2rem 15px;
       }
-      :root{
+
+      :root {
         --base-font-size: 16px;
       }
     }
@@ -113,6 +114,34 @@
     .markdown-section s:hover {
       color: var(--base-color);
       background: transparent;
+    }
+
+    a.btn-outline-primary {
+      color: #558fb5;
+      background-color: #fff;
+      border-color: #558fb5;
+    }
+
+    a.btn-outline-primary:hover {
+      color: #fff;
+      background-color: #558fb5;
+      border-color: #558fb5;
+    }
+
+    a.btn {
+      border: 1px solid #558fb5;
+      display: inline-block;
+      text-align: center;
+      vertical-align: baseline;
+      user-select: none;
+      padding: 0 .375rem;
+      font-size: 0.9rem;
+      border-radius: .25rem;
+      transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+    }
+
+    a.btn:hover {
+      border: 1px solid #558fb5;
     }
   </style>
 </body>

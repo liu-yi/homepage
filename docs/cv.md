@@ -121,11 +121,13 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University
 
 ## Publications
 
+<div class="publist">
+
 - **Towards Practical Homomorphic Time-Lock Puzzles: Applicability and Verifiability** <span class="pubtag">[:link:](https://link.springer.com/chapter/10.1007/978-3-031-17140-6_21)</span>
   
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
-    The 27th European Symposium on Research in Computer Security. **ESORICS 2022**. <span class="pubtag">[[ePrint](https://eprint.iacr.org/2022/585)]</span>
+    The 27th European Symposium on Research in Computer Security. **ESORICS 2022**. <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2022/585" target="_blank">ePrint</a></span>
 
     Copenhagen, Denmark. Sept. 2022.
 
@@ -133,7 +135,7 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University
   
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
-    The 25th International Conference on Practice and Theory of Public-Key Cryptography. **PKC 2022**. <span class="pubtag">[[ePrint](https://eprint.iacr.org/2021/1682)] [[Video](https://www.youtube.com/watch?v=Pv8zVTxacr0)]</span>
+    The 25th International Conference on Practice and Theory of Public-Key Cryptography. **PKC 2022**. <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2021/1682" target="_blank">ePrint</a> <a class="btn btn-outline-primary" href="https://www.youtube.com/watch?v=Pv8zVTxacr0" target="_blank">Video</a></span>
 
     Virtual. March 2022.  
 
@@ -141,7 +143,7 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University
   
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
-    The 17th International Conference on International Conference on Information Security and Cryptology. **Inscrypt 2021**. <span class="pubtag">[[ePrint](https://eprint.iacr.org/2021/1430)]</span>
+    The 17th International Conference on International Conference on Information Security and Cryptology. **Inscrypt 2021**. <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2021/1430" target="_blank">ePrint</a></span>
 
     Virtual. Aug. 2021. 
     
@@ -149,7 +151,7 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University
   
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
-    The 19th International Conference on Applied Cryptography and Network Security. **ACNS 2021**. <span class="pubtag">[[ePrint](https://eprint.iacr.org/2021/413)]</span>
+    The 19th International Conference on Applied Cryptography and Network Security. **ACNS 2021**. <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2021/413" target="_blank">ePrint</a></span>
 
     Virtual. June 2021. 
 
@@ -157,7 +159,7 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University
   
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
-    The 16th International Conference on International Conference on Information Security and Cryptology. **Inscrypt 2020**. <span class="pubtag">[[ePrint](https://eprint.iacr.org/2020/567)] </span>
+    The 16th International Conference on International Conference on Information Security and Cryptology. **Inscrypt 2020**. <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2020/567" target="_blank">ePrint</a> </span>
 
     Guangzhou, China. Dec. 2020. 
 
@@ -167,7 +169,9 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University
   
   <u>**Yi Liu**</u>, Qi Wang
 
-  Manuscript, 2017. <span class="pubtag">[[ePrint](https://eprint.iacr.org/2017/1043)]</span>
+  Manuscript, 2017. <a class="pubtag btn btn-outline-primary" href="https://eprint.iacr.org/2017/1043" target="_blank">ePrint</a>
+
+</div>
 
 ## Experience
 
@@ -192,6 +196,7 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University
 
 <!-- ## Skills
 C/C++, Python, LaTeX, Java, HTML/CSS, JavaScript -->
+
 
 
 <style>
@@ -285,17 +290,16 @@ body[data-page="docs/cv.md"] .content {
   margin-left: 0px !important;
 }
 
-body[data-page="docs/cv.md"] .markdown-section .pubtag{
+.publist .pubtag{
   opacity: 0.0;
 }
 
-body[data-page="docs/cv.md"] .markdown-section:hover .pubtag{
+.publist:hover .pubtag{
   opacity: 1.0;
 }
 
-body[data-page="docs/cv.md"] .pubtag{
+.pubtag{
   transition: all 200ms, opacity 300ms;
 }
 
-      
 </style>
