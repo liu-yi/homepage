@@ -121,47 +121,45 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University
 
 ## Publications
 
-- **Towards Practical Homomorphic Time-Lock Puzzles: Applicability and Verifiability** [:link:](https://link.springer.com/chapter/10.1007/978-3-031-17140-6_21)
+- **Towards Practical Homomorphic Time-Lock Puzzles: Applicability and Verifiability** <span class="pubtag">[:link:](https://link.springer.com/chapter/10.1007/978-3-031-17140-6_21)</span>
   
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
-    The 27th European Symposium on Research in Computer Security. **ESORICS 2022**. [[ePrint](https://eprint.iacr.org/2022/585)]
+    The 27th European Symposium on Research in Computer Security. **ESORICS 2022**. <span class="pubtag">[[ePrint](https://eprint.iacr.org/2022/585)]</span>
 
     Copenhagen, Denmark. Sept. 2022.
 
-- **Making Private Function Evaluation Safer, Faster, and Simpler** [:link:](https://link.springer.com/chapter/10.1007/978-3-030-97121-2_13)
+- **Making Private Function Evaluation Safer, Faster, and Simpler** <span class="pubtag">[:link:](https://link.springer.com/chapter/10.1007/978-3-030-97121-2_13)<span>
   
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
-    The 25th International Conference on Practice and Theory of Public-Key Cryptography. **PKC 2022**. [[ePrint](https://eprint.iacr.org/2021/1682)]
+    The 25th International Conference on Practice and Theory of Public-Key Cryptography. **PKC 2022**. <span class="pubtag">[[ePrint](https://eprint.iacr.org/2021/1682)] [[Video](https://www.youtube.com/watch?v=Pv8zVTxacr0)]</span>
 
-    Virtual. March 2022. [[Video](https://www.youtube.com/watch?v=Pv8zVTxacr0)] 
+    Virtual. March 2022.  
 
-- **Improved Zero-Knowledge Argument of Encrypted Extended Permutation** [:link:](https://link.springer.com/chapter/10.1007/978-3-030-88323-2_15)
+- **Improved Zero-Knowledge Argument of Encrypted Extended Permutation** <span class="pubtag">[:link:](https://link.springer.com/chapter/10.1007/978-3-030-88323-2_15)</span>
   
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
-    The 17th International Conference on International Conference on Information Security and Cryptology. **Inscrypt 2021**. [[ePrint](https://eprint.iacr.org/2021/1430)] 
+    The 17th International Conference on International Conference on Information Security and Cryptology. **Inscrypt 2021**. <span class="pubtag">[[ePrint](https://eprint.iacr.org/2021/1430)]</span>
 
     Virtual. Aug. 2021. 
     
-- **Blind Polynomial Evaluation and Data Trading** [:link:](https://link.springer.com/chapter/10.1007/978-3-030-78372-3_5)
+- **Blind Polynomial Evaluation and Data Trading** <span class="pubtag">[:link:](https://link.springer.com/chapter/10.1007/978-3-030-78372-3_5)</span>
   
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
-    The 19th International Conference on Applied Cryptography and Network Security. **ACNS 2021**. [[ePrint](https://eprint.iacr.org/2021/413)]
+    The 19th International Conference on Applied Cryptography and Network Security. **ACNS 2021**. <span class="pubtag">[[ePrint](https://eprint.iacr.org/2021/413)]</span>
 
     Virtual. June 2021. 
 
-- **An Improvement of Multi-Exponentiation with Encrypted Bases Argument: Smaller and Faster** [:link:](https://link.springer.com/chapter/10.1007/978-3-030-71852-7_27)
+- **An Improvement of Multi-Exponentiation with Encrypted Bases Argument: Smaller and Faster** <span class="pubtag">[:link:](https://link.springer.com/chapter/10.1007/978-3-030-71852-7_27)</span>
   
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
-    The 16th International Conference on International Conference on Information Security and Cryptology. **Inscrypt 2020**. [[ePrint](https://eprint.iacr.org/2020/567)] 
+    The 16th International Conference on International Conference on Information Security and Cryptology. **Inscrypt 2020**. <span class="pubtag">[[ePrint](https://eprint.iacr.org/2020/567)] </span>
 
     Guangzhou, China. Dec. 2020. 
-
-    
 
 ## Manuscripts
 
@@ -169,7 +167,7 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University
   
   <u>**Yi Liu**</u>, Qi Wang
 
-  Manuscript, 2017. [[ePrint](https://eprint.iacr.org/2017/1043)]
+  Manuscript, 2017. <span class="pubtag">[[ePrint](https://eprint.iacr.org/2017/1043)]</span>
 
 ## Experience
 
@@ -286,5 +284,18 @@ body[data-page="docs/cv.md"] .sidebar-toggle {
 body[data-page="docs/cv.md"] .content {
   margin-left: 0px !important;
 }
+
+body[data-page="docs/cv.md"] .markdown-section .pubtag{
+  opacity: 0.0;
+}
+
+body[data-page="docs/cv.md"] .markdown-section:hover .pubtag{
+  opacity: 1.0;
+}
+
+body[data-page="docs/cv.md"] .pubtag{
+  transition: all 200ms, opacity 300ms;
+}
+
       
 </style>
