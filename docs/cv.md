@@ -290,16 +290,6 @@ body[data-page="docs/cv.md"] .content {
   margin-left: 0px !important;
 }
 
-.publist .pubtag{
-  opacity: 0.0;
-}
 
-.publist:hover .pubtag{
-  opacity: 1.0;
-}
-
-.pubtag{
-  transition: all 200ms, opacity 300ms;
-}
 
 </style>

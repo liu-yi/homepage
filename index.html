@@ -94,6 +94,18 @@
       transition: color, 0.25s;
     }
 
+    .publist .pubtag {
+      opacity: 0.0;
+    }
+
+    .publist:hover .pubtag {
+      opacity: 1.0;
+    }
+
+    .pubtag {
+      transition: all 200ms, opacity 300ms;
+    }
+
     @media (max-width: 480px) {
       .markdown-section {
         padding: 2rem 15px;
@@ -102,6 +114,11 @@
       :root {
         --base-font-size: 16px;
       }
+
+      .publist .pubtag {
+        opacity: 1.0;
+      }
+
     }
 
     .markdown-section s {
