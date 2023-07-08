@@ -1,12 +1,9 @@
-
-<!-- # About Me -->
-
 <div id="intro">
   <div class="profile">
     <div class="image">
-      <div id="avatar">
-        <img v-on="{ mouseenter: mouseEnter, mouseleave: mouseLeave }" @click="todo"
-          :src="logo_list[here_logo]">
+      <div id="avatar"  @click="todo">
+          <img v-show="!hover_avatar" src="public/img/logo.jpg" v-on="{ mouseenter: mouseEnter, mouseleave: mouseLeave }">
+          <img v-show="hover_avatar" src="public/img/logo2.jpg" v-on="{ mouseenter: mouseEnter, mouseleave: mouseLeave }">
       </div>
     </div>
     <div class="info">
@@ -58,46 +55,26 @@
       return {
         hover_avatar: false,
         hover_name: false,
-        logo_list: ["public/img/logo.jpg", "public/img/logo1.jpg", "public/img/logo2.jpg"],
         todo_num : 0,
-        display_todo: false
+        display_todo: false,
       }
     },
     methods: {
       mouseEnter(event) {
-        // console.log(event)
         this.hover_avatar = true;
         this.hover_name = true; 
       },
       mouseLeave(event) {
-        // console.log(event)
         this.hover_avatar = false;
         this.hover_name = false; 
       },
       todo(){
         this.todo_num++; 
-        console.log(this.$router)
         if(this.todo_num == 5){
           this.display_todo = true
         }
       }
     }, 
-    computed: {
-      here_logo() {
-        if (this.hover_avatar) {
-          return 2;
-        } else if (this.here) {
-          return 1;
-        } else {
-          return 0;
-        }
-      },
-    },
-    beforeCreate(){
-      // if (window.matchMedia('(max-device-width: 767px)').matches){
-      //   document.body.classList.remove('close')
-      // } 
-    }
   }).mount('#intro');
 </script>
 
@@ -113,9 +90,7 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University
   - Thesis: Private Function Evaluation: Improvements and Applications. 
 - **Southern University of Science and Technology (SUSTech)** <div class="duration">*Sept. 2014 – July 2018*</div>
   - B.Eng. in Computer Science and Technology
-  <!-- - GPA: **3.84/4.00** (Core); **3.70/4.00** (Overall) -->
   - Thesis: An Evaluation System Based on Blockchain and Linkable Ring Signature. 
-  <!-- - [[Slides](https://imliuyi.com/ugthesis_slide.pdf)] -->
     - Best Thesis Award in the CSE Department, SUSTech.
 
 
@@ -213,10 +188,6 @@ C/C++, Python, LaTeX, Java, HTML/CSS, JavaScript -->
 .duration {
   float: right;
 }
-
-/* #about-me {
-  display: none
-} */
 .profile{
     display: flex;
     flex-direction: row; 
@@ -225,7 +196,6 @@ C/C++, Python, LaTeX, Java, HTML/CSS, JavaScript -->
 .profile .image{
     max-width: 180px;
     padding: 2px; 
-    /* border: 1px solid #f2f3f3; */
 }
 .profile .image img{
     border-radius: 50%;
@@ -240,7 +210,6 @@ C/C++, Python, LaTeX, Java, HTML/CSS, JavaScript -->
 .profile .info .name{
     font-size: 2.5rem; 
     padding-bottom: 8px;
-    /* font-weight: 600;  */
 }
 .profile .info .socials{
     display: flex; 
@@ -264,7 +233,6 @@ C/C++, Python, LaTeX, Java, HTML/CSS, JavaScript -->
     }
   .profile .info .name{
     font-size: 1.8rem; 
-    /* font-weight: 600;  */
     }
   .profile .info .socials img{
     width: 1rem; 
