@@ -7,7 +7,7 @@
       </div>
     </div>
     <div class="info">
-      <div class="name" @mouseenter="hover_name = true"
+      <div class="name" style="max-width: 120px" @mouseenter="hover_name = true"
           @mouseleave="hover_name = false">
         <span>{{ hover_name ? "刘   " : "Yi " }}</span>
         <span class="last">{{ hover_name ? "逸" : "Liu" }}</span>
