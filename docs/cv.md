@@ -7,12 +7,10 @@
       </div>
     </div>
     <div class="info">
-      <div class="name">
-        <span
-          @mouseenter="hover_name = true"
-          @mouseleave="hover_name = false"
-          >{{ hover_name ? "刘 逸" : "Yi Liu" }}</span
-        >
+      <div class="name" @mouseenter="hover_name = true"
+          @mouseleave="hover_name = false">
+        <span>{{ hover_name ? "刘   " : "Yi " }}</span>
+        <span class="last">{{ hover_name ? "逸" : "Liu" }}</span>
       </div>
       <div class="socials">
         <div>
@@ -256,6 +254,14 @@ body[data-page="docs/cv.md"] .sidebar-toggle {
 
 body[data-page="docs/cv.md"] .content {
   margin-left: 0px !important;
+}
+
+body[data-page="docs/cv.md"] h2 {
+  font-variant: small-caps;
+}
+
+body[data-page="docs/cv.md"] .last {
+  font-variant: small-caps;
 }
 
 
