@@ -39,8 +39,7 @@
         <span v-if="display_todo">[</span><a v-if="display_todo" href="#/miscellaneous/todo">Todo</a><span v-if="display_todo">]</span>
         [<a target="_blank" style="font-size: 1em" href="public/cv/YiLIU-CV-en.pdf" title="Download my CV">
           CV
-        </a>]
-        [<a target="_blank" style="font-size: 1em" href="public/cv/YiLIU-CV-cn.pdf" title="下载我的中文版简历">
+        </a>|<a target="_blank" style="font-size: 1em" href="public/cv/YiLIU-CV-cn.pdf" title="下载我的中文版简历">
           简历
         </a>]
       </div>
