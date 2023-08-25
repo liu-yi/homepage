@@ -98,6 +98,14 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University
 
 <div class="publist">
 
+- **Robust Publicly Verifiable Covert Security: Limited Information Leakage and Guaranteed Correctness with Low Overhead** 
+  
+    <u>**Yi Liu**</u>, Junzuo Lai, Qi Wang, Xianrui Qin, Anjia Yang, Jian Weng 
+
+    The 29th International Conference on the Theory and Application of Cryptology and Information Security. **ASIACRYPT 2023**. 
+
+    Guangzhou, China. Dec. 2022.
+
 - **Towards Practical Homomorphic Time-Lock Puzzles: Applicability and Verifiability** <span class="pubtag">[:link:](https://link.springer.com/chapter/10.1007/978-3-031-17140-6_21)</span>
   
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
