@@ -153,6 +153,20 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University
 
 </div>
 
+## Research Projects
+- <span title="新型安全模型中的安全多方计算协议设计">**Design of Secure Multi-Party Computation Protocols in New Security Models**</span> <div class="duration">*2024 – 2026*</div>
+  - <span title="项目负责人">Principal Investigator</span>
+  - Supported by the <span title="国家自然科学基金青年科学基金项目">Young Scientists Fund of the National Natural Science Foundation of China</span> (Grant No. 62302194). 
+
+## Professional Activities
+- **Journal Reviewers**
+  - IEEE Transactions on Dependable and Secure Computing (TDSC)
+  - International Journal of Information Security 
+- **Conference Reviewer**
+  - IEEE BSC@QRS (2022, 2021, 2020)
+- **Membership**
+  - IACR Student (2022, 2021, 2020, 2019)
+
 ## Experience
 
 - **Teaching Assistant**
