@@ -1,9 +1,9 @@
-# Undergraduate Courses
+## Undergraduate Courses
 
 - C++ Programming [[Fall 2023](teaching/cpp.md)]
-  - Lecture 
-  - Lab 
+  - Lecture + Lab
 
-# Postgraduate Courses
+
+## Postgraduate Courses
 
 - Advanced Cryptography [[Fall 2023](teaching/crypto.md)]
