@@ -1,6 +1,7 @@
 * [Home](/)
 <!-- * My -->
-* [Research](/research/)
+<!-- * [Research](/research/) -->
+* [Teaching](/teaching/)
 * [Miscellaneous](/miscellaneous/)
 
 <!-- * Notes
