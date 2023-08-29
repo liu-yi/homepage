@@ -43,7 +43,7 @@
 
 ## 教学安排（暂定）
 1. 8月29日 
-   - 入门介绍
+   - 入门介绍 [[理论课课件](https://liuyi.pro/teaching/cpp/Lecture01.pptx)][[实验课课件](https://liuyi.pro/teaching/cpp/Lab01.pptx)]
 2. 9月5日
    - 数据类型与算术运算符
 3. 9月12日
