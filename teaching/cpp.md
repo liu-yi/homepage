@@ -43,9 +43,9 @@
 
 ## 教学安排（暂定）
 1. 8月29日 
-   - 入门介绍 [[理论课课件](https://liuyi.pro/teaching/cpp/Lecture01.pptx)][[实验课课件](https://liuyi.pro/teaching/cpp/Lab01.pptx)]
+   - 入门介绍 [[理论课课件](https://liuyi.pro/teaching/cpp/Lecture01/Lecture01.pptx)][[实验课课件](https://liuyi.pro/teaching/cpp/Lab01/Lab01.pptx)]
 2. 9月5日
-   - 数据类型与算术运算符
+   - 数据类型与算术运算符 [[理论课课件](https://liuyi.pro/teaching/cpp/Lecture02/Lecture02.pptx)][[实验课课件](https://liuyi.pro/teaching/cpp/Lab02/Lab02.pptx)]
 3. 9月12日
    - 分支和循环
 4. 9月19日
