@@ -50,7 +50,7 @@
 ### Cryptography
 
 - [x] [The 1st BIU Winter School](https://cyber.biu.ac.il/event/the-1st-biu-winter-school/) - *Secure Computation and Efficiency.* **Finished all but Ishai's part.**
-- [x] [The 2nt BIU Winter School](https://cyber.biu.ac.il/event/the-1st-biu-winter-school/) - *Lattice-Based Cryptography and Applications.* **Finished all but FHE part.**
+- [x] [The 2nd BIU Winter School](https://cyber.biu.ac.il/event/the-2nd-biu-winter-school/) - *Lattice-Based Cryptography and Applications.* **Finished all but FHE part.**
 - [x] [The 3rd BIU Winter School](https://cyber.biu.ac.il/event/the-3rd-biu-winter-school/) - *Bilinear Pairings in Cryptography.* **Finished all but How pairings work part.**
 - [x] [The 5th BIU Winter School](https://cyber.biu.ac.il/event/the-5th-biu-winter-school/) - *Advances in Practical Multiparty Computation.* **Finished all but Damgård's part and workshop.**
 - [x] [The 6th BIU Winter School](https://cyber.biu.ac.il/event/the-6th-biu-winter-school/) - *Cryptography in the Cloud - Verifiable Computation and Special Encryption.* **Finished all but searchable encryption part.**
