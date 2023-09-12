@@ -47,7 +47,7 @@
 2. 9月5日
    - 数据类型与算术运算符 [[理论课课件](https://liuyi.pro/teaching/cpp_fall23/Lecture02/Lecture02.pptx)][[实验课课件](https://liuyi.pro/teaching/cpp/Lab02/Lab02.pptx)]
 3. 9月12日
-   - 分支和循环
+   - 分支和循环 [[理论课课件](https://liuyi.pro/teaching/cpp_fall23/Lecture03/Lecture03.pptx)][[实验课课件](https://liuyi.pro/teaching/cpp/Lab03/Lab03.pptx)]
 4. 9月19日
    - 数据结构
 5. 9月26日
