@@ -99,7 +99,7 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University
   
     <u>**Yi Liu**</u>, Junzuo Lai, Qi Wang, Xianrui Qin, Anjia Yang, Jian Weng 
 
-    The 29th International Conference on the Theory and Application of Cryptology and Information Security. **ASIACRYPT 2023**. 
+    The 29th International Conference on the Theory and Application of Cryptology and Information Security. **ASIACRYPT 2023**. <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2023/1392" target="_blank">ePrint</a></span>
 
     Guangzhou, China. Dec. 2022.
 
