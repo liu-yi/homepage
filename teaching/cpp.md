@@ -49,7 +49,7 @@
 3. 9月12日
    - 分支和循环 [[理论课课件](https://liuyi.pro/teaching/cpp_fall23/Lecture03/Lecture03.pptx)][[实验课课件](https://liuyi.pro/teaching/cpp/Lab03/Lab03.pptx)]
 4. 9月19日
-   - 数据结构
+   - 数据结构 [[理论课课件](https://liuyi.pro/teaching/cpp_fall23/Lecture04/Lecture04.pptx)][[实验课课件](https://liuyi.pro/teaching/cpp/Lab04/Lab04.pptx)]
 5. 9月26日
    - 内存与指针
 6. 10月3日（**国庆放假**）
