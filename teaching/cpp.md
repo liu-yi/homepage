@@ -51,7 +51,7 @@
 4. 9月19日
    - 数据结构 [[理论课课件](https://liuyi.pro/teaching/cpp_fall23/Lecture04/Lecture04.pptx)][[实验课课件](https://liuyi.pro/teaching/cpp/Lab04/Lab04.pptx)]
 5. 9月26日
-   - 内存与指针
+   - 内存与指针 [[理论课课件](https://liuyi.pro/teaching/cpp_fall23/Lecture05/Lecture05.pptx)][[实验课课件](https://liuyi.pro/teaching/cpp/Lab05/Lab05.pptx)]
 6. 10月3日（**国庆放假**）
 7. 10月10日
    - 函数
