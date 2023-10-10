@@ -1,0 +1,3 @@
+C:/Users/45288/OneDrive/Courses/CPP/Lecture06/code/src/build/CMakeFiles/dotp.dir
+C:/Users/45288/OneDrive/Courses/CPP/Lecture06/code/src/build/CMakeFiles/edit_cache.dir
+C:/Users/45288/OneDrive/Courses/CPP/Lecture06/code/src/build/CMakeFiles/rebuild_cache.dir
