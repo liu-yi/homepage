@@ -56,9 +56,9 @@
 7. 10月10日
    - 函数 [[理论课课件](https://liuyi.pro/teaching/cpp_fall23/Lecture06/Lecture06.pptx)][[实验课课件](https://liuyi.pro/teaching/cpp/Lab06/Lab06.pptx)]
 8. 10月17日
-   - 类与对象的基本概念 I
+   - 类与对象的基本概念 I [[理论课课件](https://liuyi.pro/teaching/cpp_fall23/Lecture07/Lecture07.pptx)][[实验课课件](https://liuyi.pro/teaching/cpp/Lab07/Lab07.pptx)]
 9. 10月24日
-   - 类与对象的基本概念 II
+   - 类与对象的基本概念 II [[理论课课件](https://liuyi.pro/teaching/cpp_fall23/Lecture08/Lecture08.pptx)][[实验课课件](https://liuyi.pro/teaching/cpp/Lab08/Lab08.pptx)]
 10. 10月31日
     - 类与对象的基本概念 III
 11. 11月7日

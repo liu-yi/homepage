@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Users/45288/OneDrive/Courses/CPP/Lecture07/code/src/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DWITH_AVX2  -O3 -DNDEBUG -std=gnu++20 -mfma -fopenmp -o CMakeFiles\\dotp.dir\\main.cpp.obj -c C:\\Users\\45288\\OneDrive\\Courses\\CPP\\Lecture07\\code\\src\\main.cpp",
+  "file": "C:/Users/45288/OneDrive/Courses/CPP/Lecture07/code/src/main.cpp",
+  "output": "CMakeFiles/dotp.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/45288/OneDrive/Courses/CPP/Lecture07/code/src/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DWITH_AVX2  -O3 -DNDEBUG -std=gnu++20 -mfma -fopenmp -o CMakeFiles\\dotp.dir\\matoperation.cpp.obj -c C:\\Users\\45288\\OneDrive\\Courses\\CPP\\Lecture07\\code\\src\\matoperation.cpp",
+  "file": "C:/Users/45288/OneDrive/Courses/CPP/Lecture07/code/src/matoperation.cpp",
+  "output": "CMakeFiles/dotp.dir/matoperation.cpp.obj"
+}
+]

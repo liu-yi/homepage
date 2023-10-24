@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Users/45288/OneDrive/Courses/CPP/Lecture07/code/multi-files/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -O3 -DNDEBUG -o CMakeFiles\\persondemo.dir\\main.cpp.obj -c C:\\Users\\45288\\OneDrive\\Courses\\CPP\\Lecture07\\code\\multi-files\\main.cpp",
+  "file": "C:/Users/45288/OneDrive/Courses/CPP/Lecture07/code/multi-files/main.cpp",
+  "output": "CMakeFiles/persondemo.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/45288/OneDrive/Courses/CPP/Lecture07/code/multi-files/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -O3 -DNDEBUG -o CMakeFiles\\persondemo.dir\\student.cpp.obj -c C:\\Users\\45288\\OneDrive\\Courses\\CPP\\Lecture07\\code\\multi-files\\student.cpp",
+  "file": "C:/Users/45288/OneDrive/Courses/CPP/Lecture07/code/multi-files/student.cpp",
+  "output": "CMakeFiles/persondemo.dir/student.cpp.obj"
+}
+]

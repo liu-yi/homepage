@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/45288/OneDrive/Courses/CPP/Lecture07/code/exampleMat/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/matexample.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\matexample.dir\\matexample.cpp.obj -c C:\\Users\\45288\\OneDrive\\Courses\\CPP\\Lecture07\\code\\exampleMat\\matexample.cpp",
+  "file": "C:/Users/45288/OneDrive/Courses/CPP/Lecture07/code/exampleMat/matexample.cpp",
+  "output": "CMakeFiles/matexample.dir/matexample.cpp.obj"
+}
+]
