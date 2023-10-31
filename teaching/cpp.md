@@ -60,7 +60,7 @@
 9. 10月24日
    - 类与对象的基本概念 II [[理论课课件](https://liuyi.pro/teaching/cpp_fall23/Lecture08/Lecture08.pptx)][[实验课课件](https://liuyi.pro/teaching/cpp/Lab08/Lab08.pptx)]
 10. 10月31日
-    - 类与对象的基本概念 III
+    - 类与对象的基本概念 III [[理论课课件](https://liuyi.pro/teaching/cpp_fall23/Lecture09/Lecture09.pptx)][[实验课课件](https://liuyi.pro/teaching/cpp/Lab09/Lab09.pptx)]
 11. 11月7日
     - 类的继承与多态 I
 12. 11月14日
