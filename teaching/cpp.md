@@ -64,7 +64,7 @@
 11. 11月7日
     - 类的继承与多态 I [[理论课课件](https://liuyi.pro/teaching/cpp_fall23/Lecture10/Lecture10.pptx)][[实验课课件](https://liuyi.pro/teaching/cpp/Lab10/Lab10.pptx)]
 12. 11月14日
-    - 类的继承与多态 II
+    - 类的继承与多态 II [[理论课课件](https://liuyi.pro/teaching/cpp_fall23/Lecture11/Lecture11.pptx)][[实验课课件](https://liuyi.pro/teaching/cpp/Lab11/Lab11.pptx)]
 13. 11月21日
     - 类的继承与多态 III
 14. 11月28日
