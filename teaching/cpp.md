@@ -66,9 +66,9 @@
 12. 11月14日
     - 类的继承与多态 II [[理论课课件](https://liuyi.pro/teaching/cpp_fall23/Lecture11/Lecture11.pptx)][[实验课课件](https://liuyi.pro/teaching/cpp/Lab11/Lab11.pptx)]
 13. 11月21日
-    - 类的继承与多态 III
+    - 类的继承与多态 III [[理论课课件](https://liuyi.pro/teaching/cpp_fall23/Lecture12/Lecture12.pptx)][[实验课课件](https://liuyi.pro/teaching/cpp/Lab12/Lab12.pptx)]
 14. 11月28日
-    - 异常处理
+    - STL 与 异常处理 [[理论课课件](https://liuyi.pro/teaching/cpp_fall23/Lecture13/Lecture13.pptx)][[实验课课件](https://liuyi.pro/teaching/cpp/Lab13/Lab13.pptx)]
 15. 12月5日
     - 进阶知识
 16. 12月12日
