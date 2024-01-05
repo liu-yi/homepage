@@ -76,7 +76,7 @@
 </script>
 
 ## About Me
-I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University (JNU)](https://english.jnu.edu.cn/). My research interests are cryptography and network security, in particular: **secure two-party/multi-party computation**, **zero-knowledge proofs**, **timed cryptography**, **blockchain-related applications**, etc.
+I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University (JNU)](https://english.jnu.edu.cn/). My research interests are cryptography, in particular: **secure two-party/multi-party computation**, **timed cryptography**, **zero-knowledge proofs**, **blockchain-related applications**, etc.
 
 ## Education
 
@@ -90,16 +90,20 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University
   - Thesis: An Evaluation System Based on Blockchain and Linkable Ring Signature. 
     - Best Thesis Award in the CSE Department, SUSTech.
 
+## Research Projects
+- <span title="新型安全模型中的安全多方计算协议设计">**Design of Secure Multi-Party Computation Protocols in New Security Models**</span> <div class="duration">*2024 – 2026*</div>
+  - <span title="项目负责人">Principal Investigator</span>
+  - Supported by the <span title="国家自然科学基金青年科学基金项目">Young Scientists Fund of the National Natural Science Foundation of China</span> (Grant No. 62302194). 
 
 ## Publications
 
 <div class="publist">
 
-- **Robust Publicly Verifiable Covert Security: Limited Information Leakage and Guaranteed Correctness with Low Overhead** 
+- **Robust Publicly Verifiable Covert Security: Limited Information Leakage and Guaranteed Correctness with Low Overhead** <span class="pubtag">[:link:](https://link.springer.com/chapter/10.1007/978-981-99-8721-4_9)</span>
   
     <u>**Yi Liu**</u>, Junzuo Lai, Qi Wang, Xianrui Qin, Anjia Yang, Jian Weng 
 
-    The 29th International Conference on the Theory and Application of Cryptology and Information Security. **ASIACRYPT 2023**. <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2023/1392" target="_blank">ePrint</a></span>
+    The 29th International Conference on the Theory and Application of Cryptology and Information Security (**ASIACRYPT 2023**). <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2023/1392" target="_blank">ePrint</a></span>
 
     Guangzhou, China. Dec. 2022.
 
@@ -107,7 +111,7 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University
   
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
-    The 27th European Symposium on Research in Computer Security. **ESORICS 2022**. <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2022/585" target="_blank">ePrint</a></span>
+    The 27th European Symposium on Research in Computer Security (**ESORICS 2022**). <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2022/585" target="_blank">ePrint</a></span>
 
     Copenhagen, Denmark. Sept. 2022.
 
@@ -115,7 +119,7 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University
   
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
-    The 25th International Conference on Practice and Theory of Public-Key Cryptography. **PKC 2022**. <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2021/1682" target="_blank">ePrint</a> <a class="btn btn-outline-primary" href="https://www.youtube.com/watch?v=Pv8zVTxacr0" target="_blank">Video</a></span>
+    The 25th International Conference on Practice and Theory of Public-Key Cryptography (**PKC 2022**). <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2021/1682" target="_blank">ePrint</a> <a class="btn btn-outline-primary" href="https://www.youtube.com/watch?v=Pv8zVTxacr0" target="_blank">Video</a></span>
 
     Virtual. March 2022.  
 
@@ -123,7 +127,7 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University
   
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
-    The 17th International Conference on International Conference on Information Security and Cryptology. **Inscrypt 2021**. <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2021/1430" target="_blank">ePrint</a></span>
+    The 17th International Conference on International Conference on Information Security and Cryptology (**Inscrypt 2021**). <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2021/1430" target="_blank">ePrint</a></span>
 
     Virtual. Aug. 2021. 
     
@@ -131,7 +135,7 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University
   
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
-    The 19th International Conference on Applied Cryptography and Network Security. **ACNS 2021**. <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2021/413" target="_blank">ePrint</a></span>
+    The 19th International Conference on Applied Cryptography and Network Security (**ACNS 2021**). <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2021/413" target="_blank">ePrint</a></span>
 
     Virtual. June 2021. 
 
@@ -139,7 +143,7 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University
   
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
-    The 16th International Conference on International Conference on Information Security and Cryptology. **Inscrypt 2020**. <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2020/567" target="_blank">ePrint</a> </span>
+    The 16th International Conference on International Conference on Information Security and Cryptology (**Inscrypt 2020**). <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2020/567" target="_blank">ePrint</a> </span>
 
     Guangzhou, China. Dec. 2020. 
 
@@ -153,10 +157,11 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University
 
 </div>
 
-## Research Projects
-- <span title="新型安全模型中的安全多方计算协议设计">**Design of Secure Multi-Party Computation Protocols in New Security Models**</span> <div class="duration">*2024 – 2026*</div>
-  - <span title="项目负责人">Principal Investigator</span>
-  - Supported by the <span title="国家自然科学基金青年科学基金项目">Young Scientists Fund of the National Natural Science Foundation of China</span> (Grant No. 62302194). 
+
+
+## Teaching
+- C++ Programming (Fall 2023)
+- Advanced Cryptography (Fall 2023)
 
 ## Professional Activities
 - **Journal Reviewers**
@@ -165,9 +170,12 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University
 - **Conference Reviewer**
   - IEEE BSC@QRS (2022, 2021, 2020)
 - **Membership**
-  - IACR Student (2022, 2021, 2020, 2019)
+  - IACR Regular Membership (2023)
+  - IACR Student Membership (2022, 2021, 2020, 2019)
 
-## Experience
+
+
+<!-- ## Experience
 
 - **Teaching Assistant**
   - COMP2119: Introduction to Data Structures and Algorithms (HKU Fall 2021)
@@ -180,7 +188,7 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University
 - **Research Assistant**
   - CoCrypto Lab (Adviser: Qi Wang) <div class="duration">*Sept. 2016 – Aug. 2018*</div>
   - SUSTech Innovation Center for Data Science (Adviser: Rusong Zheng) <div class="duration">*July 2017 – Aug. 2017*</div>
-  - UAV and Sensor Network Lab (Adviser: Qi Hao) <div class="duration">*July 2015 – Sept. 2016*</div>
+  - UAV and Sensor Network Lab (Adviser: Qi Hao) <div class="duration">*July 2015 – Sept. 2016*</div> -->
 
 <!-- ## Awards & Honors
 - **Best Thesis Award** Department of Computer Science and Engineering of SUSTech **2018**
