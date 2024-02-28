@@ -163,6 +163,16 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University
 - C++ Programming (Fall 2023)
 - Advanced Cryptography (Fall 2023)
 
+## Students
+
+- **Graduate Students**
+  - Yipeng Song (Master, since 2023)
+
+- **Undergraduate Students**
+  - Junjie Li (B.Eng. 2024)
+  - Wanqing Li (B.Eng. 2024)
+  - Jiquan Yang (B.Eng. 2024)
+
 ## Professional Activities
 - **Journal Reviewers**
   - IEEE Transactions on Dependable and Secure Computing (TDSC)
