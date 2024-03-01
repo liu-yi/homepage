@@ -76,7 +76,7 @@
 </script>
 
 ## About Me
-I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University (JNU)](https://english.jnu.edu.cn/). My research interests are cryptography, in particular: **secure two-party/multi-party computation**, **timed cryptography**, **zero-knowledge proofs**, **blockchain-related applications**, etc.
+I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.jnu.edu.cn/), [Jinan University (JNU)](https://english.jnu.edu.cn/). My research interests are cryptography, in particular: **secure two-party/multi-party computation**, **timed cryptography**, **zero-knowledge proofs**, **blockchain-related applications**, etc.
 
 ## Education
 
@@ -84,11 +84,11 @@ I am Yi Liu (刘逸), a lecturer at College of Cyber Security, [Jinan University
   - Ph.D. in Cryptography 
   - Joint Ph.D. Programme with SUSTech
   - Supervisor: [Siu-Ming Yiu](https://www.cs.hku.hk/index.php/people/academic-staff/smyiu) (HKU) and [Qi Wang](http://cse.sustech.edu.cn/faculty/~wangqi/) (SUSTech)
-  - Thesis: Private Function Evaluation: Improvements and Applications. 
+  - Thesis: Private Function Evaluation: Improvements and Applications <span>[:link:](https://hub.hku.hk/handle/10722/327638)</span>
 - **Southern University of Science and Technology (SUSTech)** <div class="duration">*Sept. 2014 – July 2018*</div>
   - B.Eng. in Computer Science and Technology
-  - Thesis: An Evaluation System Based on Blockchain and Linkable Ring Signature. 
-    - Best Thesis Award in the CSE Department, SUSTech.
+  - Thesis: An Evaluation System Based on Blockchain and Linkable Ring Signature
+    - Best Thesis Award in the CSE Department, SUSTech
 
 ## Research Projects
 - <span title="新型安全模型中的安全多方计算协议设计">**Design of Secure Multi-Party Computation Protocols in New Security Models**</span> <div class="duration">*2024 – 2026*</div>
