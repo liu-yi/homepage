@@ -78,6 +78,8 @@
 ## About Me
 I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.jnu.edu.cn/), [Jinan University (JNU)](https://english.jnu.edu.cn/). My research interests are cryptography, in particular: **secure two-party/multi-party computation**, **timed cryptography**, **zero-knowledge proofs**, **blockchain-related applications**, etc.
 
+I can supervise 1-2 Master's students per year. I am looking for self-motivated students with a computer science background, strong self-learning skills, and a keen curiosity for acquiring new knowledge. Prior experience in cryptography or security is not required. If interested, please reach out to me at i@liuyi.pro. 
+
 ## Education
 
 - **The University of Hong Kong (HKU)**  <div class="duration">*Sept. 2018 – Feb. 2023*</div>
