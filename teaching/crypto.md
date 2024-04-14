@@ -21,12 +21,11 @@
 
 ## Course Schedule (Tentative)
 
-1. 2023.9.8 
-  - Introduction [[Slides](https://liuyi.pro/teaching/crypto_fall23/Lecture01.pdf)]
-2. 2023.9.15
-3. 2023.9.22
+1. 2023.9.8 [[Slides](https://liuyi.pro/teaching/crypto_fall23/Lecture01.pdf)]
+2. 2023.9.15 [[Slides](https://liuyi.pro/teaching/crypto_fall23/Lecture02.pdf)]
+3. 2023.9.22 [[Slides](https://liuyi.pro/teaching/crypto_fall23/Lecture03.pdf)]
 4. 2023.9.29 (**No course**, Mid-Autumn Festival)
-5. 2023.10.8 (adjusted working day?)
-6. 2023.10.13
-7. 2023.10.20
-8. 2023.10.27
+5. 2023.10.8 [[Slides](https://liuyi.pro/teaching/crypto_fall23/Lecture04.pdf)]
+6. 2023.10.13 [[Slides](https://liuyi.pro/teaching/crypto_fall23/Lecture05.pdf)]
+7. 2023.10.20 [[Slides](https://liuyi.pro/teaching/crypto_fall23/Lecture06.pdf)]
+8. 2023.10.27 [[Slides](https://liuyi.pro/teaching/crypto_fall23/Lecture07.pdf)]
