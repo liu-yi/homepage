@@ -20,7 +20,7 @@
   - C++ Primer
 
 
-## 评分方案（暂定）
+## 评分方案
 - 理论课
   - 平时分（40%）
     - 考勤
@@ -41,7 +41,7 @@
 
 !> 作业与课堂实验可以交流，但禁止抄袭，一经发现，按0分处理并上报学校。
 
-## 教学安排（暂定）
+## 教学安排
 1. 8月29日 
    - 入门介绍 [[理论课课件](https://liuyi.pro/teaching/cpp_fall23/Lecture01/Lecture01.pptx)][[实验课课件](https://liuyi.pro/teaching/cpp/Lab01/Lab01.pptx)]
 2. 9月5日

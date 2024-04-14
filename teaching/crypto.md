@@ -15,11 +15,11 @@
   - [A Graduate Course in Applied Cryptography](https://toc.cryptobook.us/) (by Dan Boneh & Victor Shoup)
   - [A Computational Introduction to Number Theory and Algebra](https://www.shoup.net/ntb/) (by Victor Shoup)
 
-## Marking scheme (Tentative)
+## Marking scheme
 - Assignments (40%)
 - Final Exam (60%)
 
-## Course Schedule (Tentative)
+## Course Schedule
 
 1. 2023.9.8 [[Slides](https://liuyi.pro/teaching/crypto_fall23/Lecture01.pdf)]
 2. 2023.9.15 [[Slides](https://liuyi.pro/teaching/crypto_fall23/Lecture02.pdf)]
