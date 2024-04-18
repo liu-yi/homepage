@@ -99,9 +99,11 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
   - <span title="项目负责人">Principal Investigator</span>
   - Supported by the <span title="国家自然科学基金青年科学基金项目">Young Scientists Fund of the National Natural Science Foundation of China</span> (Grant No. 62302194). 
 
-## Publications
+## Selected Publications
 
 <div class="publist">
+
+[→ Full List](/publications/?id=publications)
 
 - **Robust Publicly Verifiable Covert Security: Limited Information Leakage and Guaranteed Correctness with Low Overhead** <span class="pubtag">[:link:](https://link.springer.com/chapter/10.1007/978-981-99-8721-4_9)</span>
   
@@ -164,8 +166,8 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 
 
 ## Teaching
-- C++ Programming (Fall 2023)
-- Advanced Cryptography (Fall 2023)
+- C++ Programming ([Fall 2023](/teaching/cpp?id=c-程序设计))
+- Advanced Cryptography ([Fall 2023](/teaching/crypto?id=advanced-cryptography-高级密码学))
 
 ## Students
 
