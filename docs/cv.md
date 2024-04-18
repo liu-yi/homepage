@@ -103,7 +103,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 
 <div class="publist">
 
-[→ Full List](/publications/?id=publications)
+<!-- [→ Full List](publications/) -->
 
 - **Robust Publicly Verifiable Covert Security: Limited Information Leakage and Guaranteed Correctness with Low Overhead** <span class="pubtag">[:link:](https://link.springer.com/chapter/10.1007/978-981-99-8721-4_9)</span>
   
@@ -165,9 +165,9 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 
 
 
-## Teaching
+<!-- ## Teaching
 - C++ Programming ([Fall 2023](/teaching/cpp?id=c-程序设计))
-- Advanced Cryptography ([Fall 2023](/teaching/crypto?id=advanced-cryptography-高级密码学))
+- Advanced Cryptography ([Fall 2023](/teaching/crypto?id=advanced-cryptography-高级密码学)) -->
 
 ## Students
 
