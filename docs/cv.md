@@ -165,9 +165,9 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 
 
 
-<!-- ## Teaching
-- C++ Programming ([Fall 2023](/teaching/cpp?id=c-程序设计))
-- Advanced Cryptography ([Fall 2023](/teaching/crypto?id=advanced-cryptography-高级密码学)) -->
+## Teaching
+- C++ Programming (Fall 2023)
+- Advanced Cryptography (Fall 2023)
 
 ## Students
 

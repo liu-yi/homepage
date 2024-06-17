@@ -2,7 +2,7 @@
 <!-- * My -->
 <!-- * [Research](/research/) -->
 * [Publications](/publications/)
-* [Teaching](/teaching/)
+<!-- * [Teaching](/teaching/) -->
 * [Miscellaneous](/miscellaneous/)
 
 <!-- * Notes
