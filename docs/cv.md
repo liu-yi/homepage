@@ -153,13 +153,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 
     Guangzhou, China. Dec. 2020. 
 
-## Manuscripts
 
-- **An E-voting Protocol Based on Blockchain**
-  
-  <u>**Yi Liu**</u>, Qi Wang
-
-  Manuscript, 2017. <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2017/1043" target="_blank">ePrint</a></span>
 
 </div>
 
