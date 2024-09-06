@@ -9,6 +9,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
   <link rel="shortcut icon" href="public/img/logo.ico" type="image/ico" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V6PJ8BXB1K"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-V6PJ8BXB1K');
+  </script>
 </head>
 
 <body>
@@ -26,7 +35,7 @@
       homepage: 'docs/cv.md',
       latex: {
         inlineMath: [['$', '$'], ['\\(', '\\)']],
-        displayMath: [['$$', '$$'], ['\\[', '\\]']],               
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
         customOptions: {}
       },
       // requestHeaders: {
@@ -68,7 +77,7 @@
       --navbar-menu-link-color--hover: var(--theme-color);
       --navbar-menu-link-color--active: var(--theme-color);
       --navbar-menu-link-border-radius: 6px;
-      --content-max-width                 : 70em;
+      --content-max-width: 70em;
       --notice-tip-border-color: var(--theme-color);
 
     }
