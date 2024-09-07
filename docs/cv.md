@@ -166,8 +166,8 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 ## Students
 
 - **Graduate Students**
+  - Yunqi He (Master, since 2024)
   - Yipeng Song (Master, since 2023)
-  - Yunqi He (Master, since 2023)
 
 - **Undergraduate Students**
   - Jiquan Yang (B.Eng. 2025)
