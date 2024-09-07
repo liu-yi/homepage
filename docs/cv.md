@@ -160,13 +160,14 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 
 
 ## Teaching
-- C++ Programming (Fall 2023)
-- Advanced Cryptography (Fall 2023)
+- C++ Programming (Fall 2024, Fall 2023)
+- Advanced Cryptography (Fall 2024, Fall 2023)
 
 ## Students
 
 - **Graduate Students**
   - Yipeng Song (Master, since 2023)
+  - Yunqi He (Master, since 2023)
 
 - **Undergraduate Students**
   - Jiquan Yang (B.Eng. 2025)
