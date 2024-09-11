@@ -45,7 +45,7 @@
 1. 9月5日 
      - 入门介绍 [[理论课课件](https://liuyi.pro/teaching/cpp_fall24/Lecture01/Lecture01.pptx)][[实验课课件](https://liuyi.pro/teaching/cpp_fall24/Lab01/Lab01.pptx)]
 2. 9月12日
-     - 数据类型与算术运算符 
+     - 数据类型与算术运算符 [[理论课课件](https://liuyi.pro/teaching/cpp_fall24/Lecture02/Lecture02.pptx)][[实验课课件](https://liuyi.pro/teaching/cpp_fall24/Lab02/Lab02.pptx)]
 3. 9月19日
      - 分支和循环 
 4. 9月26日
