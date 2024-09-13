@@ -19,11 +19,11 @@
 
 ## Course Schedule
 
-1. 2023.9.13 [[Slides](https://liuyi.pro/teaching/crypto_fall24/Lecture01.pdf)]
-2. 2023.9.20 
-3. 2023.9.27 
-4. 2023.10.4 (**No course**, National Day)
-5. 2023.10.11 
-6. 2023.10.18 
-7. 2023.10.25 
-8. 2023.11.1 
+1. 9.13 [[Slides](https://liuyi.pro/teaching/crypto_fall24/Lecture01.pptx)]
+2. 9.20 
+3. 9.27 
+4. 10.4 (**No course**, National Day)
+5. 10.11 
+6. 10.18 
+7. 10.25 
+8. 11.1 
