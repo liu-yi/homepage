@@ -178,6 +178,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 ## Professional Activities
 - **Journal Reviewers**
   - IEEE Transactions on Dependable and Secure Computing (TDSC)
+  - IEEE Transactions on Industrial Informatics
   - International Journal of Information Security 
 - **Conference Reviewer**
   - IEEE BSC@QRS (2022, 2021, 2020)
