@@ -4,7 +4,13 @@
 
 ---
 
+1. **Enabling Privacy-Preserving and Publicly Auditable Federated Learning** 
 
+    Huang Zeng, Anjia Yang, Jian Weng, Minrong Chen, Fengjun Xiao, <u>**Yi Liu**</u>, Ye Yao \\
+            
+    IEEE International Conference on Communications (**ICC 2024**)
+
+    Denver, Colorado
 
 
 1. **MTDCAP: Moving Target Defense-Based CAN Authentication Protocol** <span class="pubtag">[:link:](https://ieeexplore.ieee.org/document/10499960)</span>
