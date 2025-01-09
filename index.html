@@ -40,7 +40,7 @@
       // coverpage: true,
       // onlyCover: true,
       loadNavbar: true,
-      hideSidebar: true,
+      // hideSidebar: true,
       // loadSidebar: true,
       homepage: 'docs/cv.md',
       latex: {
@@ -51,6 +51,7 @@
       requestHeaders: {
         'cache-control': 'no-cache',
       },
+      mergeNavbar: true,
     }
   </script>
   <!-- Docsify v4 -->
@@ -91,6 +92,26 @@
       --notice-tip-border-color: var(--theme-color);
 
     }
+    @media (min-width: 480px){
+      body[data-page="publications/README.md"] .sidebar,
+      body[data-page="publications/README.md"] .sidebar-toggle {
+        display: none !important;
+      }
+
+      body[data-page="publications/README.md"] .content {
+        margin-left: 0px !important;
+      }
+
+      body[data-page="docs/cv.md"] .sidebar,
+      body[data-page="docs/cv.md"] .sidebar-toggle {
+        display: none !important;
+      }
+
+      body[data-page="docs/cv.md"] .content {
+        margin-left: 0px !important;
+    }
+    }
+   
 
     @font-face {
       font-family: zhongsong;

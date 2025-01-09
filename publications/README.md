@@ -68,7 +68,7 @@
 
     Guangzhou, China. Dec. 2020. 
 
-## Manuscripts
+# Manuscripts
 
 - **An E-voting Protocol Based on Blockchain**
   
