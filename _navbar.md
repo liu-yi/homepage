@@ -2,8 +2,8 @@
 <!-- * My -->
 <!-- * [Research](/research/) -->
 * [Publications](/publications/)
-* [Teaching](/teaching/)
-* [Miscellaneous](/miscellaneous/)
+<!-- * [Teaching](/teaching/) -->
+<!-- * [Miscellaneous](/miscellaneous/) -->
 
 <!-- * Notes
   * [Zero Knowledge](notes/zero-knowledge.md)

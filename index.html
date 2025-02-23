@@ -40,7 +40,7 @@
       // coverpage: true,
       // onlyCover: true,
       loadNavbar: true,
-      hideSidebar: true,
+      // hideSidebar: true,
       // loadSidebar: true,
       homepage: 'docs/cv.md',
       latex: {
@@ -51,6 +51,7 @@
       requestHeaders: {
         'cache-control': 'no-cache',
       },
+      mergeNavbar: true,
     }
   </script>
   <!-- Docsify v4 -->
@@ -78,7 +79,7 @@
       --theme-color: #558fb5;
       --link-color--hover: #366482;
       --link-color: var(--theme-color);
-      --base-font-family: "KaTeX_Main", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      --base-font-family: "KaTeX_Main", zhongsong, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
       --emoji-size: calc(var(--base-line-height) * 0.7em);
       --link-text-decoration: none;
       /* --sidebar-width: 15rem; */
@@ -90,6 +91,31 @@
       --content-max-width: 70em;
       --notice-tip-border-color: var(--theme-color);
 
+    }
+    @media (min-width: 480px){
+      body[data-page="publications/README.md"] .sidebar,
+      body[data-page="publications/README.md"] .sidebar-toggle {
+        display: none !important;
+      }
+
+      body[data-page="publications/README.md"] .content {
+        margin-left: 0px !important;
+      }
+
+      body[data-page="docs/cv.md"] .sidebar,
+      body[data-page="docs/cv.md"] .sidebar-toggle {
+        display: none !important;
+      }
+
+      body[data-page="docs/cv.md"] .content {
+        margin-left: 0px !important;
+    }
+    }
+   
+
+    @font-face {
+      font-family: zhongsong;
+      src: url(public/fonts/zs.ttf);
     }
 
     span.scroll-to-top:hover {
