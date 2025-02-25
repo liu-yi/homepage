@@ -75,11 +75,14 @@
   }).mount('#intro');
 </script>
 
+?> 
+**Looking for Students**:</br>
+I am available to supervise 1-2 Master's students each year. I am looking for self-motivated students with a solid background in computer science who are eager to explore research problems in cryptography, security, and privacy. While no prior experience in cryptography or security is required, students should have strong self-learning abilities and a curiosity for acquiring new knowledge. For more information, see [*Information For Prospective Students*](/for-students/). If you are interested, feel free to reach out via email! 
 
-?> I am available to supervise 1-2 Master's students annually. I am seeking self-motivated students with a background in computer science, strong self-learning skills, and a keen curiosity for acquiring new knowledge. If interested, please feel free to reach out to me.
 
 ## About Me
-I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.jnu.edu.cn/), [Jinan University (JNU)](https://english.jnu.edu.cn/). My research interests are cryptography, in particular: **secure two-party/multi-party computation**, **timed cryptography**, **zero-knowledge proofs**, **blockchain-related applications**, etc.
+I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.jnu.edu.cn/), [Jinan University (JNU)](https://english.jnu.edu.cn/). My research interests broadly cover cryptography, computer security and privacy. Recently, I’ve been working on **secure multi-party computation**, **zero-knowledge proof**, **timed cryptography**, **blockchain-related applications**, etc.
+
 
 
 ## Education

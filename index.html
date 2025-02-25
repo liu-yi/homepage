@@ -92,12 +92,20 @@
       --notice-tip-border-color: var(--theme-color);
 
     }
-    @media (min-width: 480px){
+
+    @font-face {
+      font-family: "STZHONGS";
+      src: url("./public/STZHONGS.TTF") format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @media (min-width: 480px) {
+
       body[data-page="publications/README.md"] .sidebar,
       body[data-page="publications/README.md"] .sidebar-toggle {
         display: none !important;
       }
-
       body[data-page="publications/README.md"] .content {
         margin-left: 0px !important;
       }
@@ -106,12 +114,19 @@
       body[data-page="docs/cv.md"] .sidebar-toggle {
         display: none !important;
       }
-
       body[data-page="docs/cv.md"] .content {
         margin-left: 0px !important;
+      }
+
+      /* body[data-page="for-students/README.md"] .sidebar,
+      body[data-page="for-students/README.md"] .sidebar-toggle {
+        display: none !important;
+      }
+      body[data-page="for-students/README.md"] .content {
+        margin-left: 0px !important;
+      } */
     }
-    }
-   
+
 
     @font-face {
       font-family: zhongsong;

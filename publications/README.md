@@ -4,16 +4,22 @@
 
 ---
 
-1. **Enabling Privacy-Preserving and Publicly Auditable Federated Learning** 
+1. **Efficient and Privacy-Preserving Ride Matching over Road Networks against Malicious ORH server**
 
-    Huang Zeng, Anjia Yang, Jian Weng, Minrong Chen, Fengjun Xiao, <u>**Yi Liu**</u>, Ye Yao \\
+    Mingtian Zhang, Anjia Yang, Jian Weng, Minrong Chen, Huang Zeng, <u>**Yi Liu**</u>, Xiaoli Liu, Zhihua Xia
+
+    IEEE Transactions on Information Forensics and Security, 2025
+
+2. **Enabling Privacy-Preserving and Publicly Auditable Federated Learning** 
+
+    Huang Zeng, Anjia Yang, Jian Weng, Minrong Chen, Fengjun Xiao, <u>**Yi Liu**</u>, Ye Yao 
             
     IEEE International Conference on Communications (**ICC 2024**)
 
-    Denver, Colorado
+    Denver, Colorado. June 2024.
 
 
-1. **MTDCAP: Moving Target Defense-Based CAN Authentication Protocol** <span class="pubtag">[:link:](https://ieeexplore.ieee.org/document/10499960)</span>
+3. **MTDCAP: Moving Target Defense-Based CAN Authentication Protocol** <span class="pubtag">[:link:](https://ieeexplore.ieee.org/document/10499960)</span>
 
     Heng Sun, Huibiao Su, Jian Weng, Zhiquan Liu, Ming Li, <u>**Yi Liu**</u>, Yucheng Zhong, Wenzhen Sun
 
