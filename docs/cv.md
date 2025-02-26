@@ -22,7 +22,7 @@
               <img src="public/icons/github.svg" alt="Github"
               title="Github" />
             </a>
-            <a href="https://www.linkedin.com/in/%E9%80%B8-%E5%88%98-363764114" target="_blank">
+            <a href="https://www.linkedin.com/in/liuyipro" target="_blank">
               <img src="public/icons/linkedin-mono.svg" alt="LinkedIn"
               title="LinkedIn" />
             </a>
