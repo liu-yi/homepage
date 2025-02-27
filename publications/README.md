@@ -4,7 +4,8 @@
 
 ---
 
-1. **Efficient and Privacy-Preserving Ride Matching over Road Networks against Malicious ORH server**
+1. **Efficient and Privacy-Preserving Ride Matching over Road Networks against Malicious ORH server** <span class="pubtag">[:link:](https://doi.org/10.1109/TIFS.2025.3544453)</span>
+
 
     Mingtian Zhang, Anjia Yang, Jian Weng, Minrong Chen, Huang Zeng, <u>**Yi Liu**</u>, Xiaoli Liu, Zhihua Xia
 
