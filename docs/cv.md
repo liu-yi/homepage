@@ -109,6 +109,14 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 <!-- [→ Full List](publications/) -->
 <span><a class="btn btn-outline-primary" style="font-size: 17px; width: 100%; padding: 2px" href="#/publications/?id=main">Full List of Publications</a></span>
 
+- **Highly Efficient Actively Secure Two-Party Computation with One-Bit Advantage Bound** 
+
+    <u>**Yi Liu**</u>, Junzuo Lai, Peng Yang, Anjia Yang, Qi Wang, Siu-Ming Yiu, Jian Weng
+
+    46th IEEE Symposium on Security and Privacy (**IEEE S&P 2025**). 
+    
+    San Francisco, USA. May 2025.
+
 - **Robust Publicly Verifiable Covert Security: Limited Information Leakage and Guaranteed Correctness with Low Overhead** <span class="pubtag">[:link:](https://link.springer.com/chapter/10.1007/978-981-99-8721-4_9)</span>
   
     <u>**Yi Liu**</u>, Junzuo Lai, Qi Wang, Xianrui Qin, Anjia Yang, Jian Weng 

@@ -4,14 +4,31 @@
 
 ---
 
-1. **Efficient and Privacy-Preserving Ride Matching over Road Networks against Malicious ORH server** <span class="pubtag">[:link:](https://doi.org/10.1109/TIFS.2025.3544453)</span>
+1. **Highly Efficient Actively Secure Two-Party Computation with One-Bit Advantage Bound** 
+
+    <u>**Yi Liu**</u>, Junzuo Lai, Peng Yang, Anjia Yang, Qi Wang, Siu-Ming Yiu, Jian Weng
+
+    46th IEEE Symposium on Security and Privacy (**IEEE S&P 2025**). 
+    
+    San Francisco, USA. May 2025.
+
+
+2. **Towards Efficient and Practical Multi-party Computation under Inconsistent Trust in TEEs** 
+
+    Xuanwei Hu, Rujia Li, <u>**Yi Liu**</u>, Qi Wang
+
+    46th IEEE Symposium on Security and Privacy (**IEEE S&P 2025**). 
+    
+    San Francisco, USA. May 2025.
+
+3. **Efficient and Privacy-Preserving Ride Matching over Road Networks against Malicious ORH server** <span class="pubtag">[:link:](https://doi.org/10.1109/TIFS.2025.3544453)</span>
 
 
     Mingtian Zhang, Anjia Yang, Jian Weng, Minrong Chen, Huang Zeng, <u>**Yi Liu**</u>, Xiaoli Liu, Zhihua Xia
 
     IEEE Transactions on Information Forensics and Security, 2025
 
-2. **Enabling Privacy-Preserving and Publicly Auditable Federated Learning** 
+1. **Enabling Privacy-Preserving and Publicly Auditable Federated Learning** 
 
     Huang Zeng, Anjia Yang, Jian Weng, Minrong Chen, Fengjun Xiao, <u>**Yi Liu**</u>, Ye Yao 
             
@@ -20,7 +37,7 @@
     Denver, Colorado. June 2024.
 
 
-3. **MTDCAP: Moving Target Defense-Based CAN Authentication Protocol** <span class="pubtag">[:link:](https://ieeexplore.ieee.org/document/10499960)</span>
+1. **MTDCAP: Moving Target Defense-Based CAN Authentication Protocol** <span class="pubtag">[:link:](https://ieeexplore.ieee.org/document/10499960)</span>
 
     Heng Sun, Huibiao Su, Jian Weng, Zhiquan Liu, Ming Li, <u>**Yi Liu**</u>, Yucheng Zhong, Wenzhen Sun
 
