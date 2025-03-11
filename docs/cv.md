@@ -113,7 +113,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 
     <u>**Yi Liu**</u>, Junzuo Lai, Peng Yang, Anjia Yang, Qi Wang, Siu-Ming Yiu, Jian Weng
 
-    46th IEEE Symposium on Security and Privacy (**IEEE S&P 2025**). 
+    46th IEEE Symposium on Security and Privacy (**S&P 2025**). 
     
     San Francisco, USA. May 2025.
 
