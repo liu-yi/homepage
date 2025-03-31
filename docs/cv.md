@@ -98,6 +98,9 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
     - Best Thesis Award in the CSE Department, SUSTech
 
 ## Research Projects
+- <span title="新型安全多方计算协议设计研究">**Research on the Design of New Secure Multi-Party Computation Protocols**</span> <div class="duration">*2025 – 2026*</div>
+  - <span title="项目负责人">Principal Investigator</span>
+  - Supported by the <span title="广州市基础与应用基础研究专题（青年博士“启航”项目）">Guangzhou Municipal Fundamental and Applied Basic Research Special Topic Young Doctoral "Sail" Project</span> (Grant No. 2025A04J2146). 
 - <span title="新型安全模型中的安全多方计算协议设计">**Design of Secure Multi-Party Computation Protocols in New Security Models**</span> <div class="duration">*2024 – 2026*</div>
   - <span title="项目负责人">Principal Investigator</span>
   - Supported by the <span title="国家自然科学基金青年科学基金项目">Young Scientists Fund of the National Natural Science Foundation of China</span> (Grant No. 62302194). 
@@ -113,7 +116,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 
     <u>**Yi Liu**</u>, Junzuo Lai, Peng Yang, Anjia Yang, Qi Wang, Siu-Ming Yiu, Jian Weng
 
-    46th IEEE Symposium on Security and Privacy (**S&P 2025**). 
+    The 46th IEEE Symposium on Security and Privacy (**S&P 2025**). 
     
     San Francisco, USA. May 2025.
 
