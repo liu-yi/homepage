@@ -8,7 +8,7 @@
 
     <u>**Yi Liu**</u>, Junzuo Lai, Peng Yang, Anjia Yang, Qi Wang, Siu-Ming Yiu, Jian Weng
 
-    The 46th IEEE Symposium on Security and Privacy (**S&P 2025**). 
+    The 46th IEEE Symposium on Security and Privacy (**S&P 2025**). <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2025/614" target="_blank">ePrint</a></span>
     
     San Francisco, USA. May 2025.
 
