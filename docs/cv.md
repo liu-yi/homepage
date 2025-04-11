@@ -192,7 +192,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 
 ## Professional Activities
 - **Journal Reviewers**
-  - IEEE Transactions on Dependable and Secure Computing (TDSC)
+  - IEEE Transactions on Dependable and Secure Computing
   - IEEE Transactions on Industrial Informatics
   - International Journal of Information Security 
   - Web Intelligence
