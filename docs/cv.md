@@ -90,7 +90,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 - **The University of Hong Kong (HKU)**  <div class="duration">*Sept. 2018 – Feb. 2023*</div>
   - Ph.D. in Cryptography 
   - Joint Ph.D. Programme with SUSTech
-  - Supervisor: [Siu-Ming Yiu](https://www.cs.hku.hk/index.php/people/academic-staff/smyiu) (HKU) and [Qi Wang](http://cse.sustech.edu.cn/faculty/~wangqi/) (SUSTech)
+  - Supervisor: [Siu-Ming Yiu](https://www.cs.hku.hk/index.php/people/academic-staff/smyiu) (HKU) and [Qi Wang](https://dake98.github.io) (SUSTech)
   - Thesis: Private Function Evaluation: Improvements and Applications <span>[:link:](https://hub.hku.hk/handle/10722/327638)</span>
 - **Southern University of Science and Technology (SUSTech)** <div class="duration">*Sept. 2014 – July 2018*</div>
   - B.Eng. in Computer Science and Technology
