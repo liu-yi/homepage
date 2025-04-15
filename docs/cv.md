@@ -3,7 +3,8 @@
     <div class="image">
       <div id="avatar"  @click="todo">
           <img v-show="!hover_avatar" src="public/img/logo.jpg" v-on="{ mouseenter: mouseEnter, mouseleave: mouseLeave }">
-          <img v-show="hover_avatar" src="public/img/logo2.jpg" v-on="{ mouseenter: mouseEnter, mouseleave: mouseLeave }">
+          <img v-show="hover_avatar && todo_num % 2 == 0" src="public/img/logo2.jpg" v-on="{ mouseenter: mouseEnter, mouseleave: mouseLeave }">
+          <img v-show="hover_avatar && todo_num % 2 == 1" src="public/img/logo3.jpg" v-on="{ mouseenter: mouseEnter, mouseleave: mouseLeave }">
       </div>
     </div>
     <div class="info">
@@ -67,7 +68,7 @@
       },
       todo(){
         this.todo_num++; 
-        if(this.todo_num == 5){
+        if(this.todo_num == 10){
           this.display_todo = true
         }
       }
