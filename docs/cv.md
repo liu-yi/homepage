@@ -205,6 +205,8 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 - **Conference Reviewer**
   - IEEE BSC@QRS (2022, 2021, 2020)
 - **Membership**
+  - IEEE Membership (2025)
+  - IEEE Computer Society Technical Community on Security and Privacy (2025)
   - IACR Regular Membership (2023)
   - IACR Student Membership (2022, 2021, 2020, 2019)
 
