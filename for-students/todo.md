@@ -25,7 +25,7 @@
   本书系统介绍了安全两方计算协议的定义与安全性证明方法，是深入理解相关理论与协议构造的必备教材。
 
 - **Secure Multiparty Computation and Secret Sharing** – *Ronald Cramer, Ivan Bjerre Damgård, Jesper Buus Nielsen*  
-  该书重点讲解基于信息论安全的多方计算协议及其安全性证明，适合作为深入研究信息论安全技术的参考资料。建议主要阅读第一部分（多方计算），可跳过第二部分（秘密分享）。
+  该书重点讲解基于信息论安全的多方计算协议及其安全性证明。主要阅读第一部分，可跳过第二部分（秘密分享）。
 
 - [**How to Simulate It - A Tutorial on the Simulation Proof Technique**](https://eprint.iacr.org/2016/046.pdf) - *Yehuda Lindell*
 
