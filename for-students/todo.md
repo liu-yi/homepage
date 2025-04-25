@@ -34,3 +34,6 @@
 ## 数学基础
 
 - **A Computational Introduction to Number Theory and Algebra** – *Victor Shoup*
+
+    本书对公钥密码学涉及的数学知识进行了较为系统的介绍。对于数学基础相对薄弱的读者来说，是一本非常适合的入门教材。
+
