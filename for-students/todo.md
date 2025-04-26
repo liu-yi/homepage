@@ -31,6 +31,10 @@
 
   该短文介绍密码协议的定义与证明技术。建议在通读上面两本教材后再阅读，以加深对密码协议安全性证明方法的理解。
 
+- [**Proofs, Arguments, and Zero-Knowledge**] - *Justin Thaler*
+
+  本书介绍零知识证明，特别是近10年零知识证明的主要技术路线。对零知识证明感兴趣可以阅读。
+
 ## 数学基础
 
 - **A Computational Introduction to Number Theory and Algebra** – *Victor Shoup*
