@@ -113,7 +113,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 <!-- [→ Full List](publications/) -->
 <span><a class="btn btn-outline-primary" style="font-size: 17px; width: 100%; padding: 2px" href="#/publications/?id=main">Full List of Publications</a></span>
 
-- **Highly Efficient Actively Secure Two-Party Computation with One-Bit Advantage Bound** 
+- **Highly Efficient Actively Secure Two-Party Computation with One-Bit Advantage Bound** <span class="pubtag">[:link:](https://doi.ieeecomputersociety.org/10.1109/SP61157.2025.00183)</span>
 
     <u>**Yi Liu**</u>, Junzuo Lai, Peng Yang, Anjia Yang, Qi Wang, Siu-Ming Yiu, Jian Weng
 

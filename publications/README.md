@@ -7,7 +7,7 @@
 <!-- > The notation # indicates the corresponding author(s). -->
 
 
-1. **Highly Efficient Actively Secure Two-Party Computation with One-Bit Advantage Bound** 
+1. **Highly Efficient Actively Secure Two-Party Computation with One-Bit Advantage Bound** <span class="pubtag">[:link:](https://doi.ieeecomputersociety.org/10.1109/SP61157.2025.00183)</span>
 
     <u>**Yi Liu**</u>, Junzuo Lai, Peng Yang, Anjia Yang, Qi Wang, Siu-Ming Yiu, Jian Weng
 
@@ -16,7 +16,8 @@
     San Francisco, USA. May 2025.
 
 
-1. **Towards Efficient and Practical Multi-party Computation under Inconsistent Trust in TEEs** 
+1. **Towards Efficient and Practical Multi-party Computation under Inconsistent Trust in TEEs** <span class="pubtag">[:link:](https://doi.ieeecomputersociety.org/10.1109/SP61157.2025.00185)</span>
+
 
     Xuanwei Hu, Rujia Li, <u>**Yi Liu**</u>, Qi Wang
 
