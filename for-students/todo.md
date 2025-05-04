@@ -27,11 +27,11 @@
 - **Secure Multiparty Computation and Secret Sharing** – *Ronald Cramer, Ivan Bjerre Damgård, Jesper Buus Nielsen*  
   该书重点讲解基于信息论安全的多方计算协议及其安全性证明。主要阅读第一部分，可跳过第二部分（秘密分享）。
 
-- [**How to Simulate It - A Tutorial on the Simulation Proof Technique**](https://eprint.iacr.org/2016/046.pdf) - *Yehuda Lindell*
+- [**How to Simulate It - A Tutorial on the Simulation Proof Technique**](https://eprint.iacr.org/2016/046) - *Yehuda Lindell*
 
   该短文介绍密码协议的定义与证明技术。建议在通读上面两本教材后再阅读，以加深对密码协议安全性证明方法的理解。
 
-- [**Proofs, Arguments, and Zero-Knowledge**] - *Justin Thaler*
+- [**Proofs, Arguments, and Zero-Knowledge**](https://people.cs.georgetown.edu/jthaler/ProofsArgsAndZK) - *Justin Thaler*
 
   本书介绍零知识证明，特别是近10年零知识证明的主要技术路线。对零知识证明感兴趣可以阅读。
 
