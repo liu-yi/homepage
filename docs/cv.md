@@ -34,7 +34,7 @@
         </div>
       </div>
       <div class="contact">
-        <div class="email" title="Contact me">i@liuyi.pro, liuyi@jnu.edu.cn</div>
+        <div class="email" title="Contact me">i (AT) liuyi.pro, liuyi (AT) jnu.edu.cn</div>
       </div>
       <div class="cv">
         <span v-if="display_todo">[</span><a v-if="display_todo" href="#/miscellaneous/todo">Todo</a><span v-if="display_todo">]</span>
