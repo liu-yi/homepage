@@ -9,6 +9,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
   <link rel="shortcut icon" href="public/img/logo.ico" type="image/ico" />
+  
+  <!-- KaTeX字体预加载 - 解决文字不显示问题 -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Main-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Math-Italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Size1-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Size2-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <!-- 本地字体预加载 -->
+  <link rel="preload" href="public/fonts/zs.ttf" as="font" type="font/ttf" crossorigin>
+  
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-V6PJ8BXB1K"></script>
   <script>
@@ -80,7 +91,7 @@
       --theme-color: #558fb5;
       --link-color--hover: #366482;
       --link-color: var(--theme-color);
-      --base-font-family: "KaTeX_Main", zhongsong, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      --base-font-family: "KaTeX_Main", zhongsong, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
       --emoji-size: calc(var(--base-line-height) * 0.7em);
       --link-text-decoration: none;
       /* --sidebar-width: 15rem; */
@@ -91,7 +102,15 @@
       --navbar-menu-link-border-radius: 6px;
       --content-max-width: 70em;
       --notice-tip-border-color: var(--theme-color);
+    }
 
+    /* 字体加载优化 */
+    @font-face {
+      font-family: "zhongsong";
+      src: url(public/fonts/zs.ttf) format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
     }
 
     @font-face {
