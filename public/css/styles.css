@@ -295,7 +295,7 @@ body[data-page*="publications"] .markdown-section .pubtag a[href*="eprint"] {
 }
 
 body[data-page*="publications"] .markdown-section .pubtag a[href*="youtube"] {
-  background: linear-gradient(135deg, var(--theme-color), #b5a555) !important;
+  background: linear-gradient(135deg, var(--theme-color), #366482) !important;
 }
 
 body[data-page*="publications"] .markdown-section .pubtag a:hover {
