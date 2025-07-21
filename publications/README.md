@@ -116,15 +116,3 @@
 
   Manuscript, 2017. <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2017/1043" target="_blank">ePrint</a></span>
 
-<!-- <style>
-body[data-page="publications/README.md"] .sidebar,
-body[data-page="publications/README.md"] .sidebar-toggle {
-  display: none !important;
-}
-
-body[data-page="publications/README.md"] .content {
-  margin-left: 0px !important;
-}
-
-
-</style> -->
