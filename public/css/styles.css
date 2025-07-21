@@ -15,6 +15,7 @@
   --navbar-menu-link-border-radius: 6px;
   --content-max-width: 70em;
   --notice-tip-border-color: var(--theme-color);
+  --sidebar-toggle-offset-top: 0;
 }
 
 /* 字体定义 */
@@ -123,7 +124,7 @@
   }
 }
 
-/* 特殊页面样式 */
+/* 桌面端：CV和publications页面都隐藏sidebar */
 [data-page*="cv"] .sidebar,
 [data-page*="cv"] .sidebar-toggle,
 [data-page*="publications"] .sidebar,
@@ -134,6 +135,222 @@
 [data-page*="cv"] .content,
 [data-page*="publications"] .content {
   margin-left: 0;
+}
+
+/* 移动端：CV页面隐藏sidebar，publications页面显示sidebar */
+@media (max-width: 480px) {
+  [data-page*="cv"] .sidebar,
+  [data-page*="cv"] .sidebar-toggle {
+    display: none;
+  }
+  
+  [data-page*="cv"] .content {
+    margin-left: 0;
+  }
+  
+  /* publications页面在移动端显示sidebar */
+  [data-page*="publications"] .sidebar,
+  [data-page*="publications"] .sidebar-toggle {
+    display: flex;
+  }
+  
+}
+
+/* Publications页面精美美化 */
+body[data-page*="publications"] .markdown-section {
+  max-width: 78em;
+  line-height: 1.7;
+}
+
+body[data-page*="publications"] .markdown-section >ol {
+  padding-left: 0;
+}
+
+/* 标题美化 */
+body[data-page*="publications"] .markdown-section > h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #2c3e50;
+  margin-bottom: 3rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+body[data-page*="publications"] .markdown-section > h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--theme-color), #7ba7cc);
+  border-radius: 2px;
+}
+
+/* 修复论文编号位置 */
+body[data-page*="publications"] .markdown-section ol > li,
+body[data-page*="publications"] .markdown-section ul > li {
+  background: linear-gradient(135deg, #ffffff 0%, #fafbfc 100%);
+  border: none;
+  border-left: 5px solid var(--theme-color);
+  border-radius: 12px;
+  padding: 2rem 2rem 2rem 2rem;
+  margin: 2rem 0 2rem 0;
+  box-shadow: 0 4px 20px rgba(85, 143, 181, 0.08);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+  overflow: visible;
+  white-space: normal;
+  counter-increment: paper-counter;
+  list-style: none;
+}
+
+body[data-page*="publications"] .markdown-section ol > li::before,
+body[data-page*="publications"] .markdown-section ul > li::before {
+  content: counter(paper-counter);
+  position: absolute;
+  left: -19px;
+  top: 2.1rem;
+  width: 38px;
+  height: 38px;
+  background: var(--theme-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(85, 143, 181, 0.3);
+  z-index: 1;
+}
+
+/* body[data-page*="publications"] .markdown-section ul li::before {
+  content: none;
+} */
+
+body[data-page*="publications"] .markdown-section ol li:hover,
+body[data-page*="publications"] .markdown-section ul li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(85, 143, 181, 0.15);
+  border-left-color: #366482;
+}
+
+/* 论文标题美化 - 移除渐变 */
+body[data-page*="publications"] .markdown-section li strong {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  white-space: normal;
+  display: inline;
+}
+
+/* 作者美化 */
+body[data-page*="publications"] .markdown-section li u {
+  color: var(--theme-color);
+  font-weight: 700;
+  text-decoration: none;
+  background: linear-gradient(120deg, var(--theme-color), #7ba7cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 1.05rem;
+}
+
+/* 会议/期刊美化 */
+body[data-page*="publications"] .markdown-section li em {
+  color: #5a6c7d;
+  font-style: italic;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+
+body[data-page*="publications"] .markdown-section .pubtag a::after {
+  display: none !important;
+}
+
+body[data-page*="publications"] .markdown-section .pubtag a[href*="doi."],
+body[data-page*="publications"] .markdown-section .pubtag a[href*="eprint"],
+body[data-page*="publications"] .markdown-section .pubtag a[href*="youtube"] {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  margin:0 2px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: white !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+  border: none !important;
+  background: none !important;
+}
+
+body[data-page*="publications"] .markdown-section .pubtag a[href*="eprint"] {
+  background: linear-gradient(135deg, var(--theme-color), #366482) !important;
+}
+
+body[data-page*="publications"] .markdown-section .pubtag a[href*="youtube"] {
+  background: linear-gradient(135deg, var(--theme-color), #b5a555) !important;
+}
+
+body[data-page*="publications"] .markdown-section .pubtag a:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 悬停装饰 */
+body[data-page*="publications"] .markdown-section li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, transparent 0%, rgba(85, 143, 181, 0.03) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+body[data-page*="publications"] .markdown-section li:hover::before {
+  opacity: 1;
+}
+
+/* 移动端适配 */
+@media (max-width: 480px) {
+  body[data-page*="publications"] .markdown-section ul li {
+    padding: 1.5rem 1rem 1.5rem 2.5rem;
+    margin: 1rem 0 1rem 0.5rem;
+  }
+  
+  body[data-page*="publications"] .markdown-section ul li::before {
+    left: -8px;
+    top: 1.5rem;
+    width: 24px;
+    height: 24px;
+    font-size: 0.8rem;
+  }
+
+  body[data-page*="publications"] .markdown-section > h1 {
+  font-size: 2rem;
+  }
+  
+  body[data-page*="publications"] .markdown-section li strong {
+    font-size: 1.1rem;
+  }
+  
+  body[data-page*="publications"] h1 {
+    font-size: 2rem;
+  }
+  
+  body[data-page*="publications"] h2 {
+    font-size: 1.5rem;
+  }
 }
 
 /* 字体样式优化 */
@@ -315,6 +532,10 @@ a.btn:hover {
   
   .publist .pubtag {
     opacity: 1.0;
+  }
+
+  body[data-page*="publications"] .markdown-section li::before {
+    opacity: 1;
   }
 }
 
