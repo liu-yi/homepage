@@ -123,7 +123,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
     Nanjing, China. Oct. 2025.
 
 
-- **Highly Efficient Actively Secure Two-Party Computation with One-Bit Advantage Bound** <span class="pubtag">[:link:](https://doi.ieeecomputersociety.org/10.1109/SP61157.2025.00183)</span>
+- **Highly Efficient Actively Secure Two-Party Computation with One-Bit Advantage Bound** <span class="pubtag"><a class="emoji" href="https://doi.ieeecomputersociety.org/10.1109/SP61157.2025.00183" target="_blank">:link:</a></span>
 
     <u>**Yi Liu**</u>, Junzuo Lai, Peng Yang, Anjia Yang, Qi Wang, Siu-Ming Yiu, Jian Weng
 
@@ -131,7 +131,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
     
     San Francisco, USA. May 2025.
 
-- **Robust Publicly Verifiable Covert Security: Limited Information Leakage and Guaranteed Correctness with Low Overhead** <span class="pubtag">[:link:](https://link.springer.com/chapter/10.1007/978-981-99-8721-4_9)</span>
+- **Robust Publicly Verifiable Covert Security: Limited Information Leakage and Guaranteed Correctness with Low Overhead** <span class="pubtag"><a class="emoji" href="https://link.springer.com/chapter/10.1007/978-981-99-8721-4_9" target="_blank">:link:</a></span>
   
     <u>**Yi Liu**</u>, Junzuo Lai, Qi Wang, Xianrui Qin, Anjia Yang, Jian Weng 
 
@@ -139,7 +139,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 
     Guangzhou, China. Dec. 2023.
 
-- **Towards Practical Homomorphic Time-Lock Puzzles: Applicability and Verifiability** <span class="pubtag">[:link:](https://link.springer.com/chapter/10.1007/978-3-031-17140-6_21)</span>
+- **Towards Practical Homomorphic Time-Lock Puzzles: Applicability and Verifiability** <span class="pubtag"><a class="emoji" href="https://link.springer.com/chapter/10.1007/978-3-031-17140-6_21" target="_blank">:link:</a></span>
   
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
@@ -147,7 +147,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 
     Copenhagen, Denmark. Sept. 2022.
 
-- **Making Private Function Evaluation Safer, Faster, and Simpler** <span class="pubtag">[:link:](https://link.springer.com/chapter/10.1007/978-3-030-97121-2_13)<span>
+- **Making Private Function Evaluation Safer, Faster, and Simpler** <span class="pubtag"><a class="emoji" href="https://link.springer.com/chapter/10.1007/978-3-030-97121-2_13" target="_blank">:link:</a></span>
   
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
@@ -155,7 +155,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 
     Virtual. March 2022.  
 
-- **Improved Zero-Knowledge Argument of Encrypted Extended Permutation** <span class="pubtag">[:link:](https://link.springer.com/chapter/10.1007/978-3-030-88323-2_15)</span>
+- **Improved Zero-Knowledge Argument of Encrypted Extended Permutation** <span class="pubtag"><a class="emoji" href="https://link.springer.com/chapter/10.1007/978-3-030-88323-2_15" target="_blank">:link:</a></span>
   
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
@@ -163,7 +163,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 
     Virtual. Aug. 2021. 
     
-- **Blind Polynomial Evaluation and Data Trading** <span class="pubtag">[:link:](https://link.springer.com/chapter/10.1007/978-3-030-78372-3_5)</span>
+- **Blind Polynomial Evaluation and Data Trading** <span class="pubtag"><a class="emoji" href="https://link.springer.com/chapter/10.1007/978-3-030-78372-3_5" target="_blank">:link:</a></span>
   
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
@@ -171,7 +171,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 
     Virtual. June 2021. 
 
-- **An Improvement of Multi-Exponentiation with Encrypted Bases Argument: Smaller and Faster** <span class="pubtag">[:link:](https://link.springer.com/chapter/10.1007/978-3-030-71852-7_27)</span>
+- **An Improvement of Multi-Exponentiation with Encrypted Bases Argument: Smaller and Faster** <span class="pubtag"><a class="emoji" href="https://link.springer.com/chapter/10.1007/978-3-030-71852-7_27" target="_blank">:link:</a></span>
   
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
