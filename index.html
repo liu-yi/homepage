@@ -49,6 +49,8 @@
 </head>
 
 <body>
+  <!-- 滚动进度指示器 -->
+  <div class="progress-bar" id="progress-bar"></div>
   <div id="app"></div>
   <script>
     window.$docsify = {
@@ -93,3 +95,44 @@
   <script defer src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
   <script defer src="/public/js/docsify-scroll-to-top.js"></script>
   <link rel="stylesheet" href="public/css/styles.min.css">
+
+  <script>
+    // 滚动进度指示器 - 正确实现
+    function updateProgressBar() {
+      const progressBar = document.getElementById('progress-bar');
+      if (!progressBar) return;
+
+      // 获取可视区域和内容高度
+      const viewportHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      // 计算滚动百分比
+      const scrollableHeight = documentHeight - viewportHeight;
+      const progress = Math.max(0, Math.min(100, (scrollTop / Math.max(1, scrollableHeight)) * 100));
+      
+      progressBar.style.width = progress + '%';
+      progressBar.style.background = 'linear-gradient(90deg, #558fb5, #7ba7cc)';
+      progressBar.style.height = '3px';
+      progressBar.style.position = 'fixed';
+      progressBar.style.top = '0';
+      progressBar.style.left = '0';
+      progressBar.style.zIndex = '9999';
+      progressBar.style.transition = 'width 0.1s ease-out';
+    }
+
+    // 监听滚动事件
+    window.addEventListener('scroll', updateProgressBar);
+    window.addEventListener('load', function() {
+      setTimeout(updateProgressBar, 300);
+    });
+
+    // docsify 路由变化时更新
+    if (window.$docsify) {
+      window.$docsify.plugins = (window.$docsify.plugins || []).concat(function(hook) {
+        hook.doneEach(function() {
+          setTimeout(updateProgressBar, 100);
+        });
+      });
+    }
+  </script>
