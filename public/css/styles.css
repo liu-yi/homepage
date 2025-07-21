@@ -166,27 +166,32 @@ body[data-page*="publications"] .markdown-section >ol {
   padding-left: 0;
 }
 
-/* 标题美化 */
-body[data-page*="publications"] .markdown-section > h1 {
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: #2c3e50;
-  margin-bottom: 3rem;
-  text-align: center;
-  position: relative;
-  padding-bottom: 1rem;
+/* Publications页面标题增强美化 - 使用更高优先级选择器 */
+body[data-page*="publications"] .markdown-section h1 {
+  font-size: 2.1rem !important;
+  font-weight: 800 !important;
+  color: #2c3e50 !important;
+  margin: 0 auto 3rem auto !important;
+  text-align: center !important;
+  position: relative !important;
+  padding: 2rem 0 1.5rem 0 !important;
+  max-width: fit-content;
+  background: var(--theme-color) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
 }
 
-body[data-page*="publications"] .markdown-section > h1::after {
+body[data-page*="publications"] .markdown-section h1::after {
   content: '';
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 120px;
-  height: 4px;
-  background: linear-gradient(90deg, var(--theme-color), #7ba7cc);
-  border-radius: 2px;
+  width: 200px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--theme-color), #7ba7cc, transparent);
+  border-radius: 3px;
 }
 
 /* 修复论文编号位置 */
