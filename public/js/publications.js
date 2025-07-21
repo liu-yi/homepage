@@ -47,7 +47,8 @@ function initializeSearch() {
     function filterPapers() {
         const searchTerm = searchInput.value.toLowerCase();
         const activeFilter = getActiveFilter();
-        let visibleCount = 0;
+        let visibleRefereedCount = 0;
+        let visibleManuscriptCount = 0;
         
         papers.forEach(paper => {
             const text = paper.textContent.toLowerCase();
@@ -56,13 +57,21 @@ function initializeSearch() {
             
             const isVisible = matchesSearch && matchesType;
             paper.style.display = isVisible ? 'list-item' : 'none';
-            if (isVisible) visibleCount++;
+            
+            if (isVisible) {
+                if (paper.dataset.type === 'manuscript') {
+                    visibleManuscriptCount++;
+                } else {
+                    visibleRefereedCount++; // conference or journal (refereed)
+                }
+            }
         });
         
         // 更新统计信息
-        const statNumber = document.querySelector('.stats-bar .stat-number');
-        if (statNumber) {
-            statNumber.textContent = visibleCount;
+        const statNumbers = document.querySelectorAll('.stats-bar .stat-number');
+        if (statNumbers.length >= 2) {
+            statNumbers[0].textContent = visibleRefereedCount; // Refereed Papers
+            statNumbers[1].textContent = visibleManuscriptCount; // Manuscripts
         }
     }
     

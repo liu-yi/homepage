@@ -294,6 +294,10 @@ body[data-page*="publications"] .markdown-section .pubtag a[href*="eprint"] {
   background: linear-gradient(135deg, var(--theme-color), #366482) !important;
 }
 
+body[data-page*="publications"] .markdown-section .pubtag a[href*="doi"] {
+  background: linear-gradient(135deg, #007ccf, #006ab1) !important;
+}
+
 body[data-page*="publications"] .markdown-section .pubtag a[href*="youtube"] {
   background: linear-gradient(135deg, var(--theme-color), #366482) !important;
 }
