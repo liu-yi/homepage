@@ -6,6 +6,14 @@
 ---
 <!-- > The notation # indicates the corresponding author(s). -->
 
+1. **Zero-Knowledge Protocols with PVC Security: Striking the Balance between Security and Efficiency** 
+
+    <u>**Yi Liu**</u>, Yipeng Song, Anjia Yang, Junzuo Lai
+
+    The 27th International Conference on Information and Communications Security (**ICICS 2025**). 
+    
+    Nanjing, China. Oct. 29 - 31 2025. 
+
 
 1. **Highly Efficient Actively Secure Two-Party Computation with One-Bit Advantage Bound** <span class="pubtag">[:link:](https://doi.ieeecomputersociety.org/10.1109/SP61157.2025.00183)</span>
 
