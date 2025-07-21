@@ -2,9 +2,9 @@
   <div class="profile">
     <div class="image">
       <div id="avatar"  @click="todo">
-          <img v-show="!hover_avatar" src="public/img/logo.jpg" v-on="{ mouseenter: mouseEnter, mouseleave: mouseLeave }">
-          <img v-show="hover_avatar && todo_num % 2 == 0" src="public/img/logo2.jpg" v-on="{ mouseenter: mouseEnter, mouseleave: mouseLeave }">
-          <img v-show="hover_avatar && todo_num % 2 == 1" src="public/img/logo3.jpg" v-on="{ mouseenter: mouseEnter, mouseleave: mouseLeave }">
+          <img v-show="!hover_avatar" src="public/img/logo.jpg" alt="Yi Liu's profile picture" v-on="{ mouseenter: mouseEnter, mouseleave: mouseLeave }">
+          <img v-show="hover_avatar && todo_num % 2 == 0" src="public/img/logo2.jpg" alt="Yi Liu's alternative profile picture" v-on="{ mouseenter: mouseEnter, mouseleave: mouseLeave }">
+          <img v-show="hover_avatar && todo_num % 2 == 1" src="public/img/logo3.jpg" alt="Yi Liu's third profile picture" v-on="{ mouseenter: mouseEnter, mouseleave: mouseLeave }">
       </div>
     </div>
     <div class="info">
