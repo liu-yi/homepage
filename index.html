@@ -5,19 +5,26 @@
   <meta charset="UTF-8">
   <title>Yi Liu</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
+  <meta name="description" content="Yi Liu - Cryptography, Security, and Privacy Research">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  
+  <!-- CDN优化配置 -->
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="//www.googletagmanager.com">
+  <link rel="dns-prefetch" href="//hm.baidu.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  
+  <!-- 优化CSS加载顺序 -->
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"></noscript>
+  
   <link rel="shortcut icon" href="public/img/logo.ico" type="image/ico" />
   
-  <!-- KaTeX字体预加载 - 解决文字不显示问题 -->
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <!-- 关键字体预加载 -->
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Main-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Math-Italic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Size1-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Size2-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  
-  <!-- 本地字体预加载 -->
   <link rel="preload" href="public/fonts/zs.ttf" as="font" type="font/ttf" crossorigin>
   
   <!-- Google tag (gtag.js) -->
@@ -66,23 +73,25 @@
       mergeNavbar: true,
     }
   </script>
-  <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- 优化后的CDN资源加载 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
-
-  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
-
-  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-latex.min.js"></script>
-
-  <script src="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
-  <script src="//cdn.jsdelivr.net/npm/marked@4"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
-
-  <script src="//cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
-  <script src="/public/js/docsify-scroll-to-top.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@latest/dist/docsify-pagination.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@latest/dist/docsify-copy-code.min.js"></script>
+  
+  <!-- 代码高亮 - 延迟加载 -->
+  <script defer src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-latex.min.js"></script>
+  
+  <!-- KaTeX - 延迟加载 -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/marked@4"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+  
+  <!-- Vue3 - 延迟加载 -->
+  <script defer src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
+  <script defer src="/public/js/docsify-scroll-to-top.js"></script>
 
   <style>
     :root {
