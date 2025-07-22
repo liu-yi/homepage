@@ -490,7 +490,7 @@ body[data-page*="publications"] .markdown-section li:hover::before {
 }
 
 /* 新增：加载动画 */
-.publications-container {
+/* .publications-container {
   opacity: 0;
   animation: fadeInUp 0.8s ease forwards;
 }
@@ -504,7 +504,7 @@ body[data-page*="publications"] .markdown-section li:hover::before {
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */
 
 /* 新增：统计信息栏 */
 .stats-bar {
