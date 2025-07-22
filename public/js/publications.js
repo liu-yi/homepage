@@ -2,10 +2,9 @@
 (function() {
     'use strict';
     
-    let initialized = false;
-    
     function initializeSearch() {
-        if (initialized) return;
+        // Always reinitialize when on publications page to handle navigation
+        console.log('Initializing publications search...');
         
         try {
             const searchInput = document.getElementById('pubSearch');
@@ -18,8 +17,6 @@
                 console.warn('Publications search: Required elements not found');
                 return;
             }
-            
-            initialized = true;
             
             // 为每个论文添加类型标识
             papers.forEach((paper) => {
@@ -106,14 +103,10 @@
     
     // 更可靠的初始化策略
     function initWithRetry() {
-        if (initialized) return;
-        
         const maxRetries = 10;
         let retries = 0;
         
         function attempt() {
-            if (initialized) return;
-            
             const searchInput = document.getElementById('pubSearch');
             const papers = document.querySelectorAll('.markdown-section li');
             
@@ -160,7 +153,7 @@
         } else {
             // 等待Docsify加载
             const observer = new MutationObserver(function() {
-                if (window.$docsify && !initialized) {
+                if (window.$docsify) {
                     setupDocsifyPlugin();
                     observer.disconnect();
                 }
@@ -170,9 +163,7 @@
             
             // 后备方案：DOMContentLoaded
             document.addEventListener('DOMContentLoaded', function() {
-                if (!initialized) {
-                    setTimeout(initWithRetry, 500);
-                }
+                setTimeout(initWithRetry, 500);
             });
             
             // 额外保险
