@@ -1,3 +1,0 @@
-C:/Users/45288/OneDrive/Courses/CPP/Lecture07/code/exampleMat/build/CMakeFiles/matexample.dir
-C:/Users/45288/OneDrive/Courses/CPP/Lecture07/code/exampleMat/build/CMakeFiles/edit_cache.dir
-C:/Users/45288/OneDrive/Courses/CPP/Lecture07/code/exampleMat/build/CMakeFiles/rebuild_cache.dir
