@@ -3,6 +3,10 @@
   --content-max-width: 65em;
   --base-font-size: 17px;
   --theme-color: #558fb5;
+  --theme-color-dark: #366482;
+  --theme-color-light: #7ba7cc;
+  --theme-color-gradient: linear-gradient(135deg, #558fb5, #7ba7cc, #366482);
+  --theme-color-gradient-hover: linear-gradient(135deg, #366482, #558fb5, #7ba7cc);
   --link-color--hover: #366482;
   --link-color: var(--theme-color);
   --base-font-family: "KaTeX_Main", zhongsong, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -26,14 +30,6 @@
   font-style: normal;
   font-display: fallback;
 }
-
-/* @font-face {
-  font-family: "STZHONGS";
-  src: url('../STZHONGS.TTF') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: fallback;
-} */
 
 /* 简历页面样式 */
 .markdown-section p, .markdown-section li {
@@ -75,9 +71,31 @@
   padding-left: 2rem;
 }
 
+@media (min-width: 481px) {
+  .profile .info .name {
+  margin-left: -6px;
+}
+}
+
 .profile .info .name {
   font-size: 2.5rem;
   padding-bottom: 8px;
+  text-align: center;
+  /* margin-left: -6px; */
+  background: var(--theme-color-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: all 0.3s ease;
+}
+
+.profile .info .name:hover {
+  background: var(--theme-color-gradient-hover);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transform: scale(1.25) ;
+  /* transform: translateX(8px); */
 }
 
 .profile .info .socials {
@@ -95,6 +113,40 @@
   font-family: Courier New, Courier, monospace;
 }
 
+.profile .info .cv a {
+  background: var(--theme-color-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* font-weight: 600; */
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.profile .info .cv a:hover {
+  background: var(--theme-color-gradient-hover);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transform: translateY(-1px);
+}
+
+.profile .info .cv a[target="_blank"]::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--theme-color-gradient);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.profile .info .cv a[target="_blank"]:hover::after {
+  transform: scaleX(1);
+}
+
 /* 响应式设计 */
 @media (max-width: 480px) {
   .profile {
@@ -104,8 +156,8 @@
   }
   
   .profile .image {
-    max-width: 180px;
-    margin-bottom: 1rem;
+    max-width: 220px;
+    /* margin-bottom: 0.5rem; */
   }
   
   .profile .info {
@@ -114,13 +166,13 @@
   }
   
   .profile .info .name {
-    font-size: 2.2rem;
-    margin-bottom: 0.5rem;
+    font-size: 2.8rem;
+    /* margin-bottom: 0.5rem; */
   }
   
   .profile .info .socials {
     justify-content: center;
-    margin-bottom: 0.5rem;
+    /* margin-bottom: 0.5rem; */
   }
   
   .profile .info .socials img {
@@ -733,7 +785,7 @@ a.btn:hover {
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--theme-color);
+  background: var(--theme-color-gradient);
   transition: width 0.3s ease;
   pointer-events: none;
 }

@@ -60,11 +60,11 @@
     methods: {
       mouseEnter(event) {
         this.hover_avatar = true;
-        this.hover_name = true; 
+        // this.hover_name = true; 
       },
       mouseLeave(event) {
         this.hover_avatar = false;
-        this.hover_name = false; 
+        // this.hover_name = false; 
       },
       todo(){
         this.todo_num++; 
