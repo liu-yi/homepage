@@ -27,13 +27,13 @@
   font-display: fallback;
 }
 
-@font-face {
+/* @font-face {
   font-family: "STZHONGS";
   src: url('../STZHONGS.TTF') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: fallback;
-}
+} */
 
 /* 简历页面样式 */
 .markdown-section p, .markdown-section li {

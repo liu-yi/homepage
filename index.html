@@ -4,9 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Yi Liu - Cryptography Researcher | Jinan University</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Yi Liu's academic profile at Jinan University. Research in cryptography, secure multi-party computation, zero-knowledge proofs, and blockchain applications.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="description" content="Yi Liu's academic profile at Jinan University. Research in cryptography, secure multi-party computation, zero-knowledge proofs, and blockchain applications.">
   
   <meta name="keywords" content="cryptography, security, privacy, multi-party computation, zero-knowledge, blockchain, Jinan University">
   <meta name="author" content="Yi Liu">
@@ -37,6 +36,8 @@
   <!-- 优化CSS加载顺序 -->
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"></noscript>
+  <link rel="stylesheet" href="public/css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
   
   <link rel="shortcut icon" href="public/img/logo.ico" type="image/ico" />
   
@@ -74,13 +75,7 @@
   <script>
     window.$docsify = {
       name: 'Yi Liu',
-      // repo: '',
-      // logo: 'public/logo.png',
-      // coverpage: true,
-      // onlyCover: true,
       loadNavbar: true,
-      // hideSidebar: true,
-      // loadSidebar: true,
       homepage: 'docs/cv.md',
       latex: {
         inlineMath: [['$', '$'], ['\\(', '\\)']],
@@ -91,7 +86,7 @@
         'cache-control': 'no-cache',
       },
       serviceWorker: false,
-      mergeNavbar: true,
+      mergeNavbar: true
     }
   </script>
   <!-- 自定义脚本 -->
@@ -108,52 +103,12 @@
   
   <!-- KaTeX - 延迟加载 -->
   <script defer src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/marked@4"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
   
   <!-- Vue3 - 延迟加载 -->
   <script defer src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
   <script defer src="/public/js/docsify-scroll-to-top.js"></script>
-  <link rel="stylesheet" href="public/css/styles.css">
-
-  <script>
-    // 滚动进度指示器 - 正确实现
-    function updateProgressBar() {
-      const progressBar = document.getElementById('progress-bar');
-      if (!progressBar) return;
-
-      // 获取可视区域和内容高度
-      const viewportHeight = window.innerHeight;
-      const documentHeight = document.documentElement.scrollHeight;
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      
-      // 计算滚动百分比
-      const scrollableHeight = documentHeight - viewportHeight;
-      const progress = Math.max(0, Math.min(100, (scrollTop / Math.max(1, scrollableHeight)) * 100));
-      
-      progressBar.style.width = progress + '%';
-      progressBar.style.background = 'linear-gradient(90deg, #558fb5, #7ba7cc)';
-      progressBar.style.height = '3px';
-      progressBar.style.position = 'fixed';
-      progressBar.style.top = '0';
-      progressBar.style.left = '0';
-      progressBar.style.zIndex = '9999';
-      progressBar.style.transition = 'width 0.1s ease-out';
-    }
-
-    // 监听滚动事件
-    window.addEventListener('scroll', updateProgressBar);
-    window.addEventListener('load', function() {
-      setTimeout(updateProgressBar, 300);
-    });
-
-    // docsify 路由变化时更新
-    if (window.$docsify) {
-      window.$docsify.plugins = (window.$docsify.plugins || []).concat(function(hook) {
-        hook.doneEach(function() {
-          setTimeout(updateProgressBar, 100);
-        });
-      });
-    }
-  </script>
+  <script src="/public/js/progress-bar.js"></script>
+</body>
+</html>
