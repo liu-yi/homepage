@@ -269,7 +269,7 @@ C/C++, Python, LaTeX, Java, HTML/CSS, JavaScript -->
   </div>
 </div>
 
-<div id="map-container" style="border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+<div id="map-container" style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
 <div id="amap-container"></div>
-    <!-- <a href="https://www.amap.com/search?id=B0JBD7XRFY&city=440113&geoobj=113.402929%7C23.011163%7C113.425245%7C23.022489&query_type=IDQ&query=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83%E5%A4%A7%E6%A5%BC&zoom=17" class="" target="_blank">查看大地图</a> -->
+<a href="https://www.amap.com/search?id=B0JBD7XRFY&city=440113&geoobj=113.402929%7C23.011163%7C113.425245%7C23.022489&query_type=IDQ&query=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83%E5%A4%A7%E6%A5%BC&zoom=17" class="map-button" target="_blank">View Map</a>
 </div>

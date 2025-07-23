@@ -860,6 +860,34 @@ a.btn:hover {
   border: 1px solid #e1e5e9;
 }
 
+/* 大地图按钮样式 - 更优雅的低调设计 */
+.map-button {
+  display: block;
+  width: 100%;
+  padding: 0.2rem 1.5rem;
+  background: transparent;
+  text-align: center;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.map-button:hover,
+.markdown-section .map-button:hover {
+  background: var(--theme-color) !important;
+  color: white !important;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(85, 143, 181, 0.2);
+}
+
+.map-button:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 4px rgba(85, 143, 181, 0.15);
+}
+
+.map-button:hover::after {
+  transform: translateX(2px);
+}
+
 /* 地址切换容器样式 */
 .address-wrapper {
   display: flex;
@@ -877,6 +905,7 @@ a.btn:hover {
 }
 
 .address-container {
+  padding-top: 6px;
   line-height: 1.6;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -901,7 +930,7 @@ a.btn:hover {
 }
 
 [data-lang="cn"]::after {
-  content: " (Click for address in English)";
+  content: " (Click to see address in English)";
   font-size: 0.8em;
   color: #fff;
   margin-left: 0.5rem;
