@@ -32,7 +32,8 @@
 }
 
 /* 简历页面样式 */
-.markdown-section p, .markdown-section li {
+.markdown-section p,
+.markdown-section li {
   margin: 0.4em 0 0.4em 0;
 }
 
@@ -73,8 +74,8 @@
 
 @media (min-width: 481px) {
   .profile .info .name {
-  margin-left: -6px;
-}
+    margin-left: -6px;
+  }
 }
 
 .profile .info .name {
@@ -94,7 +95,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  transform: scale(1.25) ;
+  transform: scale(1.25);
   /* transform: translateX(8px); */
 }
 
@@ -154,42 +155,42 @@
     align-items: center;
     text-align: center;
   }
-  
+
   .profile .image {
     max-width: 220px;
     /* margin-bottom: 0.5rem; */
   }
-  
+
   .profile .info {
     padding-left: 0;
     align-items: center;
   }
-  
+
   .profile .info .name {
     font-size: 2.8rem;
     /* margin-bottom: 0.5rem; */
   }
-  
+
   .profile .info .socials {
     justify-content: center;
     /* margin-bottom: 0.5rem; */
   }
-  
+
   .profile .info .socials img {
     width: 1.5rem;
     margin: 0 0.4rem;
     padding: 0.25rem;
   }
-  
+
   .profile .info .contact .email {
     font-size: 0.8rem;
     margin-bottom: 0.5rem;
   }
-  
+
   .profile .info .cv {
     font-size: 0.9rem;
   }
-  
+
   .duration {
     float: none;
   }
@@ -210,21 +211,22 @@
 
 /* 移动端：CV页面隐藏sidebar，publications页面显示sidebar */
 @media (max-width: 480px) {
+
   [data-page*="cv"] .sidebar,
   [data-page*="cv"] .sidebar-toggle {
     display: none;
   }
-  
+
   [data-page*="cv"] .content {
     margin-left: 0;
   }
-  
+
   /* publications页面在移动端显示sidebar */
   [data-page*="publications"] .sidebar,
   [data-page*="publications"] .sidebar-toggle {
     display: flex;
   }
-  
+
 }
 
 /* Publications页面精美美化 */
@@ -233,7 +235,7 @@ body[data-page*="publications"] .markdown-section {
   line-height: 1.7;
 }
 
-body[data-page*="publications"] .markdown-section >ol {
+body[data-page*="publications"] .markdown-section>ol {
   padding-left: 0;
 }
 
@@ -266,8 +268,8 @@ body[data-page*="publications"] .markdown-section h1::after {
 }
 
 /* 修复论文编号位置 */
-body[data-page*="publications"] .markdown-section ol > li,
-body[data-page*="publications"] .markdown-section ul > li {
+body[data-page*="publications"] .markdown-section ol>li,
+body[data-page*="publications"] .markdown-section ul>li {
   background: linear-gradient(135deg, #ffffff 0%, #fafbfc 100%);
   border: none;
   border-left: 5px solid var(--theme-color);
@@ -283,8 +285,8 @@ body[data-page*="publications"] .markdown-section ul > li {
   list-style: none;
 }
 
-body[data-page*="publications"] .markdown-section ol > li::before,
-body[data-page*="publications"] .markdown-section ul > li::before {
+body[data-page*="publications"] .markdown-section ol>li::before,
+body[data-page*="publications"] .markdown-section ul>li::before {
   content: counter(paper-counter);
   position: absolute;
   left: -19px;
@@ -355,7 +357,7 @@ body[data-page*="publications"] .markdown-section .pubtag a[href*="eprint"],
 body[data-page*="publications"] .markdown-section .pubtag a[href*="youtube"] {
   display: inline-block;
   padding: 0.3rem 0.8rem;
-  margin:0 2px;
+  margin: 0 2px;
   border-radius: 15px;
   font-size: 0.8rem;
   font-weight: 600;
@@ -407,7 +409,7 @@ body[data-page*="publications"] .markdown-section li:hover::before {
     padding: 1.5rem 1rem 1.5rem 2.5rem;
     margin: 1rem 0 1rem 0.5rem;
   }
-  
+
   body[data-page*="publications"] .markdown-section ul li::before {
     left: -8px;
     top: 1.5rem;
@@ -416,18 +418,18 @@ body[data-page*="publications"] .markdown-section li:hover::before {
     font-size: 0.8rem;
   }
 
-  body[data-page*="publications"] .markdown-section > h1 {
-  font-size: 2rem;
+  body[data-page*="publications"] .markdown-section>h1 {
+    font-size: 2rem;
   }
-  
+
   body[data-page*="publications"] .markdown-section li strong {
     font-size: 1.1rem;
   }
-  
+
   body[data-page*="publications"] h1 {
     font-size: 2rem;
   }
-  
+
   body[data-page*="publications"] h2 {
     font-size: 1.5rem;
   }
@@ -443,7 +445,7 @@ body[data-page*="publications"] .markdown-section li:hover::before {
   font-weight: 600;
   color: white;
   background: linear-gradient(135deg, #ff6b6b, #ee5a24);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   vertical-align: middle;
 }
 
@@ -566,7 +568,7 @@ body[data-page*="publications"] .markdown-section li:hover::before {
   padding: 1.5rem;
   border-radius: 12px;
   margin: 2rem 0;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .stat-item {
@@ -701,13 +703,13 @@ a.btn:hover {
 
 /* --- Social Icon Enhancements --- */
 .socials a img {
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    opacity: 0.7;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.7;
 }
 
 .socials a:hover img {
-    transform: scale(1.15);
-    opacity: 1;
+  transform: scale(1.15);
+  opacity: 1;
 }
 
 
@@ -727,7 +729,7 @@ a.btn {
 
 a.btn:hover {
   transform: translateY(-1px);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* 出版物卡片效果 */
@@ -821,11 +823,11 @@ a.btn:hover {
   .markdown-section {
     padding: 2rem 15px;
   }
-  
+
   :root {
     --base-font-size: 16px;
   }
-  
+
   .publist .pubtag {
     opacity: 1.0;
   }
@@ -847,4 +849,93 @@ a.btn:hover {
 
 .pubtag {
   transition: all 200ms, opacity 300ms;
+}
+
+/* 地图容器样式 */
+#map-container {
+  margin: 1rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e1e5e9;
+}
+
+/* 地址切换容器样式 */
+.address-wrapper {
+  display: flex;
+  padding-left: 12px;
+  border-left: 3px solid transparent;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.address-wrapper:hover {
+  border-left-color: var(--theme-color);
+  transform: translateX(2px);
+  transition: all 0.3s ease;
+}
+
+.address-container {
+  line-height: 1.6;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.address-container .room-info {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+
+/* 地址切换提示 */
+[data-lang="en"]::after {
+  content: " (点击显示中文)";
+  font-size: 0.8em;
+  margin-left: 0.5rem;
+}
+
+[data-lang="en"]:hover::after {
+  color: #888;
+}
+
+[data-lang="cn"]::after {
+  content: " (Click for address in English)";
+  font-size: 0.8em;
+  color: #fff;
+  margin-left: 0.5rem;
+}
+
+[data-lang="cn"]:hover::after {
+  color: #888;
+}
+
+/* 响应式地图样式 */
+
+@media (min-width: 481px) {
+  #amap-container {
+    height: 450px;
+  }
+
+  [data-lang="en"]::after {
+    color: #fff;
+  }
+
+  [data-lang="cn"]::after {
+    color: #fff;
+  }
+}
+
+@media (max-width: 480px) {
+  [data-lang="en"]::after {
+    color: #888;
+  }
+
+  [data-lang="cn"]::after {
+    color: #888;
+  }
+  #amap-container {
+    height: 250px;
+  }
 }

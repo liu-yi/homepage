@@ -245,3 +245,31 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 
 <!-- ## Skills
 C/C++, Python, LaTeX, Java, HTML/CSS, JavaScript -->
+
+## Location
+
+<div class="address-wrapper">
+  <div class="address-container" id="address-en" data-lang="en" style="line-height: 2;">
+    <span class="room-info">Room 906, Intellectual Property Building</span>
+    Jinan University (Panyu Campus)
+    <br>
+    No. 855 Xingye Avenue East, Panyu District  
+    <br>
+    Guangzhou, Guangdong 511443, P. R. China  
+    <br>
+  </div>
+  <div class="address-container" id="address-cn" data-lang="cn" style="line-height: 2; display: none;">
+    <span class="room-info">知识产权大楼906室</span>
+    暨南大学（番禺校区）
+    <br>
+    番禺区新造镇兴业大道东855号  
+    <br>
+    中华人民共和国广东省广州市
+    <br>
+  </div>
+</div>
+
+<div id="map-container" style="border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+<div id="amap-container"></div>
+    <!-- <a href="https://www.amap.com/search?id=B0JBD7XRFY&city=440113&geoobj=113.402929%7C23.011163%7C113.425245%7C23.022489&query_type=IDQ&query=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83%E5%A4%A7%E6%A5%BC&zoom=17" class="" target="_blank">查看大地图</a> -->
+</div>

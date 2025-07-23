@@ -5,48 +5,57 @@
   <meta charset="UTF-8">
   <title>Yi Liu - Cryptography Researcher | Jinan University</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <meta name="description" content="Yi Liu's academic profile at Jinan University. Research in cryptography, secure multi-party computation, zero-knowledge proofs, and blockchain applications.">
-  
-  <meta name="keywords" content="cryptography, security, privacy, multi-party computation, zero-knowledge, blockchain, Jinan University">
+  <meta name="description"
+    content="Yi Liu's academic profile at Jinan University. Research in cryptography, secure multi-party computation, zero-knowledge proofs, and blockchain applications.">
+
+  <meta name="keywords"
+    content="cryptography, security, privacy, multi-party computation, zero-knowledge, blockchain, Jinan University">
   <meta name="author" content="Yi Liu">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://liuyi.pro">
-  
+
   <!-- Open Graph / Social Media -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://liuyi.pro/">
   <meta property="og:title" content="Yi Liu - Cryptography Researcher">
-  <meta property="og:description" content="Yi Liu's research in cryptography, secure multi-party computation, and zero-knowledge proofs at Jinan University.">
+  <meta property="og:description"
+    content="Yi Liu's research in cryptography, secure multi-party computation, and zero-knowledge proofs at Jinan University.">
   <meta property="og:image" content="https://liuyi.pro/public/img/logo.jpg">
-  
+
   <!-- Twitter Card -->
   <meta property="twitter:card" content="summary">
   <meta property="twitter:url" content="https://liuyi.pro/">
   <meta property="twitter:title" content="Yi Liu - Cryptography Researcher">
   <meta property="twitter:description" content="Cryptography and security research at Jinan University.">
   <meta property="twitter:image" content="https://liuyi.pro/public/img/logo.jpg">
-  
+
   <!-- CDN优化配置 -->
   <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
   <link rel="dns-prefetch" href="//www.googletagmanager.com">
   <link rel="dns-prefetch" href="//hm.baidu.com">
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
-  
+
   <!-- 优化CSS加载顺序 -->
-  <link rel="preload" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"></noscript>
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  </noscript>
   <link rel="stylesheet" href="public/css/styles.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
-  
+
   <link rel="shortcut icon" href="public/img/logo.ico" type="image/ico" />
-  
+
   <!-- 关键字体预加载 -->
-  <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Main-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Math-Italic.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Size1-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Main-Regular.woff2" as="font"
+    type="font/woff2" crossorigin>
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Math-Italic.woff2" as="font"
+    type="font/woff2" crossorigin>
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Size1-Regular.woff2" as="font"
+    type="font/woff2" crossorigin>
   <link rel="preload" href="public/fonts/zs.ttf" as="font" type="font/ttf" crossorigin>
-  
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-V6PJ8BXB1K"></script>
   <script>
@@ -96,19 +105,51 @@
   <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@latest/dist/docsify-pagination.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@latest/dist/docsify-copy-code.min.js"></script>
-  
+
   <!-- 代码高亮 - 延迟加载 -->
   <script defer src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-latex.min.js"></script>
-  
+
   <!-- KaTeX - 延迟加载 -->
   <script defer src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/marked@4"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
-  
+
   <!-- Vue3 - 延迟加载 -->
   <script defer src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
   <script defer src="/public/js/docsify-scroll-to-top.js"></script>
   <script src="/public/js/progress-bar.js"></script>
+  <script src="/public/js/address-toggle.js"></script>
+
+
+  <!-- 地图  -->
+  <script type="text/javascript">
+    window._AMapSecurityConfig = {
+      securityJsCode: "fa4c1a0ee4c92db8519fa781ece30b99	",
+    };
+  </script>
+  <script src="https://webapi.amap.com/loader.js"></script>
+  <script type="text/javascript">
+    AMapLoader.load({
+      key: "6a6ac6b39f33cb76ee52d1ccef73da05", //申请好的Web端开发者key，调用 load 时必填
+      version: "2.0", //指定要加载的 JS API 的版本，缺省时默认为 1.4.15
+    })
+      .then((AMap) => {
+        const map = new AMap.Map("amap-container", {
+          viewMode: '2D', //默认使用 2D 模式
+          zoom: 17, //地图级别
+          center: [113.412396, 23.016767], //地图中心点
+        });
+        const marker = new AMap.Marker({
+          position: [113.412396, 23.016767],
+          title: '我在这里'
+        });
+        map.add(marker);
+      })
+      .catch((e) => {
+        console.error(e); //加载错误提示
+      });
+  </script>
 </body>
+
 </html>
