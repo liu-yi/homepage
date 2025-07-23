@@ -380,14 +380,13 @@ body[data-page*="publications"] .markdown-section h1 {
   left: 0;
   right: 0;
   height: 4px;
-  background: var(--theme-color-gradient);
+  /* background: var(--theme-color-gradient); */
 }
 
 .students-title {
   font-size: 1.4rem;
   font-weight: 700;
   color: var(--theme-color-dark);
-  /* margin-bottom: 1rem; */
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -470,11 +469,14 @@ body[data-page*="publications"] .markdown-section h1 {
 
 .students-toggle {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   cursor: pointer;
-  /* padding: 1rem 0; */
   margin: 0;
+}
+
+.students-toggle-content {
+  flex: 1;
 }
 
 .students-toggle:hover .students-title {
@@ -483,10 +485,10 @@ body[data-page*="publications"] .markdown-section h1 {
 
 .students-toggle-icon {
   font-size: 1.2rem;
-  /* margin-bottom: 1rem; */
   color: var(--theme-color);
   transition: transform 0.3s ease;
   font-weight: bold;
+  margin-top: 0.2rem;
 }
 
 .students-toggle.expanded .students-toggle-icon {

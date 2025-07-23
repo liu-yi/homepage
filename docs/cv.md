@@ -78,12 +78,13 @@
 
 <div class="students-section">
   <div class="students-toggle" role="button" tabindex="0" data-toggle="students">
-    <div class="students-title">Looking for Students</div>
+    <div class="students-toggle-content">
+      <div class="students-title">Looking for Students</div>
+      <div class="students-summary">
+        I am available to supervise <span class="students-highlight">1-2 Master's students</span> each year.
+      </div>
+    </div>
     <div class="students-toggle-icon">▼</div>
-  </div>
-  
-  <div class="students-summary">
-    I am available to supervise <span class="students-highlight">1-2 Master's students</span> each year. 
   </div>
   <div class="students-content-collapsible">
     <div class="students-requirements">
@@ -91,7 +92,7 @@
       <ul>
         <li>Self-motivated with strong self-learning abilities</li>
         <li>Solid background in computer science fundamentals</li>
-        <li>Eager to explore research problems in <strong>cryptography, security, and privacy</strong>.
+        <li>Eager to explore research problems in cryptography, security, and privacy</li>
         <li>No prior experience in cryptography required - curiosity is key!</li>
       </ul>
     </div>
