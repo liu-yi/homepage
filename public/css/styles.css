@@ -167,7 +167,7 @@
   }
 
   .profile .info .name {
-    font-size: 2.8rem;
+    font-size: 2.7rem;
     /* margin-bottom: 0.5rem; */
   }
 
@@ -247,12 +247,290 @@ body[data-page*="publications"] .markdown-section h1 {
   margin: 0 auto 3rem auto !important;
   text-align: center !important;
   position: relative !important;
-  padding: 2rem 0 1.5rem 0 !important;
-  max-width: fit-content;
-  background: var(--theme-color) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  background-clip: text !important;
+}
+
+/* Education Timeline Styles */
+.education-timeline {
+  position: relative;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.education-timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--theme-color-gradient);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-left: 60px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 12px;
+  top: 8px;
+  width: 18px;
+  height: 18px;
+  background: var(--theme-color);
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px var(--theme-color-light);
+  z-index: 1;
+}
+
+.timeline-content {
+  background: #fff;
+  border: 1px solid #e8eef4;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(85, 143, 181, 0.1);
+  transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+  box-shadow: 0 4px 16px rgba(85, 143, 181, 0.2);
+  transform: translateY(-1px);
+}
+
+.timeline-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  /* color: var(--theme-color-dark); */
+  margin-bottom: 0.5rem;
+}
+
+.timeline-duration {
+  font-size: 0.9rem;
+  color: var(--theme-color);
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+.timeline-details {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.timeline-details li {
+  margin: 0.3rem 0;
+  color: #4a5568;
+  line-height: 1.5;
+}
+
+.timeline-details li::marker {
+  color: var(--theme-color-light);
+}
+
+/* Responsive timeline for mobile */
+@media (max-width: 480px) {
+  .education-timeline::before {
+    left: 15px;
+  }
+  
+  .timeline-item {
+    padding-left: 45px;
+  }
+  
+  .timeline-marker {
+    left: 7px;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .timeline-content {
+    padding: 1rem;
+  }
+  
+  .timeline-title {
+    font-size: 1.1rem;
+  }
+}
+
+/* Looking for Students Section Styling */
+.students-section {
+  background: linear-gradient(135deg, #f8fafc 0%, #e8f4fd 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 12px rgba(85, 143, 181, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.students-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--theme-color-gradient);
+}
+
+.students-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--theme-color-dark);
+  /* margin-bottom: 1rem; */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.students-title::before {
+  content: '🎓';
+  font-size: 1.4rem;
+}
+
+/* .students-content {
+  color: #4a5568;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+} */
+
+.students-highlight {
+  background: var(--theme-color-light);
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  margin: 0 0.2rem;
+}
+
+.students-requirements {
+  background: #fff;
+  border-left: 4px solid var(--theme-color);
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.students-requirements ul {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.students-requirements li {
+  margin: 0.3rem 0;
+  color: #4a5568;
+}
+
+.students-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--theme-color-gradient);
+  color: white !important;
+  padding: 0.25rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(85, 143, 181, 0.3);
+}
+
+.students-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(85, 143, 181, 0.4);
+  color: white;
+}
+
+.students-cta::after {
+  content: '→';
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.students-cta:hover::after {
+  transform: translateX(4px);
+}
+
+/* Collapsible Students Section */
+.students-collapsible {
+  cursor: pointer;
+  user-select: none;
+}
+
+.students-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  /* padding: 1rem 0; */
+  margin: 0;
+}
+
+.students-toggle:hover .students-title {
+  color: var(--theme-color);
+}
+
+.students-toggle-icon {
+  font-size: 1.2rem;
+  /* margin-bottom: 1rem; */
+  color: var(--theme-color);
+  transition: transform 0.3s ease;
+  font-weight: bold;
+}
+
+.students-toggle.expanded .students-toggle-icon {
+  transform: rotate(180deg);
+}
+
+.students-content-collapsible {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
+.students-summary {
+  color: #4a5568;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
+.students-summary .students-highlight {
+  background: var(--theme-color-light);
+  color: #fff;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  font-weight: 600;
+  margin: 0 0.2rem;
+}
+
+/* Responsive design for students section */
+@media (max-width: 480px) {
+  .students-section {
+    padding: 1.2rem;
+    margin: 1.5rem 0;
+  }
+  
+  .students-title {
+    font-size: 1.2rem;
+  }
+  
+  .students-cta {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 body[data-page*="publications"] .markdown-section h1::after {
@@ -930,7 +1208,7 @@ a.btn:hover {
 }
 
 [data-lang="cn"]::after {
-  content: " (Click to see address in English)";
+  content: " (Click to see the address in English)";
   font-size: 0.8em;
   color: #fff;
   margin-left: 0.5rem;

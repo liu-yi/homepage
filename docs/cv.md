@@ -76,9 +76,30 @@
   }).mount('#intro');
 </script>
 
-?> 
-**Looking for Students**:</br>
-I am available to supervise 1-2 Master's students each year. I am looking for self-motivated students with a solid background in computer science who are eager to explore research problems in cryptography, security, and privacy. While no prior experience in cryptography or security is required, students should have strong self-learning abilities and a curiosity for acquiring new knowledge. For more information, see [*Information For Prospective Students*](/for-students/). If you are interested, feel free to reach out via email! 
+<div class="students-section">
+  <div class="students-toggle" role="button" tabindex="0" data-toggle="students">
+    <div class="students-title">Looking for Students</div>
+    <div class="students-toggle-icon">▼</div>
+  </div>
+  
+  <div class="students-summary">
+    I am available to supervise <span class="students-highlight">1-2 Master's students</span> each year. 
+  </div>
+  <div class="students-content-collapsible">
+    <div class="students-requirements">
+      <strong>Requirements & Expectations:</strong>
+      <ul>
+        <li>Self-motivated with strong self-learning abilities</li>
+        <li>Solid background in computer science fundamentals</li>
+        <li>Eager to explore research problems in <strong>cryptography, security, and privacy</strong>.
+        <li>No prior experience in cryptography required - curiosity is key!</li>
+      </ul>
+    </div>
+    <a href="#/for-students/" class="students-cta">
+      Learn More for Prospective Students
+    </a>
+  </div>
+</div> 
 
 
 ## About Me
@@ -88,15 +109,34 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 
 ## Education
 
-- **The University of Hong Kong (HKU)**  <div class="duration">*Sept. 2018 – Feb. 2023*</div>
-  - Ph.D. in Cryptography 
-  - Joint Ph.D. Programme with SUSTech
-  - Supervisor: [Siu-Ming Yiu](https://www.cs.hku.hk/index.php/people/academic-staff/smyiu) (HKU) and [Qi Wang](https://dake98.github.io) (SUSTech)
-  - Thesis: Private Function Evaluation: Improvements and Applications <span class="pubtag"><a class="emoji" href="https://hub.hku.hk/handle/10722/327638" target="_blank">:link:</a></span>
-- **Southern University of Science and Technology (SUSTech)** <div class="duration">*Sept. 2014 – July 2018*</div>
-  - B.Eng. in Computer Science and Technology
-  - Thesis: An Evaluation System Based on Blockchain and Linkable Ring Signature
-    - Best Thesis Award in the CSE Department, SUSTech
+<div class="education-timeline">
+  <div class="timeline-item">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <div class="timeline-title">The University of Hong Kong (HKU)</div>
+      <div class="timeline-duration">Sept. 2018 – Feb. 2023</div>
+      <ul class="timeline-details">
+        <li>Ph.D. in Cryptography</li>
+        <li>Joint Ph.D. Programme with SUSTech</li>
+        <li>Supervisor: <a href="https://www.cs.hku.hk/index.php/people/academic-staff/smyiu" target="_blank">Siu-Ming Yiu</a> (HKU) and <a href="https://dake98.github.io" target="_blank">Qi Wang</a> (SUSTech)</li>
+        <li>Thesis: <em>Private Function Evaluation: Improvements and Applications</em> <a class="emoji" href="https://hub.hku.hk/handle/10722/327638" target="_blank">:link:</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <div class="timeline-title">Southern University of Science and Technology (SUSTech)</div>
+      <div class="timeline-duration">Sept. 2014 – July 2018</div>
+      <ul class="timeline-details">
+        <li>B.Eng. in Computer Science and Technology</li>
+        <li>Thesis: <em>An Evaluation System Based on Blockchain and Linkable Ring Signature</em></li>
+        <li>Best Thesis Award in the CSE Department, SUSTech</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 ## Research Projects
 - <span title="新型安全多方计算协议设计研究">**Research on the Design of New Secure Multi-Party Computation Protocols**</span> <div class="duration">*2025 – 2026*</div>
