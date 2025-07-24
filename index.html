@@ -126,30 +126,68 @@
   <!-- 地图  -->
   <script type="text/javascript">
     window._AMapSecurityConfig = {
-      securityJsCode: "fa4c1a0ee4c92db8519fa781ece30b99	",
+      securityJsCode: "fa4c1a0ee4c92db8519fa781ece30b99",
     };
   </script>
   <script src="https://webapi.amap.com/loader.js"></script>
   <script type="text/javascript">
-    AMapLoader.load({
-      key: "6a6ac6b39f33cb76ee52d1ccef73da05", //申请好的Web端开发者key，调用 load 时必填
-      version: "2.0", //指定要加载的 JS API 的版本，缺省时默认为 1.4.15
-    })
-      .then((AMap) => {
-        const map = new AMap.Map("amap-container", {
-          viewMode: '2D', //默认使用 2D 模式
-          zoom: 17, //地图级别
-          center: [113.412396, 23.016767], //地图中心点
-        });
-        const marker = new AMap.Marker({
-          position: [113.412396, 23.016767],
-          title: '我在这里'
-        });
-        map.add(marker);
+    function initAMap() {
+      const mapContainer = document.getElementById('amap-container');
+      if (!mapContainer) {
+        console.warn('Map container not found, retrying...');
+        setTimeout(initAMap, 500);
+        return;
+      }
+
+      // 检查地图是否已经初始化
+      if (mapContainer._amap) {
+        console.log('Map already initialized');
+        return;
+      }
+
+      AMapLoader.load({
+        key: "6a6ac6b39f33cb76ee52d1ccef73da05",
+        version: "2.0",
       })
-      .catch((e) => {
-        console.error(e); //加载错误提示
-      });
+        .then((AMap) => {
+          try {
+            const map = new AMap.Map("amap-container", {
+              viewMode: '2D',
+              zoom: 17,
+              center: [113.412396, 23.016767],
+            });
+            const marker = new AMap.Marker({
+              position: [113.412396, 23.016767],
+              title: '我在这里'
+            });
+            map.add(marker);
+            
+            // 标记地图已初始化
+            mapContainer._amap = map;
+            console.log('AMap initialized successfully');
+          } catch (error) {
+            console.error('Error initializing map:', error);
+          }
+        })
+        .catch((e) => {
+          console.error('Error loading AMap:', e);
+        });
+    }
+
+    // 监听DOMContentLoaded事件，确保DOM加载完成
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initAMap);
+    } else {
+      // DOM已经加载完成，直接初始化
+      initAMap();
+    }
+
+    // 监听路由变化，确保在Docsify页面切换时也能重新初始化地图
+    window.addEventListener('hashchange', function() {
+      if (window.location.hash === '' || window.location.hash === '#/') {
+        setTimeout(initAMap, 100);
+      }
+    });
   </script>
 </body>
 
