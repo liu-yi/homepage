@@ -1355,7 +1355,7 @@ a.btn:hover {
 .map-button {
   display: block;
   width: 100%;
-  padding: 0.6rem 1.5rem;
+  padding: 0.2rem 1.5rem;
   background: var(--theme-color-gradient);
   color: white !important;
   text-align: center;
@@ -1431,14 +1431,6 @@ a.btn:hover {
 }
 
 @media (max-width: 480px) {
-  [data-lang="en"]::after {
-    color: #888;
-  }
-
-  [data-lang="cn"]::after {
-    color: #888;
-  }
-
   #amap-container {
     height: 250px;
   }
