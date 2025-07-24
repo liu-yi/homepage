@@ -83,7 +83,7 @@
   padding-bottom: 8px;
   text-align: center;
   /* margin-left: -6px; */
-  background: var(--theme-color-gradient);
+  background: var(--theme-color-dark);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -91,7 +91,6 @@
 }
 
 .profile .info .name:hover {
-  background: var(--theme-color-gradient-hover);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -333,11 +332,6 @@ body[data-page*="publications"] .markdown-section h1 {
   z-index: 0;
 }
 
-.timeline-content:hover {
-  box-shadow: 0 4px 16px rgba(85, 143, 181, 0.2);
-  transform: translateY(-1px);
-}
-
 .timeline-title {
   font-size: 1.2rem;
   font-weight: 600;
@@ -368,40 +362,25 @@ body[data-page*="publications"] .markdown-section h1 {
 }
 
 
-/* 持续循环脉冲动画 */
-@keyframes continuousPulse {
-  0% {
-    transform: translateY(-50%) scale(1);
-    box-shadow: 0 0 0 0 rgba(85, 143, 181, 0.7);
-  }
-
-  50% {
-    transform: translateY(-50%) scale(1.2);
-    box-shadow: 0 0 0 8px rgba(85, 143, 181, 0);
-  }
-
-  100% {
-    transform: translateY(-50%) scale(1);
-    box-shadow: 0 0 0 0 rgba(85, 143, 181, 0);
-  }
-}
-
-/* 卡片悬浮时触发标记点脉冲动画 */
+/* 简化标记点动画 - 去除连续脉冲效果 */
 .timeline-item:hover .timeline-marker {
-  animation: continuousPulse 1.5s ease-in-out infinite;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 0 0 3px rgba(85, 143, 181, 0.3);
+  transition: all 0.3s ease;
 }
 
-/* 标记点直接悬浮时也触发脉冲动画 */
+/* 标记点悬浮效果 */
 .timeline-marker:hover {
-  animation: continuousPulse 1.5s ease-in-out infinite;
-  /* cursor: pointer; */
+  transform: translateY(-50%) scale(1.15);
+  box-shadow: 0 0 0 4px rgba(85, 143, 181, 0.4);
+  transition: all 0.3s ease;
 }
 
 
-/* 内容卡片悬浮增强效果 */
+/* 内容卡片悬浮效果 - 调整为更温和的动画 */
 .timeline-content:hover {
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 8px 25px rgba(85, 143, 181, 0.25);
+  /* transform: translateY(-2px); */
+  box-shadow: 0 1px 5px rgba(85, 143, 181, 0.2);
 }
 
 /* 移动端响应式设计 */
@@ -493,7 +472,7 @@ body[data-page*="publications"] .markdown-section h1 {
 } */
 
 .students-highlight {
-  background: var(--theme-color-light);
+  background: var(--theme-color-dark);
   color: #fff;
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
