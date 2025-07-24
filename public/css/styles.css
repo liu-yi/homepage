@@ -346,7 +346,7 @@ body[data-page*="publications"] .markdown-section h1 {
 }
 
 .timeline-duration {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--theme-color);
   font-weight: 500;
   margin-bottom: 0.8rem;
@@ -374,10 +374,12 @@ body[data-page*="publications"] .markdown-section h1 {
     transform: translateY(-50%) scale(1);
     box-shadow: 0 0 0 0 rgba(85, 143, 181, 0.7);
   }
+
   50% {
     transform: translateY(-50%) scale(1.2);
     box-shadow: 0 0 0 8px rgba(85, 143, 181, 0);
   }
+
   100% {
     transform: translateY(-50%) scale(1);
     box-shadow: 0 0 0 0 rgba(85, 143, 181, 0);
@@ -407,11 +409,11 @@ body[data-page*="publications"] .markdown-section h1 {
   .education-timeline::before {
     left: 5px;
   }
-  
+
   .timeline-item {
     padding-left: 30px;
   }
-  
+
   .timeline-marker {
     left: -1px;
     width: 16px;
@@ -419,27 +421,27 @@ body[data-page*="publications"] .markdown-section h1 {
     top: 50%;
     transform: translateY(-50%);
   }
-  
+
   .timeline-content {
     padding: 0.5rem;
     margin-left: 0px;
     width: calc(100% - 12px);
   }
-  
+
   .timeline-content::before {
     left: -8px;
     border-right: 8px solid #fff;
     border-top: 8px solid transparent;
     border-bottom: 8px solid transparent;
   }
-  
+
   .timeline-content::after {
     left: -9px;
     border-right: 9px solid #e8eef4;
     border-top: 9px solid transparent;
     border-bottom: 9px solid transparent;
   }
-  
+
   .timeline-title {
     font-size: 1.1rem;
   }
@@ -447,7 +449,7 @@ body[data-page*="publications"] .markdown-section h1 {
 
 /* Looking for Students Section Styling */
 .students-section {
-  background: linear-gradient(135deg, #f8fafc 0%, #e8f4fd 100%);
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f9ff 100%);
   border: 1px solid #e2e8f0;
   border-radius: 12px;
   padding-top: 1rem;
@@ -610,11 +612,11 @@ body[data-page*="publications"] .markdown-section h1 {
     padding: 1.2rem;
     margin: 1.5rem 0;
   }
-  
+
   .students-title {
     font-size: 1.2rem;
   }
-  
+
   .students-cta {
     width: 100%;
     justify-content: center;
@@ -1242,11 +1244,11 @@ a.btn:hover {
   .teaching-courses li {
     font-size: 0.9rem;
   }
-  
+
   .student-tags {
     gap: 0.4rem;
   }
-  
+
   .student-tag {
     padding: 0.3rem 0.6rem;
     font-size: 0.85rem;
@@ -1256,7 +1258,7 @@ a.btn:hover {
 /* 标题悬停效果统一 */
 .markdown-section h2 {
   position: relative;
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .markdown-section h2::after {
@@ -1332,91 +1334,90 @@ a.btn:hover {
 
 /* 地图容器样式 */
 #map-container {
-  margin: 1rem 0;
-  border-radius: 12px;
+  margin: 1rem 0 2rem 0;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e1e5e9;
+  box-shadow: 0 8px 32px rgba(85, 143, 181, 0.12);
+  border: 1px solid #e2e8f0;
+  background: white;
+  transition: all 0.3s ease;
 }
 
-/* 大地图按钮样式 - 更优雅的低调设计 */
+#map-container:hover {
+  box-shadow: 0 12px 40px rgba(85, 143, 181, 0.15);
+}
+
+#amap-container {
+  border-radius: 16px 16px 0 0;
+}
+
+/* 地图按钮样式 */
 .map-button {
   display: block;
   width: 100%;
-  padding: 0.2rem 1.5rem;
-  background: transparent;
+  padding: 0.6rem 1.5rem;
+  background: var(--theme-color-gradient);
+  color: white !important;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight: 500;
   transition: all 0.3s ease;
+  text-decoration: none;
+  border-top: 1px solid #e2e8f0;
 }
 
-.map-button:hover,
-.markdown-section .map-button:hover {
-  background: var(--theme-color) !important;
-  color: white !important;
-  transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(85, 143, 181, 0.2);
+.map-button:hover {
+  background: var(--theme-color-gradient-hover);
 }
 
 .map-button:active {
-  transform: translateY(0);
-  box-shadow: 0 1px 4px rgba(85, 143, 181, 0.15);
+  transform: none;
+  box-shadow: none;
 }
 
-.map-button:hover::after {
-  transform: translateX(2px);
-}
-
-/* 地址切换容器样式 */
 .address-wrapper {
-  display: flex;
-  padding-left: 12px;
-  border-left: 3px solid transparent;
-  border-radius: 0;
-  transition: all 0.3s ease;
+  display: block;
+  padding-left: 0;
+  transition: none;
   position: relative;
 }
 
 .address-wrapper:hover {
-  border-left-color: var(--theme-color);
-  transform: translateX(2px);
-  transition: all 0.3s ease;
+  border-left-color: transparent;
+  transform: none;
 }
 
 .address-container {
-  padding-top: 6px;
-  line-height: 1.6;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  line-height: 2;
+  transition: none;
 }
 
 .address-container .room-info {
   display: block;
-  margin-top: 0.3rem;
+  margin: 0.3rem 0;
   font-size: 1.2em;
   font-weight: 600;
 }
 
-
 /* 地址切换提示 */
-[data-lang="en"]::after {
-  content: " (点击显示中文)";
+.address-container[data-lang="en"]::after {
+  content: " 点击切换中文";
   font-size: 0.8em;
+  color: #cbd5e1;
   margin-left: 0.5rem;
+  transition: color 0.3s ease;
 }
 
-[data-lang="en"]:hover::after {
-  color: #888;
-}
-
-[data-lang="cn"]::after {
-  content: " (Click to see the address in English)";
+.address-container[data-lang="cn"]::after {
+  content: " Click for English";
   font-size: 0.8em;
-  color: #fff;
+  color: #cbd5e1;
   margin-left: 0.5rem;
+  transition: color 0.3s ease;
 }
 
-[data-lang="cn"]:hover::after {
-  color: #888;
+.address-container:hover::after {
+  color: var(--theme-color-light);
 }
 
 /* 响应式地图样式 */
@@ -1426,13 +1427,7 @@ a.btn:hover {
     height: 450px;
   }
 
-  [data-lang="en"]::after {
-    color: #fff;
-  }
 
-  [data-lang="cn"]::after {
-    color: #fff;
-  }
 }
 
 @media (max-width: 480px) {
@@ -1443,7 +1438,12 @@ a.btn:hover {
   [data-lang="cn"]::after {
     color: #888;
   }
+
   #amap-container {
     height: 250px;
+  }
+
+  .address-container .room-info {
+    font-size: 1em;
   }
 }
