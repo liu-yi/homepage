@@ -135,11 +135,17 @@
   </script>
   <script src="https://webapi.amap.com/loader.js"></script>
   <script type="text/javascript">
+    let retryCount = 0;
+    const maxRetries = 10;
+    
     function initAMap() {
       const mapContainer = document.getElementById('amap-container');
       if (!mapContainer) {
-        console.warn('Map container not found, retrying...');
-        setTimeout(initAMap, 500);
+        // 只在主页路径下才尝试重试，且限制重试次数
+        if ((window.location.hash === '' || window.location.hash === '#/') && retryCount < maxRetries) {
+          retryCount++;
+          setTimeout(initAMap, 500);
+        }
         return;
       }
 
@@ -188,9 +194,7 @@
 
     // 监听路由变化，确保在Docsify页面切换时也能重新初始化地图
     window.addEventListener('hashchange', function() {
-      if (window.location.hash === '' || window.location.hash === '#/') {
-        setTimeout(initAMap, 100);
-      }
+      setTimeout(initAMap, 300);
     });
   </script>
 </body>
