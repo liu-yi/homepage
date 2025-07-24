@@ -520,34 +520,116 @@ body[data-page*="publications"] .markdown-section h1 {
   color: #4a5568;
 }
 
+/* 通用按钮动画类 */
+.btn-animate {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--theme-color-gradient);
+  color: white !important;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 2px 8px rgba(85, 143, 181, 0.2);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-animate::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.6s ease;
+}
+
+.btn-animate:hover {
+  background: var(--theme-color-gradient-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(85, 143, 181, 0.4);
+  letter-spacing: 0.5px;
+}
+
+.btn-animate:hover::after {
+  left: 100%;
+}
+
+.btn-animate:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 12px rgba(85, 143, 181, 0.3);
+  transition: all 0.1s ease;
+}
+
+/* 学生按钮专用样式 */
 .students-cta {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   background: var(--theme-color-gradient);
   color: white !important;
-  padding: 0.25rem 1.5rem;
+  padding: 0.2rem 1.5rem;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(85, 143, 181, 0.3);
-}
-
-.students-cta:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(85, 143, 181, 0.4);
-  color: white;
+  font-size: 1rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 2px 8px rgba(85, 143, 181, 0.2);
+  border: none;
+  cursor: pointer;
 }
 
 .students-cta::after {
-  content: '→';
-  font-size: 1.2rem;
-  transition: transform 0.3s ease;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.6s ease;
+}
+
+.students-cta:hover {
+  background: var(--theme-color-gradient-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(85, 143, 181, 0.4);
+  letter-spacing: 0.5px;
+}
+
+.students-cta:hover::before {
+  transform: scale(1.2) translateX(2px);
 }
 
 .students-cta:hover::after {
-  transform: translateX(4px);
+  left: 100%;
+}
+
+.students-cta:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 12px rgba(85, 143, 181, 0.3);
+  transition: all 0.1s ease;
+}
+
+/* 移动端适配 */
+@media (max-width: 480px) {
+  .btn-animate {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .btn-animate::before {
+    font-size: 1rem;
+  }
 }
 
 /* Collapsible Students Section */
@@ -1403,13 +1485,8 @@ a.btn:hover {
 
 @media (max-width: 480px) {
   .map-button {
-    padding: 0.6rem 1rem;
+    padding: 0.4rem 1rem;
     font-size: 0.9rem;
-  }
-  
-  .map-button::before {
-    margin-right: 0.3rem;
-    font-size: 1rem;
   }
 }
 

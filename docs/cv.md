@@ -133,7 +133,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
       <ul class="timeline-details">
         <li>B.Eng. in Computer Science and Technology</li>
         <li>Thesis: <em>An Evaluation System Based on Blockchain and Linkable Ring Signature</em></li>
-        <li>Best Thesis Award in the CSE Department, SUSTech</li>
+        <ul><li>Best Thesis Award in the CSE Department, SUSTech</li></ul>
       </ul>
     </div>
   </div>
