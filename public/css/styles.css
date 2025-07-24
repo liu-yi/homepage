@@ -1054,10 +1054,122 @@ a.btn:hover {
   width: 100%;
 }
 
-/* 标题悬停效果 - 优化 */
+/* Teaching - 简洁列表式 */
+.compact-teaching {
+  margin: 1rem 0;
+}
+
+.teaching-level {
+  margin-bottom: 0.8rem;
+}
+
+.teaching-level h4 {
+  font-size: 1.1rem;
+  color: var(--theme-color-dark);
+  margin: 0 0 0.5rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid var(--theme-color-light);
+}
+
+.teaching-courses {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.teaching-courses li {
+  padding: 0.3rem 0 0.3rem 1.5rem;
+  font-size: 0.95rem;
+  color: #4a5568;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.teaching-courses li::before {
+  content: '▸';
+  color: var(--theme-color);
+  position: absolute;
+  left: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.teaching-courses li:hover {
+  color: var(--theme-color-dark);
+  padding-left: 1.8rem;
+}
+
+.teaching-courses li:hover::before {
+  transform: translateX(3px);
+}
+
+/* Students - 极简标签式 */
+.compact-students {
+  margin: 1rem 0;
+}
+
+.student-group {
+  margin-bottom: 1.2rem;
+}
+
+.student-group h4 {
+  font-size: 1.1rem;
+  color: var(--theme-color-dark);
+  margin: 0 0 0.6rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.student-group h4::before {
+  content: '🎓';
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.student-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0;
+}
+
+.student-tag {
+  background: rgba(85, 143, 181, 0.08);
+  border: 1px solid rgba(85, 143, 181, 0.2);
+  border-radius: 16px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  color: #4a5568;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.student-tag:hover {
+  background: rgba(85, 143, 181, 0.15);
+  border-color: var(--theme-color-light);
+  color: var(--theme-color-dark);
+  transform: translateY(-1px);
+}
+
+/* 响应式优化 - 紧凑版本 */
+@media (max-width: 480px) {
+  .teaching-courses li {
+    font-size: 0.9rem;
+  }
+  
+  .student-tags {
+    gap: 0.4rem;
+  }
+  
+  .student-tag {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* 标题悬停效果统一 */
 .markdown-section h2 {
   position: relative;
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .markdown-section h2::after {

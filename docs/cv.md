@@ -227,25 +227,48 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 
 
 ## Teaching
-- Undergraduate Courses
-  - C++ Programming (Fall 2024, Fall 2023)
-  - Public-Key Cryptography (Spring 2025)
 
-- Graduate Courses
-  - Advanced Cryptography (Fall 2024, Fall 2023)
+<div class="compact-teaching">
 
+<div class="teaching-level">
+  <h4>Undergraduate Courses</h4>
+  <ul class="teaching-courses">
+    <li>C++ Programming (Fall 2024, Fall 2023)</li>
+    <li>Public-Key Cryptography (Spring 2025)</li>
+  </ul>
+</div>
+
+<div class="teaching-level">
+  <h4>Graduate Courses</h4>
+  <ul class="teaching-courses">
+    <li>Advanced Cryptography (Fall 2024, Fall 2023)</li>
+  </ul>
+</div>
+
+</div>
 
 ## Students
 
-- **Graduate Students**
-  - Yunqi He (Master, since 2024)
-  - Yipeng Song (Master, since 2023)
+<div class="compact-students">
 
-- **Undergraduate Students**
-  - Jiquan Yang (B.Eng. 2025)
-  - Junjie Li (B.Eng. 2024; first employment: Tencent)
-  - Wanqing Li (B.Eng. 2024; first employment: Midea)
+<div class="student-group">
+  <h4>Graduate Students</h4>
+  <div class="student-tags">
+    <span class="student-tag">Yunqi He (Master, since 2024)</span>
+    <span class="student-tag">Yipeng Song (Master, since 2023)</span>
+  </div>
+</div>
 
+<div class="student-group">
+  <h4>Undergraduate Students</h4>
+  <div class="student-tags">
+    <span class="student-tag">Jiquan Yang (B.Eng. 2025)</span>
+    <span class="student-tag">Junjie Li (B.Eng. 2024 → Tencent)</span>
+    <span class="student-tag">Wanqing Li (B.Eng. 2024 → Midea)</span>
+  </div>
+</div>
+
+</div>
 
 ## Professional Activities
 - **Journal Reviewers**
