@@ -461,7 +461,7 @@ body[data-page*="publications"] .markdown-section h1 {
 }
 
 .students-title::before {
-  content: '🎓';
+  content: '✨';
   font-size: 1.4rem;
 }
 
@@ -1215,7 +1215,7 @@ a.btn:hover {
 
 .teaching-level h4 {
   font-size: 1.1rem;
-  color: var(--theme-color-dark);
+  /* color: var(--theme-color-dark); */
   margin: 0 0 0.5rem 0;
   padding-left: 1rem;
   border-left: 3px solid var(--theme-color-light);
@@ -1232,7 +1232,7 @@ a.btn:hover {
   font-size: 0.95rem;
   color: #4a5568;
   position: relative;
-  transition: all 0.2s ease;
+  transition: all 0.15s ease;
 }
 
 .teaching-courses li::before {
@@ -1240,16 +1240,16 @@ a.btn:hover {
   color: var(--theme-color);
   position: absolute;
   left: 0.5rem;
-  transition: all 0.2s ease;
+  transition: all 0.15s ease;
 }
 
 .teaching-courses li:hover {
   color: var(--theme-color-dark);
-  padding-left: 1.8rem;
+  padding-left: 1.55rem;
 }
 
 .teaching-courses li:hover::before {
-  transform: translateX(3px);
+  transform: translateX(1px);
 }
 
 /* Students - 极简标签式 */
@@ -1294,16 +1294,25 @@ a.btn:hover {
 }
 
 .student-tag:hover {
-  background: rgba(85, 143, 181, 0.15);
+  background: rgba(85, 143, 181, 0.12);
   border-color: var(--theme-color-light);
   color: var(--theme-color-dark);
-  transform: translateY(-1px);
+  transform: translateY(-0.5px);
 }
 
 /* 响应式优化 - 紧凑版本 */
 @media (max-width: 480px) {
   .teaching-courses li {
     font-size: 0.9rem;
+    transition: all 0.1s ease;
+  }
+  
+  .teaching-courses li:hover {
+    padding-left: 1.52rem;
+  }
+  
+  .teaching-courses li:hover::before {
+    transform: translateX(0.5px);
   }
 
   .student-tags {
@@ -1313,6 +1322,11 @@ a.btn:hover {
   .student-tag {
     padding: 0.3rem 0.6rem;
     font-size: 0.85rem;
+    transition: all 0.15s ease;
+  }
+  
+  .student-tag:hover {
+    transform: translateY(-0.3px);
   }
 }
 
@@ -1446,10 +1460,6 @@ a.btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(85, 143, 181, 0.4);
   letter-spacing: 0.5px;
-}
-
-.map-button:hover::before {
-  transform: scale(1.2) rotate(5deg);
 }
 
 .map-button:hover::after {
