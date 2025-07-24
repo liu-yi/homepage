@@ -270,7 +270,7 @@ body[data-page*="publications"] .markdown-section h1 {
 .timeline-item {
   position: relative;
   margin-bottom: 2.5rem;
-  padding-left: 60px;
+  padding-left: 45px;
 }
 
 .timeline-item:last-child {
@@ -280,7 +280,8 @@ body[data-page*="publications"] .markdown-section h1 {
 .timeline-marker {
   position: absolute;
   left: 12px;
-  top: 8px;
+  top: 50%;
+  transform: translateY(-50%);
   width: 18px;
   height: 18px;
   background: var(--theme-color);
@@ -291,12 +292,45 @@ body[data-page*="publications"] .markdown-section h1 {
 }
 
 .timeline-content {
+  position: relative;
   background: #fff;
-  border: 1px solid #e8eef4;
+  border-left: 1px solid #e8eef4;
+  border-top: 1px solid #e8eef4;
+  border-bottom: 1px solid #e8eef4;
   border-radius: 8px;
   padding: 1.5rem;
-  box-shadow: 0 2px 8px rgba(85, 143, 181, 0.1);
+  margin-left: 15px;
+  width: calc(100% - 45px);
   transition: all 0.3s ease;
+}
+
+/* 对话框尖角 */
+.timeline-content::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #fff;
+  z-index: 1;
+}
+
+.timeline-content::after {
+  content: '';
+  position: absolute;
+  left: -11px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-right: 11px solid #e8eef4;
+  z-index: 0;
 }
 
 .timeline-content:hover {
@@ -333,24 +367,77 @@ body[data-page*="publications"] .markdown-section h1 {
   color: var(--theme-color-light);
 }
 
-/* Responsive timeline for mobile */
+
+/* 持续循环脉冲动画 */
+@keyframes continuousPulse {
+  0% {
+    transform: translateY(-50%) scale(1);
+    box-shadow: 0 0 0 0 rgba(85, 143, 181, 0.7);
+  }
+  50% {
+    transform: translateY(-50%) scale(1.2);
+    box-shadow: 0 0 0 8px rgba(85, 143, 181, 0);
+  }
+  100% {
+    transform: translateY(-50%) scale(1);
+    box-shadow: 0 0 0 0 rgba(85, 143, 181, 0);
+  }
+}
+
+/* 卡片悬浮时触发标记点脉冲动画 */
+.timeline-item:hover .timeline-marker {
+  animation: continuousPulse 1.5s ease-in-out infinite;
+}
+
+/* 标记点直接悬浮时也触发脉冲动画 */
+.timeline-marker:hover {
+  animation: continuousPulse 1.5s ease-in-out infinite;
+  /* cursor: pointer; */
+}
+
+
+/* 内容卡片悬浮增强效果 */
+.timeline-content:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(85, 143, 181, 0.25);
+}
+
+/* 移动端响应式设计 */
 @media (max-width: 480px) {
   .education-timeline::before {
-    left: 15px;
+    left: 5px;
   }
   
   .timeline-item {
-    padding-left: 45px;
+    padding-left: 30px;
   }
   
   .timeline-marker {
-    left: 7px;
+    left: -1px;
     width: 16px;
     height: 16px;
+    top: 50%;
+    transform: translateY(-50%);
   }
   
   .timeline-content {
-    padding: 1rem;
+    padding: 0.5rem;
+    margin-left: 0px;
+    width: calc(100% - 12px);
+  }
+  
+  .timeline-content::before {
+    left: -8px;
+    border-right: 8px solid #fff;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+  }
+  
+  .timeline-content::after {
+    left: -9px;
+    border-right: 9px solid #e8eef4;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
   }
   
   .timeline-title {
@@ -1113,7 +1200,7 @@ a.btn:hover {
 
 .student-group h4 {
   font-size: 1.1rem;
-  color: var(--theme-color-dark);
+  /* color: var(--theme-color-dark); */
   margin: 0 0 0.6rem 0;
   display: flex;
   align-items: center;
