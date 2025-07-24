@@ -47,14 +47,16 @@
 
   <link rel="shortcut icon" href="public/img/logo.ico" type="image/ico" />
 
-  <!-- 关键字体预加载 -->
+  <!-- 优化华文中宋字体预加载 -->
+  <link rel="preload" href="public/fonts/zs.ttf" as="font" type="font/ttf" crossorigin>
+  
+  <!-- 优化KaTeX字体预加载 -->
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Main-Regular.woff2" as="font"
     type="font/woff2" crossorigin>
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Math-Italic.woff2" as="font"
     type="font/woff2" crossorigin>
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Size1-Regular.woff2" as="font"
     type="font/woff2" crossorigin>
-  <link rel="preload" href="public/fonts/zs.ttf" as="font" type="font/ttf" crossorigin>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-V6PJ8BXB1K"></script>
@@ -98,6 +100,8 @@
       mergeNavbar: true
     }
   </script>
+  <!-- 字体加载优化 -->
+  <script src="public/js/font-optimizer.js"></script>
   <!-- 自定义脚本 -->
   <script src="public/js/publications.js"></script>
   <!-- 优化后的CDN资源加载 -->
