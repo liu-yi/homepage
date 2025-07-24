@@ -83,7 +83,7 @@
   padding-bottom: 8px;
   text-align: center;
   /* margin-left: -6px; */
-  background: var(--theme-color-dark);
+  background: var(--theme-color-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -472,7 +472,7 @@ body[data-page*="publications"] .markdown-section h1 {
 } */
 
 .students-highlight {
-  background: var(--theme-color-dark);
+  background: var(--theme-color-light);
   color: #fff;
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
@@ -659,7 +659,7 @@ body[data-page*="publications"] .markdown-section h1 {
 }
 
 .students-summary .students-highlight {
-  background: var(--theme-color-light);
+  /* background: var(--theme-color-light); */
   color: #fff;
   padding: 0.15rem 0.4rem;
   border-radius: 4px;
