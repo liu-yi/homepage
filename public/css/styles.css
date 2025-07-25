@@ -865,7 +865,8 @@ a.btn:hover {
   display: block;
   width: 100%;
   padding: 0.2rem 1.5rem;
-  background: transparent;
+  background: var(--theme-color);
+  color:#fff !important;
   text-align: center;
   font-size: 0.9rem;
   transition: all 0.3s ease;
@@ -873,25 +874,19 @@ a.btn:hover {
 
 .map-button:hover,
 .markdown-section .map-button:hover {
-  background: var(--theme-color) !important;
-  color: white !important;
-  transform: translateY(-1px);
+  background: var(--theme-color-dark);
   box-shadow: 0 2px 8px rgba(85, 143, 181, 0.2);
 }
 
 .map-button:active {
-  transform: translateY(0);
+  transform: translateY(1px);
   box-shadow: 0 1px 4px rgba(85, 143, 181, 0.15);
-}
-
-.map-button:hover::after {
-  transform: translateX(2px);
 }
 
 /* 地址切换容器样式 */
 .address-wrapper {
   display: flex;
-  padding-left: 12px;
+  /* padding-left: 12px; */
   border-left: 3px solid transparent;
   border-radius: 0;
   transition: all 0.3s ease;
@@ -899,20 +894,20 @@ a.btn:hover {
 }
 
 .address-wrapper:hover {
-  border-left-color: var(--theme-color);
-  transform: translateX(2px);
+  /* border-left-color: var(--theme-color); */
+  /* transform: translateX(2px); */
   transition: all 0.3s ease;
 }
 
 .address-container {
-  padding-top: 6px;
+  /* padding-top: 6px; */
   line-height: 1.6;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .address-container .room-info {
   display: block;
-  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
   font-size: 1.2em;
   font-weight: 600;
 }
@@ -920,24 +915,27 @@ a.btn:hover {
 
 /* 地址切换提示 */
 [data-lang="en"]::after {
-  content: " (点击显示中文)";
+  content: " 点击切换中文";
   font-size: 0.8em;
-  margin-left: 0.5rem;
+  /* margin-left: 0.5rem; */
+  color: rgb(203, 213, 225);
+  transition: color 0.3s;
 }
 
 [data-lang="en"]:hover::after {
-  color: #888;
+  color: var(--theme-color);
 }
 
 [data-lang="cn"]::after {
-  content: " (Click to see address in English)";
+  content: " Click for English";
   font-size: 0.8em;
-  color: #fff;
-  margin-left: 0.5rem;
+  /* margin-left: 0.5rem; */
+  color: rgb(203, 213, 225);
+  transition: color 0.3s
 }
 
 [data-lang="cn"]:hover::after {
-  color: #888;
+  color: var(--theme-color);
 }
 
 /* 响应式地图样式 */
@@ -946,17 +944,12 @@ a.btn:hover {
   #amap-container {
     height: 450px;
   }
-
-  [data-lang="en"]::after {
-    color: #fff;
-  }
-
-  [data-lang="cn"]::after {
-    color: #fff;
-  }
 }
 
 @media (max-width: 480px) {
+  .address-container .room-info {
+    font-size: 1rem;
+  }
   [data-lang="en"]::after {
     color: #888;
   }
