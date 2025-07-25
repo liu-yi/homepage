@@ -134,8 +134,8 @@
     window.$docsify = window.$docsify || {};
     window.$docsify.plugins = (window.$docsify.plugins || []).concat([
       function(hook, vm) {
-        let amapLoaded = false;
-        let amapInitialized = false;
+        let amapInstance = null;
+        let amapLoading = false;
 
         // Check if we're on the CV page
         function isCVPage() {
@@ -144,70 +144,128 @@
                  currentPath.startsWith('#/cv') || currentPath.startsWith('#/docs/cv');
         }
 
-        // Initialize AMap only when container is available
+        // Initialize AMap with improved error handling and retry logic
         function initAMap() {
-          if (amapInitialized) return;
-          
+          if (amapInstance || amapLoading) {
+            console.log('AMap already initialized or loading');
+            return;
+          }
+
           const container = document.getElementById('amap-container');
           if (!container) {
-            // Wait for container to be available
-            setTimeout(initAMap, 100);
+            console.log('AMap container not found, retrying...');
+            setTimeout(initAMap, 200);
             return;
           }
 
           if (typeof AMapLoader !== 'undefined') {
+            amapLoading = true;
             AMapLoader.load({
               key: "6a6ac6b39f33cb76ee52d1ccef73da05",
               version: "2.0",
             })
               .then((AMap) => {
-                const map = new AMap.Map("amap-container", {
-                  viewMode: '2D',
-                  zoom: 17,
-                  center: [113.412396, 23.016767],
-                });
-                const marker = new AMap.Marker({
-                  position: [113.412396, 23.016767],
-                  title: '我在这里'
-                });
-                map.add(marker);
-                amapInitialized = true;
+                // Ensure container is still available
+                const container = document.getElementById('amap-container');
+                if (!container) {
+                  console.error('AMap container disappeared during loading');
+                  amapLoading = false;
+                  return;
+                }
+
+                try {
+                  const map = new AMap.Map("amap-container", {
+                    viewMode: '2D',
+                    zoom: 17,
+                    center: [113.412396, 23.016767],
+                  });
+                  const marker = new AMap.Marker({
+                    position: [113.412396, 23.016767],
+                    title: '我在这里'
+                  });
+                  map.add(marker);
+                  amapInstance = map;
+                  console.log('AMap initialized successfully');
+                } catch (error) {
+                  console.error('AMap creation error:', error);
+                }
+                amapLoading = false;
               })
               .catch((e) => {
                 console.error('AMap initialization error:', e);
+                amapLoading = false;
+                // Retry after error
+                setTimeout(() => {
+                  if (isCVPage() && !amapInstance) {
+                    console.log('Retrying AMap initialization...');
+                    initAMap();
+                  }
+                }, 1000);
               });
+          } else {
+            console.error('AMapLoader not available');
+            setTimeout(initAMap, 500);
           }
         }
 
         // Clean up AMap when leaving CV page
         function cleanupAMap() {
+          if (amapInstance) {
+            try {
+              amapInstance.destroy();
+            } catch (e) {
+              console.error('Error destroying AMap:', e);
+            }
+            amapInstance = null;
+          }
+          
           const container = document.getElementById('amap-container');
-          if (container && container.innerHTML) {
+          if (container) {
             container.innerHTML = '';
-            amapInitialized = false;
+          }
+          
+          amapLoading = false;
+        }
+
+        // Robust initialization with multiple retry attempts
+        function initAMapWithRetry(retryCount = 0) {
+          if (!isCVPage()) return;
+          
+          const maxRetries = 3;
+          const container = document.getElementById('amap-container');
+          
+          if (container && AMapLoader && !amapInstance && !amapLoading) {
+            initAMap();
+          } else if (retryCount < maxRetries) {
+            setTimeout(() => initAMapWithRetry(retryCount + 1), 300 * (retryCount + 1));
           }
         }
 
         // Hook into docsify lifecycle
         hook.doneEach(function() {
           if (isCVPage()) {
-            setTimeout(initAMap, 100);
+            // Add delay to ensure DOM is fully rendered
+            setTimeout(() => initAMapWithRetry(), 150);
           } else {
             cleanupAMap();
           }
         });
 
-        // Handle page navigation
+        // Handle page navigation with improved timing
         hook.beforeEach(function(content, next) {
-          // Small delay to ensure DOM is updated
-          setTimeout(() => {
-            if (isCVPage()) {
-              initAMap();
-            } else {
-              cleanupAMap();
-            }
-          }, 50);
+          // Clean up when leaving CV page
+          if (!isCVPage()) {
+            cleanupAMap();
+          }
           next(content);
+        });
+
+        // Additional hook for after navigation
+        hook.afterEach(function(html, next) {
+          if (isCVPage()) {
+            setTimeout(() => initAMapWithRetry(), 200);
+          }
+          next(html);
         });
       }
     ]);
