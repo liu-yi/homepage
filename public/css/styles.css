@@ -31,7 +31,145 @@
   font-display: fallback;
 }
 
-/* 简历页面样式 */
+/* 桌面端：CV和publications页面都隐藏sidebar */
+[data-page*="cv"] .sidebar,
+[data-page*="cv"] .sidebar-toggle,
+[data-page*="publications"] .sidebar,
+[data-page*="publications"] .sidebar-toggle {
+  display: none;
+}
+
+[data-page*="cv"] .content,
+[data-page*="publications"] .content {
+  margin-left: 0;
+}
+
+/* 移动端：CV页面隐藏sidebar，publications页面显示sidebar */
+@media (max-width: 480px) {
+
+  [data-page*="cv"] .sidebar,
+  [data-page*="cv"] .sidebar-toggle {
+    display: none;
+  }
+
+  [data-page*="cv"] .content {
+    margin-left: 0;
+  }
+
+  /* publications页面在移动端显示sidebar */
+  [data-page*="publications"] .sidebar,
+  [data-page*="publications"] .sidebar-toggle {
+    display: flex;
+  }
+
+}
+
+/* 链接样式 */
+.markdown-section a.anchor:hover {
+  text-decoration: none;
+  text-decoration-color: var(--theme-color);
+  text-underline-offset: 10px;
+  text-decoration-thickness: 3px;
+  transition: none;
+}
+
+.markdown-section a {
+  transition: color, 0.25s;
+}
+
+/* 标题悬停效果 - 优化 */
+.markdown-section h2 {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.markdown-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--theme-color-gradient);
+  transition: width 0.3s ease;
+  pointer-events: none;
+}
+
+.markdown-section h2:hover::after {
+  width: 100%;
+}
+
+/* 链接优雅效果 - 优化选择器 */
+.markdown-section p a:not(.btn):not(.emoji),
+.markdown-section li a:not(.btn):not(.emoji) {
+  position: relative;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.markdown-section p a:not(.btn):not(.emoji)::after,
+.markdown-section li a:not(.btn):not(.emoji)::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--theme-color);
+  transition: width 0.3s ease;
+}
+
+.markdown-section p a:not(.btn):not(.emoji):hover::after,
+.markdown-section li a:not(.btn):not(.emoji):hover::after {
+  width: 100%;
+}
+
+
+span.scroll-to-top {
+  border: 1px solid #ddd;
+  transition: color 0.25s ease, border-color 0.25s ease;
+}
+
+span.scroll-to-top:hover {
+  color: var(--theme-color);
+  border-color: var(--theme-color);
+}
+
+/* 按钮样式 */
+a.btn {
+  border: 1px solid #558fb5;
+  display: inline-block;
+  text-align: center;
+  vertical-align: baseline;
+  user-select: none;
+  padding: 0 .375rem;
+  font-size: 0.9rem;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+a.btn:hover {
+  border: 1px solid #558fb5;
+}
+
+a.btn:active {
+  transform: translateY(1px);
+}
+
+a.btn-outline-primary {
+  color: #558fb5;
+  background-color: #fff;
+  border-color: #558fb5;
+}
+
+a.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #558fb5;
+  border-color: #558fb5;
+}
+
+
+
 .markdown-section p,
 .markdown-section li {
   margin: 0.4em 0 0.4em 0;
@@ -46,14 +184,33 @@
   padding: 0;
 }
 
+@media (max-width: 480px) {
+  .markdown-section {
+    padding: 2rem 15px;
+  }
+
+  :root {
+    --base-font-size: 16px;
+  }
+}
+
+/* 简历页面基本样式 */
+
+body[data-page="docs/cv.md"] h2 {
+  font-variant: small-caps;
+}
+
+body[data-page="docs/cv.md"] .last {
+  font-variant: small-caps;
+}
+
 .duration {
   float: right;
 }
 
+/* profile 样式 */
 .profile {
   display: flex;
-  flex-direction: row;
-  align-items: stretch;
 }
 
 .profile .image {
@@ -72,31 +229,19 @@
   padding-left: 2rem;
 }
 
-@media (min-width: 481px) {
-  .profile .info .name {
-    margin-left: -6px;
-  }
+.profile .image img {
+  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile .info .name {
-  font-size: 2.5rem;
-  padding-bottom: 8px;
-  text-align: center;
-  /* margin-left: -6px; */
+  width: 150px;
+  font-size: 2.7rem;
+  padding-bottom: 4px;
   background: var(--theme-color-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   transition: all 0.3s ease;
-}
-
-.profile .info .name:hover {
-  background: var(--theme-color-gradient-hover);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  transform: scale(1.25);
-  /* transform: translateX(8px); */
 }
 
 .profile .info .socials {
@@ -106,20 +251,25 @@
 
 .profile .info .socials img {
   width: 1.3rem;
-  margin: 0 0.6rem 0 0;
+  margin: 0 0.8rem 0 0;
   cursor: pointer;
 }
 
+.socials a img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.7;
+}
+
+.socials a:hover img {
+  transform: scale(1.15);
+  opacity: 1;
+}
+
 .profile .info .contact .email {
-  font-family: Courier New, Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .profile .info .cv a {
-  background: var(--theme-color-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  /* font-weight: 600; */
   transition: all 0.3s ease;
   position: relative;
 }
@@ -157,8 +307,8 @@
   }
 
   .profile .image {
-    max-width: 220px;
-    /* margin-bottom: 0.5rem; */
+    max-width: 250px;
+    margin: 1rem;
   }
 
   .profile .info {
@@ -167,28 +317,27 @@
   }
 
   .profile .info .name {
-    font-size: 2.8rem;
-    /* margin-bottom: 0.5rem; */
+    font-size: 3.2rem;
   }
 
   .profile .info .socials {
     justify-content: center;
-    /* margin-bottom: 0.5rem; */
+    margin-bottom: 0.5rem;
   }
 
   .profile .info .socials img {
-    width: 1.5rem;
+    width: 2rem;
     margin: 0 0.4rem;
     padding: 0.25rem;
   }
 
   .profile .info .contact .email {
-    font-size: 0.8rem;
-    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
   }
 
   .profile .info .cv {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
 
   .duration {
@@ -196,38 +345,132 @@
   }
 }
 
-/* 桌面端：CV和publications页面都隐藏sidebar */
-[data-page*="cv"] .sidebar,
-[data-page*="cv"] .sidebar-toggle,
-[data-page*="publications"] .sidebar,
-[data-page*="publications"] .sidebar-toggle {
-  display: none;
+
+/* 出版物卡片效果 */
+.publist ul li {
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+  padding-left: 12px;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+  margin-left: -30px;
+  list-style: none;
 }
 
-[data-page*="cv"] .content,
-[data-page*="publications"] .content {
-  margin-left: 0;
+.publist ul li:hover {
+  border-left: 3px solid var(--theme-color);
 }
 
-/* 移动端：CV页面隐藏sidebar，publications页面显示sidebar */
+.publist .pubtag {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.publist:hover .pubtag {
+  opacity: 1.0;
+}
+
+/* 移动端优化 */
 @media (max-width: 480px) {
-
-  [data-page*="cv"] .sidebar,
-  [data-page*="cv"] .sidebar-toggle {
-    display: none;
+  .publist .pubtag {
+    opacity: 1.0;
   }
 
-  [data-page*="cv"] .content {
-    margin-left: 0;
+  .publist ul li {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddd;
   }
-
-  /* publications页面在移动端显示sidebar */
-  [data-page*="publications"] .sidebar,
-  [data-page*="publications"] .sidebar-toggle {
-    display: flex;
-  }
-
 }
+
+
+/* 地图样式 */
+.address-container {
+  margin-bottom: 20px;
+  line-height: 2;
+}
+
+.address-container .room-info {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+/* 地址切换提示 */
+[data-lang="en"]::after {
+  content: " 点击切换中文";
+  font-size: 0.9rem;
+  color: rgb(203, 213, 225);
+  transition: color 0.3s;
+}
+
+[data-lang="en"]:hover::after {
+  color: var(--theme-color);
+}
+
+[data-lang="cn"]::after {
+  content: " Click for English";
+  font-size: 0.9rem;
+  color: rgb(203, 213, 225);
+  transition: color 0.3s
+}
+
+[data-lang="cn"]:hover::after {
+  color: var(--theme-color);
+}
+
+/* 地图容器样式 */
+#map-container {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e1e5e9;
+}
+
+#amap-container {
+  height: 450px;
+}
+
+/* 大地图按钮样式 */
+.map-button {
+  display: block;
+  width: 100%;
+  padding: 0.2rem 1.5rem;
+  background: var(--theme-color);
+  color: #fff !important;
+  text-align: center;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.map-button:hover,
+.markdown-section .map-button:hover {
+  background: var(--theme-color-dark);
+}
+
+.map-button:active {
+  transform: translateY(1px);
+}
+
+/* 响应式地图样式 */
+
+@media (max-width: 480px) {
+  .address-container .room-info {
+    font-size: 1rem;
+  }
+
+  [data-lang="en"]::after {
+    color: #bbb;
+  }
+
+  [data-lang="cn"]::after {
+    color: #bbb;
+  }
+
+  #amap-container {
+    height: 250px;
+  }
+}
+
 
 /* Publications页面精美美化 */
 body[data-page*="publications"] .markdown-section {
@@ -304,10 +547,6 @@ body[data-page*="publications"] .markdown-section ul>li::before {
   box-shadow: 0 2px 8px rgba(85, 143, 181, 0.3);
   z-index: 1;
 }
-
-/* body[data-page*="publications"] .markdown-section ul li::before {
-  content: none;
-} */
 
 body[data-page*="publications"] .markdown-section ol li:hover,
 body[data-page*="publications"] .markdown-section ul li:hover {
@@ -639,325 +878,9 @@ body[data-page*="publications"] .markdown-section li:hover::before {
   box-shadow: 0 4px 12px rgba(85, 143, 181, 0.3);
 }
 
-/* 字体样式优化 */
-body[data-page="docs/cv.md"] h2 {
-  font-variant: small-caps;
-}
-
-body[data-page="docs/cv.md"] .last {
-  font-variant: small-caps;
-}
-
-/* 链接样式 */
-.markdown-section a.anchor:hover {
-  text-decoration: none;
-  text-decoration-color: var(--theme-color);
-  text-underline-offset: 10px;
-  text-decoration-thickness: 3px;
-  transition: none;
-}
-
-.markdown-section a {
-  transition: color, 0.25s;
-}
-
-/* 按钮样式 */
-a.btn-outline-primary {
-  color: #558fb5;
-  background-color: #fff;
-  border-color: #558fb5;
-}
-
-a.btn-outline-primary:hover {
-  color: #fff;
-  background-color: #558fb5;
-  border-color: #558fb5;
-}
-
-a.btn {
-  border: 1px solid #558fb5;
-  display: inline-block;
-  text-align: center;
-  vertical-align: baseline;
-  user-select: none;
-  padding: 0 .375rem;
-  font-size: 0.9rem;
-  border-radius: .25rem;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-}
-
-a.btn:hover {
-  border: 1px solid #558fb5;
-}
-
-/* 交互元素 */
-.profile .image img {
-  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
-}
-
-.profile .image img:hover {
-  transform: scale(1.05);
-  filter: brightness(1.1);
-  box-shadow: 0 4px 12px rgba(85, 143, 181, 0.3);
-}
-
-/* --- Social Icon Enhancements --- */
-.socials a img {
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  opacity: 0.7;
-}
-
-.socials a:hover img {
-  transform: scale(1.15);
-  opacity: 1;
-}
-
-
-span.scroll-to-top {
-  border: 1px solid #ddd;
-  transition: color 0.25s ease, border-color 0.25s ease;
-}
-
-span.scroll-to-top:hover {
-  color: var(--theme-color);
-  border-color: var(--theme-color);
-}
-
-a.btn {
-  transition: all 0.15s ease-in-out;
-}
-
-a.btn:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* 出版物卡片效果 */
-.publist ul li {
-  transition: all 0.3s ease;
-  border-left: 3px solid transparent;
-  border-bottom: 1px solid #eee;
-  padding-left: 12px;
-  margin-top: 0.8em;
-  margin-bottom: 0.8em;
-  margin-left: -30px;
-  list-style: none;
-}
-
-.publist ul li:hover {
-  border-left: 3px solid var(--theme-color);
-  transform: translateX(2px);
-}
-
-/* 链接优雅效果 - 优化选择器 */
-.markdown-section p a:not(.btn):not(.emoji),
-.markdown-section li a:not(.btn):not(.emoji) {
-  position: relative;
-  transition: all 0.3s ease;
-  text-decoration: none;
-}
-
-.markdown-section p a:not(.btn):not(.emoji)::after,
-.markdown-section li a:not(.btn):not(.emoji)::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--theme-color);
-  transition: width 0.3s ease;
-}
-
-.markdown-section p a:not(.btn):not(.emoji):hover::after,
-.markdown-section li a:not(.btn):not(.emoji):hover::after {
-  width: 100%;
-}
-
-/* 标题悬停效果 - 优化 */
-.markdown-section h2 {
-  position: relative;
-  margin-bottom: 1rem;
-}
-
-.markdown-section h2::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--theme-color-gradient);
-  transition: width 0.3s ease;
-  pointer-events: none;
-}
-
-.markdown-section h2:hover::after {
-  width: 100%;
-}
-
-.pubtag {
-  transition: opacity 0.3s ease, transform 0.2s ease;
-}
-
-.publist:hover .pubtag {
-  opacity: 1;
-  transform: translateX(2px);
-}
-
-/* 特殊效果 */
-.markdown-section s {
-  color: transparent;
-  background: rgba(187, 187, 187, .7);
-  transition: all .3s ease-in-out;
-  text-decoration: none;
-}
-
-.markdown-section s:hover {
-  color: var(--base-color);
-  background: transparent;
-}
-
-/* 移动端优化 */
 @media (max-width: 480px) {
-  .markdown-section {
-    padding: 2rem 15px;
-  }
-
-  :root {
-    --base-font-size: 16px;
-  }
-
-  .publist .pubtag {
-    opacity: 1.0;
-  }
 
   body[data-page*="publications"] .markdown-section li::before {
     opacity: 1;
-  }
-}
-
-/* 发表列表样式 */
-.publist .pubtag {
-  opacity: 0.0;
-  transition: all 200ms, opacity 300ms;
-}
-
-.publist:hover .pubtag {
-  opacity: 1.0;
-}
-
-.pubtag {
-  transition: all 200ms, opacity 300ms;
-}
-
-/* 地图容器样式 */
-#map-container {
-  margin: 1rem 0;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e1e5e9;
-}
-
-/* 大地图按钮样式 - 更优雅的低调设计 */
-.map-button {
-  display: block;
-  width: 100%;
-  padding: 0.2rem 1.5rem;
-  background: var(--theme-color);
-  color:#fff !important;
-  text-align: center;
-  font-size: 0.9rem;
-  transition: all 0.3s ease;
-}
-
-.map-button:hover,
-.markdown-section .map-button:hover {
-  background: var(--theme-color-dark);
-  box-shadow: 0 2px 8px rgba(85, 143, 181, 0.2);
-}
-
-.map-button:active {
-  transform: translateY(1px);
-  box-shadow: 0 1px 4px rgba(85, 143, 181, 0.15);
-}
-
-/* 地址切换容器样式 */
-.address-wrapper {
-  display: flex;
-  /* padding-left: 12px; */
-  border-left: 3px solid transparent;
-  border-radius: 0;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.address-wrapper:hover {
-  /* border-left-color: var(--theme-color); */
-  /* transform: translateX(2px); */
-  transition: all 0.3s ease;
-}
-
-.address-container {
-  /* padding-top: 6px; */
-  line-height: 1.6;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.address-container .room-info {
-  display: block;
-  margin-bottom: 0.3rem;
-  font-size: 1.2em;
-  font-weight: 600;
-}
-
-
-/* 地址切换提示 */
-[data-lang="en"]::after {
-  content: " 点击切换中文";
-  font-size: 0.8em;
-  /* margin-left: 0.5rem; */
-  color: rgb(203, 213, 225);
-  transition: color 0.3s;
-}
-
-[data-lang="en"]:hover::after {
-  color: var(--theme-color);
-}
-
-[data-lang="cn"]::after {
-  content: " Click for English";
-  font-size: 0.8em;
-  /* margin-left: 0.5rem; */
-  color: rgb(203, 213, 225);
-  transition: color 0.3s
-}
-
-[data-lang="cn"]:hover::after {
-  color: var(--theme-color);
-}
-
-/* 响应式地图样式 */
-
-@media (min-width: 481px) {
-  #amap-container {
-    height: 450px;
-  }
-}
-
-@media (max-width: 480px) {
-  .address-container .room-info {
-    font-size: 1rem;
-  }
-  [data-lang="en"]::after {
-    color: #888;
-  }
-
-  [data-lang="cn"]::after {
-    color: #888;
-  }
-  #amap-container {
-    height: 250px;
   }
 }
