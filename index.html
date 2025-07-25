@@ -98,7 +98,7 @@
       mergeNavbar: true
     }
   </script>
-  <!-- 自定义脚本 -->
+  <!-- 自定义脚本 - 优化为仅在对应页面加载 -->
   <script src="public/js/publications.js"></script>
   <!-- 优化后的CDN资源加载 -->
   <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
@@ -130,25 +130,87 @@
   </script>
   <script src="https://webapi.amap.com/loader.js"></script>
   <script type="text/javascript">
-    AMapLoader.load({
-      key: "6a6ac6b39f33cb76ee52d1ccef73da05", //申请好的Web端开发者key，调用 load 时必填
-      version: "2.0", //指定要加载的 JS API 的版本，缺省时默认为 1.4.15
-    })
-      .then((AMap) => {
-        const map = new AMap.Map("amap-container", {
-          viewMode: '2D', //默认使用 2D 模式
-          zoom: 17, //地图级别
-          center: [113.412396, 23.016767], //地图中心点
+    // Docsify plugin for AMap - only load on CV page
+    window.$docsify = window.$docsify || {};
+    window.$docsify.plugins = (window.$docsify.plugins || []).concat([
+      function(hook, vm) {
+        let amapLoaded = false;
+        let amapInitialized = false;
+
+        // Check if we're on the CV page
+        function isCVPage() {
+          const currentPath = window.location.hash;
+          return currentPath === '' || currentPath === '#' || currentPath === '#/' || 
+                 currentPath.startsWith('#/cv') || currentPath.startsWith('#/docs/cv');
+        }
+
+        // Initialize AMap only when container is available
+        function initAMap() {
+          if (amapInitialized) return;
+          
+          const container = document.getElementById('amap-container');
+          if (!container) {
+            // Wait for container to be available
+            setTimeout(initAMap, 100);
+            return;
+          }
+
+          if (typeof AMapLoader !== 'undefined') {
+            AMapLoader.load({
+              key: "6a6ac6b39f33cb76ee52d1ccef73da05",
+              version: "2.0",
+            })
+              .then((AMap) => {
+                const map = new AMap.Map("amap-container", {
+                  viewMode: '2D',
+                  zoom: 17,
+                  center: [113.412396, 23.016767],
+                });
+                const marker = new AMap.Marker({
+                  position: [113.412396, 23.016767],
+                  title: '我在这里'
+                });
+                map.add(marker);
+                amapInitialized = true;
+              })
+              .catch((e) => {
+                console.error('AMap initialization error:', e);
+              });
+          }
+        }
+
+        // Clean up AMap when leaving CV page
+        function cleanupAMap() {
+          const container = document.getElementById('amap-container');
+          if (container && container.innerHTML) {
+            container.innerHTML = '';
+            amapInitialized = false;
+          }
+        }
+
+        // Hook into docsify lifecycle
+        hook.doneEach(function() {
+          if (isCVPage()) {
+            setTimeout(initAMap, 100);
+          } else {
+            cleanupAMap();
+          }
         });
-        const marker = new AMap.Marker({
-          position: [113.412396, 23.016767],
-          title: '我在这里'
+
+        // Handle page navigation
+        hook.beforeEach(function(content, next) {
+          // Small delay to ensure DOM is updated
+          setTimeout(() => {
+            if (isCVPage()) {
+              initAMap();
+            } else {
+              cleanupAMap();
+            }
+          }, 50);
+          next(content);
         });
-        map.add(marker);
-      })
-      .catch((e) => {
-        console.error(e); //加载错误提示
-      });
+      }
+    ]);
   </script>
 </body>
 
