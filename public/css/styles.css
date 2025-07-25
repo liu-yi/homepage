@@ -179,6 +179,64 @@ a.btn-outline-primary:hover {
   margin: 0.6em 0 0.6em 0;
 }
 
+/* 优雅的无序列表样式 - 清新淡雅风格 */
+.markdown-section ul:not(.publist ul) {
+  list-style: none;
+}
+
+.markdown-section ul:not(.publist ul) li {
+  position: relative;
+  padding-left: 0.8em;
+  line-height: 1.6;
+}
+
+.markdown-section ul:not(.publist ul) li::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 0.65em;
+  border-left: 10px solid var(--theme-color-light);
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.markdown-section ul:not(.publist ul) li:hover::before {
+  border-left-color: var(--theme-color-dark);
+  transform: translateY(-50%) translateX(3px);
+}
+
+.markdown-section ul:not(.publist ul) ul li::before {
+  width: 8px;
+  height: 8px;
+  border: 1px solid var(--theme-color-light);
+  border-radius: 0;
+  transform: rotate(45deg) translateY(-50%);
+}
+
+.markdown-section ul:not(.publist ul) ul li:hover::before {
+  width: 6px;
+  height: 6px;
+  border-color: var(--theme-color-light);
+  background: var(--theme-color-light);
+}
+
+/* 第三层嵌套 */
+.markdown-section ul:not(.publist ul) ul ul li::before {
+  width: 8px;
+  height: 8px;
+  border: 1px solid var(--theme-color-light);
+  transform: rotate(0deg) translateY(-50%);
+}
+
+.markdown-section ul:not(.publist ul) ul ul li:hover::before {
+  width: 8px;
+  height: 0.1px;
+}
+
 .markdown-section h2 {
   margin: 1.5rem 0 1rem;
   padding: 0;
@@ -192,6 +250,7 @@ a.btn-outline-primary:hover {
   :root {
     --base-font-size: 16px;
   }
+
 }
 
 /* 简历页面基本样式 */
@@ -394,6 +453,11 @@ body[data-page="docs/cv.md"] .last {
   margin-bottom: 0.3rem;
   font-size: 1.2em;
   font-weight: 600;
+  transition: color 0.3s
+}
+
+.address-container .room-info:hover {
+  color: var(--theme-color);
 }
 
 /* 地址切换提示 */
@@ -545,7 +609,7 @@ body[data-page*="publications"] .markdown-section ul>li {
   border: none;
   border-left: 5px solid transparent;
   border-bottom: 1px solid #ddd;
-  margin:0;
+  margin: 0;
   /* border-radius: 12px; */
   padding: 0.5rem 0rem 0.5rem 3rem;
   /* margin: 2rem 0 2rem 0; */
