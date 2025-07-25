@@ -20,7 +20,7 @@
 </div>
 
 <div class="filter-buttons">
-  <button class="filter-btn active" data-filter="all">All Publications</button>
+  <button class="filter-btn btn btn-outline-primary active" data-filter="all">All Publications</button>
   <button class="filter-btn" data-filter="conference">Conferences</button>
   <button class="filter-btn" data-filter="journal">Journals</button>
   <button class="filter-btn" data-filter="manuscript">Manuscripts</button>
@@ -28,7 +28,7 @@
 
 ---
 
-# Refereed Publications
+<!-- # Refereed Publications -->
 
 <!-- 2025年论文 -->
 <div class="year-divider"><span>2025</span></div>
@@ -168,13 +168,13 @@
 
     Guangzhou, China. Dec. 11-14, 2020. (Online: March 13, 2021). pp 397–414.  
 
-# Manuscripts
+<!-- # Manuscripts -->
 
-<!-- <div class="year-divider"><span>Manuscripts</span></div> -->
+<div class="year-divider"><span>Manuscripts</span></div>
 
 13. **An E-voting Protocol Based on Blockchain** 
   
-    <div class="pub-type workshop">Manuscript</div>
+    <div class="pub-type manuscript">Manuscript</div>
 
     <u>**Yi Liu**</u>, Qi Wang
 
