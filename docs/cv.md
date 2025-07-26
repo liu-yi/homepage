@@ -249,20 +249,12 @@ C/C++, Python, LaTeX, Java, HTML/CSS, JavaScript -->
 <div class="address-wrapper">
   <div class="address-container" id="address-en" data-lang="en">
     <span class="room-info">Room 906, Intellectual Property Building</span>
-    Jinan University (Panyu Campus)
-    <br>
-    No. 855 Xingye Avenue East, Panyu District  
-    <br>
-    Guangzhou, Guangdong 511443, P. R. China  
+    Jinan University (Panyu Campus), No. 855 Xingye Avenue East, Panyu District, Guangzhou, Guangdong 511443, P. R. China  
     <br>
   </div>
   <div class="address-container" id="address-cn" data-lang="cn" style="display: none;">
     <span class="room-info">知识产权大楼906室</span>
-    暨南大学（番禺校区）
-    <br>
-    番禺区新造镇兴业大道东855号  
-    <br>
-    中华人民共和国广东省广州市
+    中华人民共和国 广东省广州市 番禺区新造镇兴业大道东855号 暨南大学（番禺校区）
     <br>
   </div>
 </div>
