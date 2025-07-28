@@ -78,7 +78,7 @@
 
 ?> 
 **Looking for Students**:</br>
-I am available to supervise 1-2 Master's students each year. I am looking for self-motivated students with a solid background in computer science who are eager to explore research problems in cryptography, security, and privacy. While no prior experience in cryptography or security is required, students should have strong self-learning abilities and a curiosity for acquiring new knowledge. For more information, see [*Information For Prospective Students*](/for-students/). If you are interested, feel free to reach out via email! 
+I am available to supervise 2 Master's students each year. I am looking for self-motivated students with a solid background in computer science who are eager to explore research problems in cryptography, security, and privacy. While no prior experience in cryptography or security is required, students should have strong self-learning abilities and a curiosity for acquiring new knowledge. For more information, see [*Information For Prospective Students*](/for-students/). If you are interested, feel free to reach out via email! 
 
 
 ## About Me
