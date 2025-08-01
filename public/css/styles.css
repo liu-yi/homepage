@@ -929,7 +929,7 @@ body[data-page*="publications"] .markdown-section .pubtag a:hover {
 /* 移动端主题切换按钮 - CV页面专用 */
 .mobile-theme-toggle {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 15px;
   right: 15px;
   z-index: 1001;
@@ -972,6 +972,10 @@ body[data-page*="publications"] .markdown-section .pubtag a:hover {
 @media (max-width: 480px) {
   
   /* 在移动端显示CV页面的主题切换按钮 */
+  body[data-page*="cv"] .content {
+    position: relative;
+  }
+  
   body[data-page*="cv"] .mobile-theme-toggle {
     display: flex;
   }
@@ -1235,6 +1239,16 @@ body[data-page*="publications"] .markdown-section .pubtag a:hover {
   padding: 0;
 }
 
+/* 移动端主题切换按钮的SVG样式 */
+.mobile-theme-toggle .theme-icon-svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 1.5;
+  stroke: currentColor !important;
+  fill: none !important;
+  transition: all 0.3s ease;
+}
+
 .toggle-track {
   position: relative;
   width: 44px;
@@ -1272,12 +1286,31 @@ body[data-page*="publications"] .markdown-section .pubtag a:hover {
   line-height: 1;
 }
 
+.light-icon,
+.dark-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+}
+
+.light-icon svg,
+.dark-icon svg {
+  width: 10px;
+  height: 10px;
+  stroke: currentColor;
+  fill: none;
+}
+
 .light-icon {
   opacity: 1;
+  color: #f39c12;
 }
 
 .dark-icon {
   opacity: 0;
+  color: #34495e;
 }
 
 .toggle-track.dark-mode {

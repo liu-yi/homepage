@@ -22,9 +22,15 @@
         // 更新移动端按钮图标
         const mobileToggle = document.querySelector('.mobile-theme-toggle');
         if (mobileToggle) {
-            const icon = mobileToggle.querySelector('.theme-icon');
+            const icon = mobileToggle.querySelector('.theme-icon-svg');
             if (icon) {
-                icon.textContent = theme === 'dark' ? '🌙' : '☀️';
+                if (theme === 'dark') {
+                    // Moon icon for dark mode
+                    icon.innerHTML = '<path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>';
+                } else {
+                    // Sun icon for light mode
+                    icon.innerHTML = '<path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41M12 17a5 5 0 100-10 5 5 0 000 10z"/>';
+                }
             }
             mobileToggle.setAttribute('title', theme === 'dark' ? '切换到浅色模式' : '切换到深色模式');
         }
