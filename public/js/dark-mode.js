@@ -4,8 +4,8 @@
     
     function getCurrentTheme() {
         return localStorage.getItem(THEME_KEY) || 
-            //    (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-            'light';
+               (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            // 'light';
     }
     
     function setTheme(theme) {
