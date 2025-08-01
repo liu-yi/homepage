@@ -44,6 +44,49 @@
   </noscript>
   <link rel="stylesheet" href="public/css/styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
+  
+  <!-- 极简主题设置 -->
+  <script>
+    (function() {
+      const THEME_KEY = 'theme-preference';
+      const currentTheme = localStorage.getItem(THEME_KEY) || 
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      
+      // 立即设置主题属性
+      document.documentElement.setAttribute('data-theme', currentTheme);
+      document.body && document.body.setAttribute('data-theme', currentTheme);
+      
+      // 关键：通过CSS直接设置按钮状态，避免JS延迟
+      const style = document.createElement('style');
+      style.textContent = `
+        .toggle-track {
+          background-color: #ccc;
+        }
+        .toggle-track .toggle-thumb {
+          left: 2px;
+        }
+        .toggle-track .light-icon {
+          opacity: 1;
+        }
+        .toggle-track .dark-icon {
+          opacity: 0;
+        }
+        [data-theme="dark"] .toggle-track {
+          background-color: #66b3ff;
+        }
+        [data-theme="dark"] .toggle-track .toggle-thumb {
+          left: 24px;
+        }
+        [data-theme="dark"] .toggle-track .light-icon {
+          opacity: 0;
+        }
+        [data-theme="dark"] .toggle-track .dark-icon {
+          opacity: 1;
+        }
+      `;
+      document.head.appendChild(style);
+    })();
+  </script>
 
   <link rel="shortcut icon" href="public/img/logo.ico" type="image/ico" />
 
@@ -100,6 +143,7 @@
   </script>
   <!-- 自定义脚本 - 优化为仅在对应页面加载 -->
   <script src="public/js/publications.js"></script>
+  <script src="public/js/dark-mode.js"></script>
   <!-- 优化后的CDN资源加载 -->
   <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
