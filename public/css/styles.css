@@ -59,26 +59,26 @@
 
 /* 暗黑模式样式 */
 [data-theme="dark"] {
-  --bg-color: #1a1a1a;
+  --bg-color: #0f0f0f;
   --text-color: #e8e8e8;
   --border-color: #333333;
-  --secondary-bg: #2d2d2d;
-  --hover-bg: #3a3a3a;
-  --shadow-color: rgba(0, 0, 0, 0.3);
-  --white-color: #1a1a1a;
-  --light-gray: #2d2d2d;
+  --secondary-bg: #1e1e1e;
+  --hover-bg: #2a2a2a;
+  --shadow-color: rgba(0, 0, 0, 0.5);
+  --white-color: #121212;
+  --light-gray: #1e1e1e;
   --medium-gray: #333333;
   --dark-gray: #e8e8e8;
   --light-border: #444444;
   --medium-border: #555555;
   --dark-border: #666666;
-  --code-bg: #2d2d2d;
+  --code-bg: #1e1e1e;
   --code-text: #e8e8e8;
-  --blockquote-bg: #2d2d2d;
-  --table-header-bg: #2d2d2d;
-  --notice-background: #2d2d2d;
+  --blockquote-bg: #1e1e1e;
+  --table-header-bg: #1e1e1e;
+  --notice-background: #1e1e1e;
   --notice-border: #333333;
-  --notice-warning-background: #1a2942;
+  --notice-warning-background: #162030;
   --notice-warning-border: #2d4a70;
   --notice-warning-text: #a8d8ff;
   --gradient-blue-start: #4da6ff;
@@ -301,6 +301,12 @@ a.btn-outline-primary {
 a.btn-outline-primary:hover {
   color: var(--white-color);
   background-color: var(--theme-color);
+  border-color: var(--theme-color);
+}
+
+[data-theme="dark"] a.btn-outline-primary:hover {
+  color: var(--white-color);
+  background-color: var(--theme-color-dark);
   border-color: var(--theme-color);
 }
 
