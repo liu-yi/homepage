@@ -5,7 +5,6 @@
     function getCurrentTheme() {
         return localStorage.getItem(THEME_KEY) || 
                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-            // 'light';
     }
     
     function setTheme(theme) {
@@ -13,10 +12,17 @@
         document.body.setAttribute('data-theme', theme);
         localStorage.setItem(THEME_KEY, theme);
         
-        // 更新开关状态
-        const toggle = document.getElementById('toggle-track');
-        if (toggle) {
-            toggle.classList.toggle('dark-mode', theme === 'dark');
+        // 更新所有切换按钮的状态
+        updateAllToggleButtons(theme);
+    }
+    
+    function updateAllToggleButtons(theme) {
+        // 更新导航栏中的切换按钮
+        const navbarToggle = document.getElementById('toggle-track') || 
+                            document.querySelector('.sidebar-nav #toggle-track') ||
+                            document.querySelector('.theme-toggle-top #toggle-track');
+        if (navbarToggle) {
+            navbarToggle.classList.toggle('dark-mode', theme === 'dark');
         }
         
         // 更新移动端按钮图标
@@ -35,7 +41,7 @@
             mobileToggle.setAttribute('title', theme === 'dark' ? '切换到浅色模式' : '切换到深色模式');
         }
         
-        // 更新原来的主题切换按钮
+        // 更新原来的主题切换按钮（如果存在）
         const originalToggle = document.querySelector('.theme-toggle');
         if (originalToggle) {
             originalToggle.setAttribute('title', theme === 'dark' ? '切换到浅色模式' : '切换到深色模式');
@@ -55,19 +61,19 @@
     // 绑定点击事件 - 针对导航栏的切换按钮和移动端按钮
     function bindEvents() {
         // 查找导航栏中的切换按钮
-        const toggle = document.getElementById('toggle-track') || 
-                      document.querySelector('.sidebar-nav #toggle-track') ||
-                      document.querySelector('.theme-toggle-top #toggle-track');
+        const navbarToggle = document.getElementById('toggle-track') || 
+                            document.querySelector('.sidebar-nav #toggle-track') ||
+                            document.querySelector('.theme-toggle-top #toggle-track');
         
-        if (toggle) {
-            toggle.onclick = toggleTheme;
-            toggle.style.cursor = 'pointer';
+        if (navbarToggle) {
+            navbarToggle.onclick = toggleTheme;
+            navbarToggle.style.cursor = 'pointer';
             
             // 关键：同步当前主题状态到按钮
             const currentTheme = getCurrentTheme();
-            toggle.classList.toggle('dark-mode', currentTheme === 'dark');
+            navbarToggle.classList.toggle('dark-mode', currentTheme === 'dark');
             
-            console.log('主题切换按钮已绑定，当前主题：' + currentTheme);
+            console.log('导航栏主题切换按钮已绑定，当前主题：' + currentTheme);
         }
         
         // 绑定移动端主题切换按钮
@@ -116,5 +122,14 @@
             }
         ]);
     }
+    
+    // 监听系统主题变化
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+        // 只有在用户没有手动设置主题时才跟随系统变化
+        if (!localStorage.getItem(THEME_KEY)) {
+            const newTheme = e.matches ? 'dark' : 'light';
+            setTheme(newTheme);
+        }
+    });
     
 })();
