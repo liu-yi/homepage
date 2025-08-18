@@ -1,3 +1,12 @@
+.progress-bar {
+  height: 4px !important;
+  background: var(--theme-color-gradient) !important;
+}
+
+.scroll-to-top:hover {
+  transform: scale(1.1) !important;
+  box-shadow: 0 4px 12px var(--shadow-color) !important;
+}
 /* 基础样式配置 */
 :root {
   --content-max-width: 65em;
@@ -1276,12 +1285,6 @@ body[data-page*="publications"] .markdown-section .pubtag a:active {
   stroke: currentColor !important;
   fill: none !important;
   transition: all 0.3s ease;
-}
-
-/* 为可聚焦元素添加焦点样式 */
-.toggle-track:focus, .mobile-theme-toggle:focus, .filter-btn:focus, .search-input:focus {
-  outline: 2px dashed var(--theme-color);
-  outline-offset: 2px;
 }
 
 .toggle-track {
