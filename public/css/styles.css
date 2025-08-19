@@ -690,12 +690,12 @@ body[data-page="docs/cv.md"] .last {
 }
 
 [data-theme="dark"] .map-button {
-  background: linear-gradient(135deg, var(--theme-color), var(--theme-color-light));
+  background: var(--theme-color);
   color: var(--white-color) !important;
 }
 
 [data-theme="dark"] .map-button:hover {
-  background: linear-gradient(135deg, var(--theme-color-light), var(--theme-color));
+  background: var(--theme-color-dark);
 }
 
 /* 响应式地图样式 */
