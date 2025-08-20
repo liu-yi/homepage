@@ -12,9 +12,9 @@
   --content-max-width: 65em;
   --base-font-size: 17px;
   /* 微调主色调，使其更现代 */
-  --theme-color: #4a86c5; /* 原 #558fb5 */
-  --theme-color-dark: #2a6da8; /* 原 #366482 */
-  --theme-color-light: #6aa0d7; /* 原 #7ba7cc */
+  --theme-color: #3498db; /* 原 #558fb5 - 更换为更现代的蓝色 */
+  --theme-color-dark: #2980b9; /* 原 #366482 - 调整深色以匹配新主色 */
+  --theme-color-light: #5ca9e6; /* 原 #7ba7cc - 调整浅色以匹配新主色 */
   --theme-color-gradient: linear-gradient(135deg, var(--theme-color) 0%, var(--theme-color-light) 50%, var(--theme-color-dark) 100%);
   --theme-color-gradient-hover: linear-gradient(135deg, var(--theme-color-light) 0%, var(--theme-color) 50%, var(--theme-color-dark) 100%);
   --link-color--hover: var(--theme-color-light);
@@ -67,7 +67,6 @@
   --text-muted: #666666;
 }
 
-/* 暗黑模式样式 */
 [data-theme="dark"] {
   --bg-color: #0f0f0f;
   --text-color: #e8e8e8;
@@ -104,9 +103,9 @@
   --text-muted: #bbbbbb;
   
   /* 微调暗色模式主色调 */
-  --theme-color: #5ca9e6; /* 原 #66b3ff */
-  --theme-color-dark: #3a8bd4; /* 原 #4d94ff */
-  --theme-color-light: #7db8f0; /* 原 #80c1ff */
+  --theme-color: #5ca9e6; /* 原 #66b3ff - 与浅色模式主色的亮色保持一致 */
+  --theme-color-dark: #3498db; /* 原 #4d94ff - 使用浅色模式的主色作为暗色 */
+  --theme-color-light: #80c1ff; /* 原 #80c1ff - 调整为更亮的蓝色 */
   --theme-color-gradient: linear-gradient(135deg, var(--theme-color) 0%, var(--theme-color-light) 50%, var(--theme-color-dark) 100%);
   --theme-color-gradient-hover: linear-gradient(135deg, var(--theme-color-light) 0%, var(--theme-color) 50%, var(--theme-color-dark) 100%);
 }
