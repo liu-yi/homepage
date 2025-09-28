@@ -43,7 +43,17 @@
     
     Nanjing, China. Oct. 29 - 31 2025. 
 
-2. **Highly Efficient Actively Secure Two-Party Computation with One-Bit Advantage Bound** 
+2. **Publicly Auditable Federated Learning with Privacy and Byzantine Robustness**
+    
+    <div class="pub-type journal">Journal</div> <span class="impact-badge">TDSC</span>
+    
+    Huang Zeng, Anjia Yang, Jian Weng, Min-Rong CHen, Fengjun Xiao, Zilin Liu, <u>**Yi Liu**</u>
+
+    IEEE Transactions on Dependable and Secure Computing, 2025. <span class="pubtag"><a href="https://doi.org/10.1109/tdsc.2025.3609353" target="_blank">DOI</a></span>
+    
+
+3. **Highly Efficient Actively Secure Two-Party Computation with One-Bit Advantage Bound** 
+
 
     <div class="pub-type conference">Conference</div> <span class="impact-badge">S&P 2025</span>
 
@@ -53,7 +63,7 @@
     
     San Francisco, CA, USA. May 12 - 15, 2025. pp 2846-2864. 
 
-3. **Towards Efficient and Practical Multi-party Computation under Inconsistent Trust in TEEs** 
+4. **Towards Efficient and Practical Multi-party Computation under Inconsistent Trust in TEEs** 
 
     <div class="pub-type conference">Conference</div> <span class="impact-badge">S&P 2025</span>
 
@@ -63,7 +73,7 @@
     
     San Francisco, CA, USA. May 12 - 15, 2025. pp 2885-2902. 
 
-4. **Efficient and Privacy-Preserving Ride Matching over Road Networks against Malicious ORH server** 
+5. **Efficient and Privacy-Preserving Ride Matching over Road Networks against Malicious ORH server** 
 
     <div class="pub-type journal">Journal</div> <span class="impact-badge">TIFS</span>
 
