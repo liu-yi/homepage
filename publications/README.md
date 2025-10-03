@@ -5,7 +5,7 @@
 <!-- 统计信息栏 -->
 <div class="stats-bar">
   <div class="stat-item">
-    <span class="stat-number">12</span>
+    <span class="stat-number">13</span>
     <span class="stat-label">Refereed Papers</span>
   </div>
   <div class="stat-item">
