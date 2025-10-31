@@ -1,59 +1,60 @@
-.progress-bar {
-  height: 4px !important;
-  background: var(--theme-color-gradient) !important;
-}
+/* ==========================================================================
+   Theme Variables
+   ========================================================================== */
 
-.scroll-to-top:hover {
-  transform: scale(1.1) !important;
-  box-shadow: 0 4px 12px var(--shadow-color) !important;
-}
-/* 基础样式配置 */
 :root {
-  --content-max-width: 65em;
+  --base-font-family: "KaTeX_Main", zhongsong, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --base-font-size: 17px;
-  /* 微调主色调，使其更现代 */
-  --theme-color: #3498db; /* 原 #558fb5 - 更换为更现代的蓝色 */
-  --theme-color-dark: #2980b9; /* 原 #366482 - 调整深色以匹配新主色 */
-  --theme-color-light: #5ca9e6; /* 原 #7ba7cc - 调整浅色以匹配新主色 */
+  --content-max-width: 70em;
+  --emoji-size: calc(var(--base-line-height) * 0.7em);
+
+  /* Theme palette */
+  --theme-color: #3498db; 
+  --theme-color-dark: #2980b9; 
+  --theme-color-light: #5ca9e6; 
   --theme-color-gradient: linear-gradient(135deg, var(--theme-color) 0%, var(--theme-color-light) 50%, var(--theme-color-dark) 100%);
   --theme-color-gradient-hover: linear-gradient(135deg, var(--theme-color-light) 0%, var(--theme-color) 50%, var(--theme-color-dark) 100%);
-  --link-color--hover: var(--theme-color-light);
+
+  /* Link and navigation */
   --link-color: var(--theme-color);
-  --base-font-family: "KaTeX_Main", zhongsong, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --emoji-size: calc(var(--base-line-height) * 0.7em);
+  --link-color--hover: var(--theme-color-light);
   --link-text-decoration: none;
   --navbar-root-color--hover: var(--theme-color);
   --navbar-root-transition: all var(--duration-medium);
   --navbar-menu-link-color--hover: var(--theme-color);
   --navbar-menu-link-color--active: var(--theme-color);
   --navbar-menu-link-border-radius: 6px;
-  --content-max-width: 70em;
-  --notice-tip-border-color: var(--theme-color);
-  --sidebar-toggle-offset-top: 0;
-  
-  /* 暗黑模式变量 */
+
+  /* Surface tokens */
   --bg-color: #ffffff;
-  --text-color: #2c3e50;
-  --border-color: #e1e5e9;
   --secondary-bg: #f8f9fa;
   --hover-bg: #f1f3f4;
-  --shadow-color: rgba(0, 0, 0, 0.1);
   --white-color: #ffffff;
-  --light-gray: #f8f9fa;
-  --medium-gray: #e1e5e9;
-  --dark-gray: #2c3e50;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+
+  /* Text & border tokens */
+  --text-color: #2c3e50;
+  --text-muted: #666666;
+  --border-color: #e1e5e9;
   --light-border: #ddd;
   --medium-border: #ccc;
   --dark-border: #999;
+
+  /* Code & content surfaces */
   --code-bg: #f8f9fa;
   --code-text: #2c3e50;
   --blockquote-bg: #f8f9fa;
   --table-header-bg: #f8f9fa;
+
+  /* Notice palette */
   --notice-background: #f8f9fa;
   --notice-border: #e1e5e9;
+  --notice-tip-border-color: var(--theme-color);
   --notice-warning-background: #e8f4fd;
   --notice-warning-border: #bee5eb;
   --notice-warning-text: #0c5460;
+
+  /* Accent gradients */
   --gradient-blue-start: #007ccf;
   --gradient-blue-end: #006ab1;
   --gradient-red-start: #b50101;
@@ -64,32 +65,35 @@
   --gradient-orange-end: #f57c00;
   --gradient-red-accent-start: #ff6b6b;
   --gradient-red-accent-end: #ee5a24;
-  --text-muted: #666666;
+
+  --sidebar-toggle-offset-top: 0;
 }
 
 [data-theme="dark"] {
   --bg-color: #0f0f0f;
-  --text-color: #e8e8e8;
-  --border-color: #333333;
   --secondary-bg: #1e1e1e;
   --hover-bg: #2a2a2a;
-  --shadow-color: rgba(0, 0, 0, 0.5);
   --white-color: #121212;
-  --light-gray: #1e1e1e;
-  --medium-gray: #333333;
-  --dark-gray: #e8e8e8;
+  --shadow-color: rgba(0, 0, 0, 0.5);
+
+  --text-color: #e8e8e8;
+  --text-muted: #bbbbbb;
+  --border-color: #333333;
   --light-border: #444444;
   --medium-border: #555555;
   --dark-border: #666666;
+
   --code-bg: #1e1e1e;
   --code-text: #e8e8e8;
   --blockquote-bg: #1e1e1e;
   --table-header-bg: #1e1e1e;
+
   --notice-background: #1e1e1e;
   --notice-border: #333333;
   --notice-warning-background: #162030;
   --notice-warning-border: #2d4a70;
   --notice-warning-text: #a8d8ff;
+
   --gradient-blue-start: #4da6ff;
   --gradient-blue-end: #3399ff;
   --gradient-red-start: #ff3333;
@@ -100,15 +104,18 @@
   --gradient-orange-end: #ff9800;
   --gradient-red-accent-start: #ff7f7f;
   --gradient-red-accent-end: #ff5252;
-  --text-muted: #bbbbbb;
-  
+
   /* 微调暗色模式主色调 */
-  --theme-color: #5ca9e6; /* 原 #66b3ff - 与浅色模式主色的亮色保持一致 */
-  --theme-color-dark: #3498db; /* 原 #4d94ff - 使用浅色模式的主色作为暗色 */
-  --theme-color-light: #80c1ff; /* 原 #80c1ff - 调整为更亮的蓝色 */
+  --theme-color: #5ca9e6;
+  --theme-color-dark: #3498db; 
+  --theme-color-light: #80c1ff; 
   --theme-color-gradient: linear-gradient(135deg, var(--theme-color) 0%, var(--theme-color-light) 50%, var(--theme-color-dark) 100%);
   --theme-color-gradient-hover: linear-gradient(135deg, var(--theme-color-light) 0%, var(--theme-color) 50%, var(--theme-color-dark) 100%);
 }
+
+/* ==========================================================================
+   Base Layout & Typography
+   ========================================================================== */
 
 body {
   background-color: var(--bg-color);
@@ -116,7 +123,6 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* 统一页面背景色，包括溢出区域 */
 html,
 body {
   background-color: var(--bg-color) !important;
@@ -127,7 +133,6 @@ body {
   background-color: var(--bg-color) !important;
 }
 
-/* 字体定义 */
 @font-face {
   font-family: "zhongsong";
   src: url('../fonts/zs.ttf') format('truetype');
@@ -136,7 +141,21 @@ body {
   font-display: fallback;
 }
 
-/* 桌面端：CV和publications页面都隐藏sidebar */
+@media (max-width: 480px) {
+  .markdown-section {
+    padding: 2rem 15px;
+  }
+
+  :root {
+    --base-font-size: 16px;
+  }
+}
+
+/* ==========================================================================
+   Page Layout Adjustments
+   ========================================================================== */
+
+/* 桌面端：CV 和 publications 页面隐藏 sidebar */
 [data-page*="cv"] .sidebar,
 [data-page*="cv"] .sidebar-toggle,
 [data-page*="publications"] .sidebar,
@@ -149,9 +168,8 @@ body {
   margin-left: 0;
 }
 
-/* 移动端：CV页面隐藏sidebar，publications页面显示sidebar */
+/* 移动端：CV 页面隐藏 sidebar，publications 页面显示 sidebar */
 @media (max-width: 480px) {
-
   [data-page*="cv"] .sidebar,
   [data-page*="cv"] .sidebar-toggle {
     display: none;
@@ -165,9 +183,16 @@ body {
   [data-page*="publications"] .sidebar-toggle {
     display: flex;
   }
-
 }
 
+/* ==========================================================================
+   Global Components & Typography
+   ========================================================================== */
+
+.progress-bar {
+  height: 4px !important;
+  background: var(--theme-color-gradient) !important;
+}
 
 .scroll-to-top {
   background-color: var(--bg-color);
@@ -177,24 +202,13 @@ body {
 }
 
 .scroll-to-top:hover {
+  transform: scale(1.1) !important;
   color: var(--theme-color) !important;
   border-color: var(--theme-color) !important;
   background-color: var(--hover-bg) !important;
+  box-shadow: 0 4px 12px var(--shadow-color) !important;
 }
 
-[data-theme="dark"] .scroll-to-top {
-  background-color: var(--secondary-bg) !important;
-  border-color: var(--border-color) !important;
-  color: var(--text-color) !important;
-}
-
-[data-theme="dark"] .scroll-to-top:hover {
-  background-color: var(--hover-bg) !important;
-  border-color: var(--theme-color) !important;
-  color: var(--theme-color) !important;
-}
-
-/* 链接样式 */
 .markdown-section a.anchor:hover {
   text-decoration: none;
   text-decoration-color: var(--theme-color);
@@ -204,10 +218,9 @@ body {
 }
 
 .markdown-section a {
-  transition: color, 0.25s;
+  transition: color 0.25s;
 }
 
-/* 标题悬停效果 - 优化 */
 .markdown-section h2 {
   position: relative;
   margin-bottom: 1rem;
@@ -229,13 +242,12 @@ body {
   width: 100%;
 }
 
-/* 链接优雅效果 - 优化选择器 */
 .markdown-section p a:not(.btn):not(.emoji),
 .markdown-section li a:not(.btn):not(.emoji) {
   position: relative;
-  transition: all 0.3s ease;
-  text-decoration: none;
   color: var(--link-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .markdown-section p a:not(.btn):not(.emoji)::after,
@@ -255,55 +267,38 @@ body {
   width: 100%;
 }
 
-
-
-
-/* 修复sidebar-toggle按钮暗黑模式 */
-[data-theme="dark"] .sidebar-toggle {
-  border-color: var(--border-color) !important;
-  color: var(--text-color) !important;
+.markdown-section p,
+.markdown-section li {
+  margin: 0.4em 0;
 }
 
-[data-theme="dark"] .sidebar-toggle:hover {
-  color: var(--theme-color) !important;
+.markdown-section ul {
+  margin: 0.6em 0;
 }
 
-[data-theme="dark"] .sidebar-toggle .sidebar-toggle-button {
-  background-color: var(--medium-gray) !important;
-}
-
-[data-theme="dark"] .sidebar-toggle .sidebar-toggle-button span {
-  background-color: #cccccc !important;
-}
-
-[data-theme="dark"] .sidebar-toggle:hover .sidebar-toggle-button {
-  background-color: var(--theme-color) !important;
-}
-
-
-/* 按钮样式 */
+/* Buttons */
 a.btn {
-  border: 1px solid var(--theme-color);
   display: inline-block;
+  padding: 0 0.375rem;
+  font-size: 0.9rem;
   text-align: center;
   vertical-align: baseline;
   user-select: none;
-  padding: 0 .375rem;
-  font-size: 0.9rem;
-  border-radius: .25rem;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, transform .1s ease;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  border: 1px solid var(--theme-color);
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, transform 0.1s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 a.btn:hover {
   border: 1px solid var(--theme-color);
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 a.btn:active {
   transform: translateY(1px);
-  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 a.btn-outline-primary {
@@ -318,24 +313,19 @@ a.btn-outline-primary:hover {
   border-color: var(--theme-color);
 }
 
-[data-theme="dark"] a.btn-outline-primary:hover {
-  color: var(--white-color);
-  background-color: var(--theme-color-dark);
-  border-color: var(--theme-color);
+/* ==========================================================================
+   CV Page Typography & Lists
+   ========================================================================== */
+
+body[data-page="docs/cv.md"] h2,
+body[data-page="docs/cv.md"] .last {
+  font-variant: small-caps;
 }
 
-
-
-.markdown-section p,
-.markdown-section li {
-  margin: 0.4em 0 0.4em 0;
+.duration {
+  float: right;
 }
 
-.markdown-section ul {
-  margin: 0.6em 0 0.6em 0;
-}
-
-/* 优雅的无序列表样式 - 清新淡雅风格 */
 body[data-page="docs/cv.md"] .markdown-section ul:not(.publist ul) {
   list-style: none;
 }
@@ -356,8 +346,6 @@ body[data-page="docs/cv.md"] .markdown-section ul:not(.publist ul) li::before {
   border-bottom: 6px solid transparent;
   transform: translateY(-50%);
   transition: all 0.3s ease;
-  border-radius: 0 !important;
-  box-shadow: none !important;
 }
 
 body[data-page="docs/cv.md"] .markdown-section ul:not(.publist ul) li:hover::before {
@@ -380,7 +368,6 @@ body[data-page="docs/cv.md"] .markdown-section ul:not(.publist ul) ul li:hover::
   background: var(--theme-color-light);
 }
 
-/* 第三层嵌套 */
 body[data-page="docs/cv.md"] .markdown-section ul:not(.publist ul) ul ul li::before {
   width: 8px;
   height: 8px;
@@ -399,31 +386,15 @@ body[data-page="docs/cv.md"] .markdown-section h2 {
 }
 
 @media (max-width: 480px) {
-  .markdown-section {
-    padding: 2rem 15px;
+  .duration {
+    float: none;
   }
-
-  :root {
-    --base-font-size: 16px;
-  }
-
 }
 
-/* 简历页面基本样式 */
+/* ==========================================================================
+   Profile Section
+   ========================================================================== */
 
-body[data-page="docs/cv.md"] h2 {
-  font-variant: small-caps;
-}
-
-body[data-page="docs/cv.md"] .last {
-  font-variant: small-caps;
-}
-
-.duration {
-  float: right;
-}
-
-/* profile 样式 */
 .profile {
   display: flex;
 }
@@ -435,6 +406,7 @@ body[data-page="docs/cv.md"] .last {
 
 .profile .image img {
   border-radius: 50%;
+  transition: none;
 }
 
 .profile .info {
@@ -442,15 +414,6 @@ body[data-page="docs/cv.md"] .last {
   flex: 1 1;
   flex-direction: column;
   padding-left: 2rem;
-}
-
-.profile .image img {
-  transition: none;
-}
-
-/* 暗黑模式下的头像 */
-[data-theme="dark"] .profile .image img {
-  filter: brightness(0.8);
 }
 
 .profile .info .name {
@@ -476,23 +439,12 @@ body[data-page="docs/cv.md"] .last {
 }
 
 .socials a img {
-  transition: transform 0.3s ease, opacity 0.3s ease;
   opacity: 0.7;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .socials a:hover img {
   transform: scale(1.15);
-  opacity: 1;
-}
-
-/* 暗黑模式下的社交图标 - 颜色反转适配 */
-[data-theme="dark"] .socials img {
-  filter: invert(1) brightness(1.2) contrast(1.1);
-  opacity: 0.8;
-}
-
-[data-theme="dark"] .socials a:hover img {
-  filter: invert(1) brightness(1.5) contrast(1.2);
   opacity: 1;
 }
 
@@ -501,8 +453,8 @@ body[data-page="docs/cv.md"] .last {
 }
 
 .profile .info .cv a {
-  transition: all 0.3s ease;
   position: relative;
+  transition: all 0.3s ease;
 }
 
 .profile .info .cv a:hover {
@@ -529,7 +481,6 @@ body[data-page="docs/cv.md"] .last {
   transform: scaleX(1);
 }
 
-/* 响应式设计 */
 @media (max-width: 480px) {
   .profile {
     flex-direction: column;
@@ -570,22 +521,19 @@ body[data-page="docs/cv.md"] .last {
   .profile .info .cv {
     font-size: 1.2rem;
   }
-
-  .duration {
-    float: none;
-  }
 }
 
+/* ==========================================================================
+   Publication List (Generic)
+   ========================================================================== */
 
-/* 出版物卡片效果 */
 .publist ul li {
-  transition: all 0.3s ease;
-  border-left: 3px solid transparent;
-  padding-left: 12px;
-  margin-top: 1.2em;
-  margin-bottom: 1.2em;
-  margin-left: -30px;
   list-style: none;
+  margin: 1.2em 0;
+  margin-left: -30px;
+  padding-left: 12px;
+  border-left: 3px solid transparent;
+  transition: all 0.3s ease;
 }
 
 .publist ul li:hover {
@@ -598,13 +546,12 @@ body[data-page="docs/cv.md"] .last {
 }
 
 .publist:hover .pubtag {
-  opacity: 1.0;
+  opacity: 1;
 }
 
-/* 移动端优化 */
 @media (max-width: 480px) {
   .publist .pubtag {
-    opacity: 1.0;
+    opacity: 1;
   }
 
   .publist ul li {
@@ -613,8 +560,10 @@ body[data-page="docs/cv.md"] .last {
   }
 }
 
+/* ==========================================================================
+   Address & Map Module
+   ========================================================================== */
 
-/* 地图样式 */
 .address-container {
   margin-bottom: 20px;
   line-height: 2;
@@ -625,14 +574,13 @@ body[data-page="docs/cv.md"] .last {
   margin-bottom: 0.3rem;
   font-size: 1.2em;
   font-weight: 600;
-  transition: color 0.3s
+  transition: color 0.3s;
 }
 
 .address-container .room-info:hover {
   color: var(--theme-color);
 }
 
-/* 地址切换提示 */
 [data-lang="en"]::after {
   content: " 点击切换中文";
   font-size: 0.9rem;
@@ -648,18 +596,17 @@ body[data-page="docs/cv.md"] .last {
   content: " Click for English";
   font-size: 0.9rem;
   color: var(--medium-gray);
-  transition: color 0.3s
+  transition: color 0.3s;
 }
 
 [data-lang="cn"]:hover::after {
   color: var(--theme-color);
 }
 
-/* 地图容器样式 */
 #map-container {
+  border: 1px solid var(--border-color);
   border-radius: 12px;
   overflow: hidden;
-  border: 1px solid var(--border-color);
   background: var(--bg-color);
 }
 
@@ -667,8 +614,8 @@ body[data-page="docs/cv.md"] .last {
   height: 450px;
 }
 
-/* 大地图按钮样式 */
-.map-button {
+.map-button,
+.markdown-section .map-button {
   display: block;
   width: 100%;
   padding: 0.2rem 1.5rem;
@@ -688,26 +635,12 @@ body[data-page="docs/cv.md"] .last {
   transform: translateY(1px);
 }
 
-[data-theme="dark"] .map-button {
-  background: var(--theme-color);
-  color: var(--white-color) !important;
-}
-
-[data-theme="dark"] .map-button:hover {
-  background: var(--theme-color-dark);
-}
-
-/* 响应式地图样式 */
-
 @media (max-width: 480px) {
   .address-container .room-info {
     font-size: 1rem;
   }
 
-  [data-lang="en"]::after {
-    color: var(--medium-gray);
-  }
-
+  [data-lang="en"]::after,
   [data-lang="cn"]::after {
     color: var(--medium-gray);
   }
@@ -717,31 +650,28 @@ body[data-page="docs/cv.md"] .last {
   }
 }
 
+/* ==========================================================================
+   Publications Page
+   ========================================================================== */
 
-/* Publications页面精美美化 */
 body[data-page*="publications"] .markdown-section {
   max-width: 78em;
   line-height: 1.7;
 }
 
-body[data-page*="publications"] .markdown-section>ol {
+body[data-page*="publications"] .markdown-section > ol {
   padding-left: 0;
 }
 
-/* Publications页面标题增强美化 - 使用更高优先级选择器 */
 body[data-page*="publications"] .markdown-section h1 {
+  position: relative !important;
+  max-width: fit-content;
+  margin: 0 auto 3rem auto !important;
+  padding: 2rem 0 1.5rem 0 !important;
+  text-align: center !important;
   font-size: 2.1rem !important;
   font-weight: 800 !important;
   color: var(--theme-color) !important;
-  margin: 0 auto 3rem auto !important;
-  text-align: center !important;
-  position: relative !important;
-  padding: 2rem 0 1.5rem 0 !important;
-  max-width: fit-content;
-  /* background: var(--theme-color) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  background-clip: text !important; */
 }
 
 body[data-page*="publications"] .markdown-section h1::after {
@@ -749,18 +679,17 @@ body[data-page*="publications"] .markdown-section h1::after {
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%);
   width: 200px;
   height: 3px;
-  background: linear-gradient(90deg, transparent, var(--theme-color), var(--theme-color-light), transparent);
+  transform: translateX(-50%);
   border-radius: 3px;
+  background: linear-gradient(90deg, transparent, var(--theme-color), var(--theme-color-light), transparent);
 }
 
-/* 新增：年份分组标题 */
 .year-divider {
   position: relative;
-  text-align: center;
   margin: 3rem 0 2rem 0;
+  text-align: center;
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--theme-color);
@@ -773,58 +702,50 @@ body[data-page*="publications"] .markdown-section h1::after {
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--theme-color), transparent);
   z-index: -1;
+  background: linear-gradient(90deg, transparent, var(--theme-color), transparent);
 }
-
 
 .year-divider span {
-  background: var(--bg-color);
-  padding: 0 2rem;
   position: relative;
+  padding: 0 2rem;
+  background: var(--bg-color);
 }
 
-/* 修复论文编号位置 */
-body[data-page*="publications"] .markdown-section ol>li,
-body[data-page*="publications"] .markdown-section ul>li {
-  /* background: linear-gradient(135deg, #ffffff 0%, #fafbfc 100%); */
-  border: none;
-  border-left: 5px solid transparent;
-  border-bottom: 1px solid var(--light-border);
-  margin: 0;
-  /* border-radius: 12px; */
-  padding: 0.5rem 0rem 0.5rem 3rem;
-  /* margin: 2rem 0 2rem 0; */
-  /* box-shadow: 0 4px 20px rgba(85, 143, 181, 0.08); */
-  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+body[data-page*="publications"] .markdown-section ol > li,
+body[data-page*="publications"] .markdown-section ul > li {
   position: relative;
   overflow: visible;
   white-space: normal;
-  counter-increment: paper-counter;
   list-style: none;
+  margin: 0;
+  padding: 0.5rem 0 0.5rem 3rem;
+  border: none;
+  border-left: 5px solid transparent;
+  border-bottom: 1px solid var(--light-border);
+  counter-increment: paper-counter;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-body[data-page*="publications"] .markdown-section ol>li::before,
-body[data-page*="publications"] .markdown-section ul>li::before {
+body[data-page*="publications"] .markdown-section ol > li::before,
+body[data-page*="publications"] .markdown-section ul > li::before {
   content: counter(paper-counter);
   position: absolute;
-  left: -19px;
   top: 2.1rem;
-  width: 38px;
-  height: 38px;
-  background: var(--theme-color);
-  color: var(--white-color);
-  border-radius: 50%;
+  left: -19px;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 38px;
+  height: 38px;
   font-size: 1.2rem;
   font-weight: 700;
-  /* box-shadow: 0 2px 8px rgba(85, 143, 181, 0.3); */
+  color: var(--white-color);
+  background: var(--theme-color);
+  border-radius: 50%;
   z-index: 1;
 }
 
-/* 悬停装饰 */
 body[data-page*="publications"] .markdown-section li::before {
   content: '';
   position: absolute;
@@ -832,10 +753,10 @@ body[data-page*="publications"] .markdown-section li::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, transparent 0%, var(--shadow-color) 100%);
   opacity: 0;
-  transition: opacity 0.3s ease;
   pointer-events: none;
+  transition: opacity 0.3s ease;
+  background: linear-gradient(135deg, transparent 0%, var(--shadow-color) 100%);
 }
 
 body[data-page*="publications"] .markdown-section li:hover::before {
@@ -844,27 +765,23 @@ body[data-page*="publications"] .markdown-section li:hover::before {
 
 body[data-page*="publications"] .markdown-section ol li:hover,
 body[data-page*="publications"] .markdown-section ul li:hover {
-  /* transform: translateY(-2px); */
   box-shadow: 0 2px 4px var(--shadow-color);
   border-left-color: var(--theme-color-dark);
 }
 
-/* 作者美化 */
 body[data-page*="publications"] .markdown-section li u {
-  color: var(--theme-color);
+  font-size: 1.05rem;
   font-weight: 700;
   text-decoration: none;
   background: linear-gradient(120deg, var(--theme-color), #7ba7cc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  font-size: 1.05rem;
 }
 
 body[data-page*="publications"] .markdown-section li strong {
   font-size: 1.2rem;
 }
-
 
 body[data-page*="publications"] .markdown-section .pubtag a::after {
   display: none !important;
@@ -876,24 +793,24 @@ body[data-page*="publications"] .markdown-section .pubtag a[href*="youtube"] {
   display: inline-block;
   padding: 0.2rem 0.6rem;
   margin: 0 2px;
-  border-radius: .25rem;
   font-size: 0.75rem;
   font-weight: 600;
-  color: var(--theme-color) !important;
-  text-decoration: none !important;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  border: 1px solid var(--theme-color) !important;
-  background: transparent !important;
   text-align: center;
+  text-decoration: none !important;
   vertical-align: baseline;
   user-select: none;
+  color: var(--theme-color) !important;
+  background: transparent !important;
+  border: 1px solid var(--theme-color) !important;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 body[data-page*="publications"] .markdown-section .pubtag a[href*="eprint"]:hover,
 body[data-page*="publications"] .markdown-section .pubtag a[href*="doi"]:hover,
 body[data-page*="publications"] .markdown-section .pubtag a[href*="youtube"]:hover {
-  background: var(--theme-color) !important;
   color: var(--white-color) !important;
+  background: var(--theme-color) !important;
   border-color: var(--theme-color) !important;
 }
 
@@ -901,33 +818,25 @@ body[data-page*="publications"] .markdown-section .pubtag a:active {
   transform: translateY(1px);
 }
 
-
-/* 移动端适配 */
 @media (max-width: 480px) {
-  body[data-page*="publications"] .markdown-section ol>li {
-    padding: 1.5rem 1rem 1.5rem 2.5rem;
-    /* margin: 1rem 0 1rem 0.5rem; */
-    /* display: none; */
-  }
-
-  body[data-page*="publications"] .markdown-section ol>li::before {
-    left: -12px;
-    top: 1.5rem;
-    width: 24px;
-    height: 24px;
-    font-size: 0.8rem;
-    display: none;
+  body[data-page*="publications"] .markdown-section ol > li {
+    padding: 0.5rem;
   }
 
   body[data-page*="publications"] .markdown-section ol {
     padding: 0;
   }
 
-  body[data-page*="publications"] .markdown-section ol>li {
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  body[data-page*="publications"] .markdown-section ol > li::before {
+    display: none;
+    top: 1.5rem;
+    left: -12px;
+    width: 24px;
+    height: 24px;
+    font-size: 0.8rem;
   }
 
-  body[data-page*="publications"] .markdown-section>h1 {
+  body[data-page*="publications"] .markdown-section > h1 {
     font-size: 2rem;
   }
 
@@ -942,25 +851,32 @@ body[data-page*="publications"] .markdown-section .pubtag a:active {
   body[data-page*="publications"] h2 {
     font-size: 1.5rem;
   }
+
+  body[data-page*="publications"] .markdown-section li::before {
+    opacity: 1;
+  }
 }
 
-/* 移动端主题切换按钮 - CV页面专用 */
+/* ==========================================================================
+   Mobile Theme Toggle (CV)
+   ========================================================================== */
+
 .mobile-theme-toggle {
   display: none;
   position: absolute;
   top: 15px;
   right: 15px;
+  width: 40px;
+  height: 40px;
   z-index: 1001;
-  background: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
   color: var(--text-color);
   border: 1px solid var(--border-color);
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  background: rgba(255, 255, 255, 0.8);
   cursor: pointer;
   align-items: center;
   justify-content: center;
-  font-size: 1.1rem;
   transition: all 0.3s ease;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8px);
@@ -968,36 +884,27 @@ body[data-page*="publications"] .markdown-section .pubtag a:active {
 
 .mobile-theme-toggle:hover {
   transform: scale(1.05);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .mobile-theme-toggle:active {
   transform: scale(0.95);
 }
 
-[data-theme="dark"] .mobile-theme-toggle {
-  background: rgba(45, 45, 45, 0.8);
-  color: var(--text-color);
-  border-color: var(--border-color);
-}
-
-[data-theme="dark"] .mobile-theme-toggle:hover {
-  background: rgba(45, 45, 45, 0.9);
-}
-
-/* 移动端适配 */
 @media (max-width: 480px) {
-  
-  /* 在移动端显示CV页面的主题切换按钮 */
   body[data-page*="cv"] .content {
     position: relative;
   }
-  
+
   body[data-page*="cv"] .mobile-theme-toggle {
     display: flex;
   }
 }
+
+/* ==========================================================================
+   Typography Helpers & Docsify Overrides
+   ========================================================================== */
 
 .markdown-section strong,
 .markdown-section b {
@@ -1005,89 +912,6 @@ body[data-page*="publications"] .markdown-section .pubtag a:active {
   font-weight: 700;
 }
 
-[data-theme="dark"] .markdown-section strong,
-[data-theme="dark"] .markdown-section b {
-  color: var(--text-color);
-  font-weight: 800;
-  text-shadow: 0 0 1px var(--text-color);
-}
-
-[data-theme="dark"] .markdown-section strong {
-  color: #ffffff;
-  font-weight: 700;
-}
-
-[data-theme="dark"] .markdown-section em,
-[data-theme="dark"] .markdown-section i {
-  color: var(--theme-color-light);
-  font-style: italic;
-}
-
-/* Docsify 特定元素的暗黑模式适配 */
-[data-theme="dark"] .sidebar {
-  background-color: var(--secondary-bg);
-  border-right: 1px solid var(--border-color);
-}
-
-[data-theme="dark"] .sidebar-nav li,
-[data-theme="dark"] .sidebar-nav li > a,
-[data-theme="dark"] .sidebar-nav a {
-  color: #cccccc !important;
-}
-
-[data-theme="dark"] .sidebar-nav li:hover,
-[data-theme="dark"] .sidebar-nav li:hover > a,
-[data-theme="dark"] .sidebar-nav a:hover {
-  color: #ffffff !important;
-}
-
-[data-theme="dark"] .sidebar-nav li.active > a {
-  color: var(--theme-color) !important;
-}
-
-[data-theme="dark"] .sidebar-nav li.active > a {
-  color: var(--theme-color);
-}
-
-[data-theme="dark"] .markdown-section code {
-  background-color: var(--secondary-bg);
-  color: var(--text-color);
-}
-
-[data-theme="dark"] .markdown-section pre {
-  background-color: var(--secondary-bg);
-  border: 1px solid var(--border-color);
-}
-
-[data-theme="dark"] .markdown-section blockquote {
-  border-left: 4px solid var(--theme-color);
-  background-color: var(--secondary-bg);
-  color: var(--text-color);
-}
-
-[data-theme="dark"] .markdown-section table {
-  border-color: var(--border-color);
-}
-
-[data-theme="dark"] .markdown-section table th {
-  background-color: var(--secondary-bg);
-  color: var(--text-color);
-}
-
-[data-theme="dark"] .markdown-section table td {
-  border-color: var(--border-color);
-}
-
-[data-theme="dark"] .markdown-section h1,
-[data-theme="dark"] .markdown-section h2,
-[data-theme="dark"] .markdown-section h3,
-[data-theme="dark"] .markdown-section h4,
-[data-theme="dark"] .markdown-section h5,
-[data-theme="dark"] .markdown-section h6 {
-  color: var(--text-color);
-}
-
-/* 警告和通知样式 - 高优先级 */
 .markdown-section .warning,
 .markdown-section .warn,
 .markdown-section .notice-warning {
@@ -1096,69 +920,66 @@ body[data-page*="publications"] .markdown-section .pubtag a:active {
   color: var(--notice-warning-text);
 }
 
-/* 论文影响力标签 */
 .impact-badge {
   display: inline-block;
   padding: 0.15rem 0.4rem;
   margin: 0 0.2rem;
-  border-radius: .25rem;
   font-size: 0.7rem;
   font-weight: 600;
   color: var(--white-color);
   background: linear-gradient(135deg, #ff7a7a, #e55a5a);
+  border-radius: 0.25rem;
   vertical-align: middle;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .impact-badge:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* 论文类型标签 */
 .pub-type {
   display: inline-block;
   padding: 0.2rem 0.6rem;
   margin: 0 0.2rem;
-  border-radius: .25rem;
   font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  border-radius: 0.25rem;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .pub-type:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .pub-type.conference {
-  background: linear-gradient(135deg, #55b58f, #368264);
   color: var(--white-color);
+  background: linear-gradient(135deg, #55b58f, #368264);
 }
 
 .pub-type.journal {
-  background: linear-gradient(135deg, #7a95e5, #5a75c5);
   color: var(--white-color);
+  background: linear-gradient(135deg, #7a95e5, #5a75c5);
 }
 
 .pub-type.manuscript {
-  background: linear-gradient(135deg, #e5a97a, #c5895a);
   color: var(--white-color);
+  background: linear-gradient(135deg, #e5a97a, #c5895a);
 }
 
-/* 统计信息栏 */
 .stats-bar {
   display: flex;
   justify-content: space-around;
+  margin: 2rem 0;
+  padding: 1.5rem;
   background: var(--secondary-bg);
   border: 1px solid var(--border-color);
-  padding: 1.5rem;
-  border-radius: .25rem;
-  margin: 2rem 0;
+  border-radius: 0.25rem;
 }
 
 .stat-item {
@@ -1166,10 +987,10 @@ body[data-page*="publications"] .markdown-section .pubtag a:active {
 }
 
 .stat-number {
+  display: block;
   font-size: 2rem;
   font-weight: 700;
   color: var(--theme-color);
-  display: block;
 }
 
 .stat-label {
@@ -1179,7 +1000,6 @@ body[data-page*="publications"] .markdown-section .pubtag a:active {
   letter-spacing: 1px;
 }
 
-/* 搜索框 */
 .search-container {
   margin: 2rem 0;
   text-align: center;
@@ -1189,13 +1009,13 @@ body[data-page*="publications"] .markdown-section .pubtag a:active {
   width: 100%;
   max-width: 650px;
   padding: 0.8rem 1.5rem;
-  border: 2px solid var(--border-color);
-  border-radius: .5rem;
   font-size: 1rem;
-  transition: all 0.3s ease;
-  outline: none;
-  background: var(--bg-color);
   color: var(--text-color);
+  background: var(--bg-color);
+  border: 2px solid var(--border-color);
+  border-radius: 0.5rem;
+  outline: none;
+  transition: all 0.3s ease;
 }
 
 .search-input:focus {
@@ -1203,34 +1023,33 @@ body[data-page*="publications"] .markdown-section .pubtag a:active {
   box-shadow: 0 0 0 3px rgba(85, 143, 181, 0.1);
 }
 
-/* 筛选按钮 */
 .filter-buttons {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
   margin: 1.5rem 0;
-  flex-wrap: wrap;
 }
 
 .filter-btn {
   padding: 0.375rem 1.5rem;
-  border: 1px solid var(--theme-color);
-  background: transparent;
-  color: var(--theme-color);
-  border-radius: .25rem;
-  cursor: pointer;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  font-size: 0.9rem;
   font-weight: 600;
-  font-size: .9rem;
   text-align: center;
   vertical-align: baseline;
   user-select: none;
+  color: var(--theme-color);
+  background: transparent;
+  border: 1px solid var(--theme-color);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .filter-btn:hover,
 .filter-btn.active {
-  background: var(--theme-color);
   color: var(--white-color);
+  background: var(--theme-color);
   border-color: var(--theme-color);
 }
 
@@ -1238,36 +1057,27 @@ body[data-page*="publications"] .markdown-section .pubtag a:active {
   transform: translateY(1px);
 }
 
-@media (max-width: 480px) {
+/* ==========================================================================
+   Sidebar Theme Toggle
+   ========================================================================== */
 
-  body[data-page*="publications"] .markdown-section li::before {
-    opacity: 1;
-  }
-}
-
-[data-theme="dark"] .sidebar a{
-  color: #cccccc !important;
-}
-
-/* 导航栏主题切换器样式 */
 .sidebar .theme-toggle-top {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
+  height: 40px;
   padding: 0 15px;
   margin: 0 -15px;
+  box-sizing: border-box;
+  line-height: 1;
+  font-size: 0.9rem;
   background: var(--secondary-bg);
   border: 1px solid var(--border-color);
   border-left: none;
   border-right: none;
-  font-size: 0.9rem;
-  height: 40px;
-  box-sizing: border-box;
-  line-height: 1;
 }
 
-/* 图标切换开关样式 */
 .icon-toggle {
   display: inline-block;
   vertical-align: middle;
@@ -1276,7 +1086,6 @@ body[data-page*="publications"] .markdown-section .pubtag a:active {
   padding: 0;
 }
 
-/* 移动端主题切换按钮的SVG样式 */
 .mobile-theme-toggle .theme-icon-svg {
   width: 20px;
   height: 20px;
@@ -1288,34 +1097,31 @@ body[data-page*="publications"] .markdown-section .pubtag a:active {
 
 .toggle-track {
   position: relative;
+  display: flex;
+  align-items: center;
   width: 44px;
   height: 22px;
+  margin: 0;
+  padding: 0 2px;
   background-color: #ccc;
   border-radius: 22px;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  padding: 0 2px;
   user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  margin: 0;
   transition: background-color 0.3s ease;
 }
 
 .toggle-thumb {
   position: absolute;
-  height: 18px;
-  width: 18px;
-  background-color: white;
-  border-radius: 50%;
   left: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 18px;
+  height: 18px;
   font-size: 12px;
-  pointer-events: none; /* 让点击事件穿透到track */
+  background-color: #ffffff;
+  border-radius: 50%;
+  pointer-events: none;
   transition: left 0.3s ease, background-color 0.3s ease;
 }
 
@@ -1343,13 +1149,13 @@ body[data-page*="publications"] .markdown-section .pubtag a:active {
 }
 
 .light-icon {
-  opacity: 1;
   color: #f39c12;
+  opacity: 1;
 }
 
 .dark-icon {
-  opacity: 0;
   color: #34495e;
+  opacity: 0;
 }
 
 .toggle-track.dark-mode {
@@ -1366,4 +1172,161 @@ body[data-page*="publications"] .markdown-section .pubtag a:active {
 
 .toggle-track.dark-mode .dark-icon {
   opacity: 1;
+}
+
+/* ==========================================================================
+   Dark Mode Overrides
+   ========================================================================== */
+
+[data-theme="dark"] .scroll-to-top {
+  background-color: var(--secondary-bg) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .scroll-to-top:hover {
+  background-color: var(--hover-bg) !important;
+  border-color: var(--theme-color) !important;
+  color: var(--theme-color) !important;
+}
+
+[data-theme="dark"] .sidebar-toggle {
+  border-color: var(--border-color) !important;
+  color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .sidebar-toggle:hover {
+  color: var(--theme-color) !important;
+}
+
+[data-theme="dark"] .sidebar-toggle .sidebar-toggle-button {
+  background-color: var(--medium-gray) !important;
+}
+
+[data-theme="dark"] .sidebar-toggle .sidebar-toggle-button span {
+  background-color: #cccccc !important;
+}
+
+[data-theme="dark"] .sidebar-toggle:hover .sidebar-toggle-button {
+  background-color: var(--theme-color) !important;
+}
+
+[data-theme="dark"] a.btn-outline-primary:hover {
+  color: var(--white-color);
+  background-color: var(--theme-color-dark);
+  border-color: var(--theme-color);
+}
+
+[data-theme="dark"] .profile .image img {
+  filter: brightness(0.8);
+}
+
+[data-theme="dark"] .socials img {
+  filter: invert(1) brightness(1.2) contrast(1.1);
+  opacity: 0.8;
+}
+
+[data-theme="dark"] .socials a:hover img {
+  filter: invert(1) brightness(1.5) contrast(1.2);
+  opacity: 1;
+}
+
+[data-theme="dark"] .map-button {
+  background: var(--theme-color);
+  color: var(--white-color) !important;
+}
+
+[data-theme="dark"] .map-button:hover {
+  background: var(--theme-color-dark);
+}
+
+[data-theme="dark"] .mobile-theme-toggle {
+  color: var(--text-color);
+  border-color: var(--border-color);
+  background: rgba(45, 45, 45, 0.8);
+}
+
+[data-theme="dark"] .mobile-theme-toggle:hover {
+  background: rgba(45, 45, 45, 0.9);
+}
+
+[data-theme="dark"] .markdown-section strong,
+[data-theme="dark"] .markdown-section b {
+  color: var(--text-color);
+  font-weight: 800;
+  text-shadow: 0 0 1px var(--text-color);
+}
+
+[data-theme="dark"] .markdown-section strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+[data-theme="dark"] .markdown-section em,
+[data-theme="dark"] .markdown-section i {
+  color: var(--theme-color-light);
+  font-style: italic;
+}
+
+[data-theme="dark"] .sidebar {
+  background-color: var(--secondary-bg);
+  border-right: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .sidebar a {
+  color: #cccccc !important;
+}
+
+[data-theme="dark"] .sidebar-nav li,
+[data-theme="dark"] .sidebar-nav li > a,
+[data-theme="dark"] .sidebar-nav a {
+  color: #cccccc !important;
+}
+
+[data-theme="dark"] .sidebar-nav li:hover,
+[data-theme="dark"] .sidebar-nav li:hover > a,
+[data-theme="dark"] .sidebar-nav a:hover {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .sidebar-nav li.active > a {
+  color: var(--theme-color) !important;
+}
+
+[data-theme="dark"] .markdown-section code {
+  color: var(--text-color);
+  background-color: var(--secondary-bg);
+}
+
+[data-theme="dark"] .markdown-section pre {
+  background-color: var(--secondary-bg);
+  border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .markdown-section blockquote {
+  color: var(--text-color);
+  background-color: var(--secondary-bg);
+  border-left: 4px solid var(--theme-color);
+}
+
+[data-theme="dark"] .markdown-section table {
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .markdown-section table th {
+  color: var(--text-color);
+  background-color: var(--secondary-bg);
+}
+
+[data-theme="dark"] .markdown-section table td {
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .markdown-section h1,
+[data-theme="dark"] .markdown-section h2,
+[data-theme="dark"] .markdown-section h3,
+[data-theme="dark"] .markdown-section h4,
+[data-theme="dark"] .markdown-section h5,
+[data-theme="dark"] .markdown-section h6 {
+  color: var(--text-color);
 }
