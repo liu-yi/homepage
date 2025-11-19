@@ -43,19 +43,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
   </noscript>
   <link rel="stylesheet" href="public/css/styles.min.css">
+  <link rel="stylesheet" href="public/css/beautify.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
-  
+
   <!-- 极简主题设置 -->
   <script>
-    (function() {
+    (function () {
       const THEME_KEY = 'theme-preference';
-      const currentTheme = localStorage.getItem(THEME_KEY) || 
+      const currentTheme = localStorage.getItem(THEME_KEY) ||
         (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-      
+
       // 立即设置主题属性
       document.documentElement.setAttribute('data-theme', currentTheme);
       document.body && document.body.setAttribute('data-theme', currentTheme);
-      
+
       // 关键：通过CSS直接设置按钮状态，避免JS延迟
       const style = document.createElement('style');
       style.textContent = `
@@ -125,8 +126,10 @@
   <div class="progress-bar" id="progress-bar"></div>
   <!-- 移动端主题切换按钮 - CV页面专用 -->
   <button class="mobile-theme-toggle" id="mobile-theme-toggle" title="切换主题">
-    <svg class="theme-icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41M12 17a5 5 0 100-10 5 5 0 000 10z"/>
+    <svg class="theme-icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2">
+      <path
+        d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41M12 17a5 5 0 100-10 5 5 0 000 10z" />
     </svg>
   </button>
   <div id="app"></div>
@@ -184,15 +187,15 @@
     // Docsify plugin for AMap - only load on CV page
     window.$docsify = window.$docsify || {};
     window.$docsify.plugins = (window.$docsify.plugins || []).concat([
-      function(hook, vm) {
+      function (hook, vm) {
         let amapInstance = null;
         let amapLoading = false;
 
         // Check if we're on the CV page
         function isCVPage() {
           const currentPath = window.location.hash;
-          return currentPath === '' || currentPath === '#' || currentPath === '#/' || 
-                 currentPath.startsWith('#/cv') || currentPath.startsWith('#/docs/cv');
+          return currentPath === '' || currentPath === '#' || currentPath === '#/' ||
+            currentPath.startsWith('#/cv') || currentPath.startsWith('#/docs/cv');
         }
 
         // Initialize AMap with improved error handling and retry logic
@@ -269,22 +272,22 @@
             }
             amapInstance = null;
           }
-          
+
           const container = document.getElementById('amap-container');
           if (container) {
             container.innerHTML = '';
           }
-          
+
           amapLoading = false;
         }
 
         // Robust initialization with multiple retry attempts
         function initAMapWithRetry(retryCount = 0) {
           if (!isCVPage()) return;
-          
+
           const maxRetries = 3;
           const container = document.getElementById('amap-container');
-          
+
           if (container && AMapLoader && !amapInstance && !amapLoading) {
             initAMap();
           } else if (retryCount < maxRetries) {
@@ -293,7 +296,7 @@
         }
 
         // Hook into docsify lifecycle
-        hook.doneEach(function() {
+        hook.doneEach(function () {
           if (isCVPage()) {
             // Add delay to ensure DOM is fully rendered
             setTimeout(() => initAMapWithRetry(), 150);
@@ -303,7 +306,7 @@
         });
 
         // Handle page navigation with improved timing
-        hook.beforeEach(function(content, next) {
+        hook.beforeEach(function (content, next) {
           // Clean up when leaving CV page
           if (!isCVPage()) {
             cleanupAMap();
@@ -312,7 +315,7 @@
         });
 
         // Additional hook for after navigation
-        hook.afterEach(function(html, next) {
+        hook.afterEach(function (html, next) {
           if (isCVPage()) {
             setTimeout(() => initAMapWithRetry(), 200);
           }
