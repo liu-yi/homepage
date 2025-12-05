@@ -117,7 +117,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 
     <u>**Yi Liu**</u>, Yipeng Song, Anjia Yang, Junzuo Lai
 
-    The 27th International Conference on Information and Communications Security (**ICICS 2025**). 
+    The 27th International Conference on Information and Communications Security (**ICICS 2025**). <span class="pubtag"><a href="https://doi.org/10.1007/978-981-95-3540-8_8" target="_blank">DOI</a></span> <span class="pubtag"><a href="https://eprint.iacr.org/2025/2146" target="_blank">ePrint</a></span>
     
     Nanjing, China. Oct. 2025.
 
