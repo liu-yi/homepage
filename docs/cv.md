@@ -113,11 +113,11 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 <span><a class="btn btn-outline-primary" style="font-size: 17px; width: 100%; padding: 2px" href="#/publications/?id=main">Full List of Publications</a></span>
 
 
-- **Zero-Knowledge Protocols with PVC Security: Striking the Balance between Security and Efficiency** 
+- **Zero-Knowledge Protocols with PVC Security: Striking the Balance between Security and Efficiency** <span class="pubtag"><a class="emoji" href="https://doi.org/10.1007/978-981-95-3540-8_8" target="_blank">:link:</a></span>
 
     <u>**Yi Liu**</u>, Yipeng Song, Anjia Yang, Junzuo Lai
 
-    The 27th International Conference on Information and Communications Security (**ICICS 2025**). <span class="pubtag"><a href="https://doi.org/10.1007/978-981-95-3540-8_8" target="_blank">DOI</a></span> <span class="pubtag"><a href="https://eprint.iacr.org/2025/2146" target="_blank">ePrint</a></span>
+    The 27th International Conference on Information and Communications Security (**ICICS 2025**). <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2025/2146" target="_blank">ePrint</a></span>
     
     Nanjing, China. Oct. 2025.
 
