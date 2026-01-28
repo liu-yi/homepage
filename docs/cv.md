@@ -194,13 +194,16 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 
 ## Students
 
-- **Graduate Students**
+- **Postgraduate Students**
   - Yulong Du (Master, since 2025)
   - Cuiying Zhao (Master, since 2025)
   - Yunqi He (Master, since 2024)
   - Yipeng Song (Master, since 2023)
 
 - **Undergraduate Students**
+  - Tao Jiang (B.Eng. 2026)
+  - Junsong He (B.Eng. 2026)
+  - Yuanhao Zhuang (B.Eng. 2026) 
   - Jiquan Yang (B.Eng. 2025)
   - Junjie Li (B.Eng. 2024; first employment: Tencent)
   - Wanqing Li (B.Eng. 2024; first employment: Midea)
