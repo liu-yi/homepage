@@ -215,6 +215,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
   - IEEE Transactions on Industrial Informatics
   - International Journal of Information Security 
   - Web Intelligence
+  - Frontiers of Computer Science
 - **Conference Reviewer**
   - IEEE BSC@QRS (2022, 2021, 2020)
 - **Membership**
