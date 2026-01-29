@@ -48,10 +48,26 @@
 
   <!-- 极简主题设置 -->
   <script>
+    // ==========================================
+    // 主题切换开关配置
+    // 设置为 true 启用暗黑模式切换功能
+    // 设置为 false 禁用切换，强制使用白天模式
+    // ==========================================
+    window.THEME_TOGGLE_ENABLED = false;
+
     (function () {
       const THEME_KEY = 'theme-preference';
-      const currentTheme = localStorage.getItem(THEME_KEY) ||
-        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+      // 如果禁用主题切换，强制使用白天模式
+      const currentTheme = window.THEME_TOGGLE_ENABLED
+        ? (localStorage.getItem(THEME_KEY) || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'))
+        : 'light';
+
+      // 标记是否启用主题切换，确保CSS能在DOM渲染前生效
+      document.documentElement.setAttribute(
+        'data-theme-toggle-enabled',
+        window.THEME_TOGGLE_ENABLED ? 'true' : 'false'
+      );
 
       // 立即设置主题属性
       document.documentElement.setAttribute('data-theme', currentTheme);
@@ -73,7 +89,7 @@
           opacity: 0;
         }
         [data-theme="dark"] .toggle-track {
-          background-color: #66b3ff;
+          background-color: #333333;
         }
         [data-theme="dark"] .toggle-track .toggle-thumb {
           left: 24px;
@@ -84,10 +100,32 @@
         [data-theme="dark"] .toggle-track .dark-icon {
           opacity: 1;
         }
+        /* 禁用主题切换时隐藏切换按钮（避免闪烁） */
+        html:not([data-theme-toggle-enabled="true"]) .mobile-theme-toggle,
+        html:not([data-theme-toggle-enabled="true"]) .sidebar .theme-toggle-top,
+        html:not([data-theme-toggle-enabled="true"]) #toggle-track,
+        html:not([data-theme-toggle-enabled="true"]) .theme-toggle {
+          display: none !important;
+        }
       `;
       document.head.appendChild(style);
+
+      // 如果禁用主题切换，添加禁用类到 body
+      if (!window.THEME_TOGGLE_ENABLED) {
+        document.body && document.body.classList.add('theme-toggle-disabled');
+      }
     })();
   </script>
+
+  <style>
+    /* 禁用主题切换时隐藏切换按钮 */
+    html:not([data-theme-toggle-enabled="true"]) .mobile-theme-toggle,
+    html:not([data-theme-toggle-enabled="true"]) .sidebar .theme-toggle-top,
+    html:not([data-theme-toggle-enabled="true"]) #toggle-track,
+    html:not([data-theme-toggle-enabled="true"]) .theme-toggle {
+      display: none !important;
+    }
+  </style>
 
   <link rel="shortcut icon" href="public/img/logo.ico" type="image/ico" />
 
@@ -191,11 +229,13 @@
         let amapInstance = null;
         let amapLoading = false;
 
-        // Check if we're on the CV page
+        // Check if we're on the CV page - updated to handle URL parameters
         function isCVPage() {
           const currentPath = window.location.hash;
-          return currentPath === '' || currentPath === '#' || currentPath === '#/' ||
-            currentPath.startsWith('#/cv') || currentPath.startsWith('#/docs/cv');
+          // Extract the path without parameters
+          const basePath = currentPath.split('?')[0];
+          return basePath === '' || basePath === '#' || basePath === '#/' ||
+            basePath.startsWith('#/cv') || basePath.startsWith('#/docs/cv');
         }
 
         // Initialize AMap with improved error handling and retry logic

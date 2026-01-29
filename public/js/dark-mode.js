@@ -1,5 +1,70 @@
 // 暗黑模式切换功能 - 极简可靠版
 (function() {
+    // ==========================================
+    // 主题切换开关配置
+    // 在 index.html 中设置 window.THEME_TOGGLE_ENABLED = true/false
+    // 默认为 true（启用）
+    // ==========================================
+    const isToggleEnabled = window.THEME_TOGGLE_ENABLED !== false;
+    document.documentElement.setAttribute(
+        'data-theme-toggle-enabled',
+        isToggleEnabled ? 'true' : 'false'
+    );
+    
+    // 如果禁用主题切换
+    if (!isToggleEnabled) {
+        console.log('[Theme] 主题切换功能已禁用，强制使用白天模式');
+        
+        // 确保强制使用白天模式
+        document.documentElement.setAttribute('data-theme', 'light');
+        if (document.body) {
+            document.body.setAttribute('data-theme', 'light');
+            document.body.classList.add('theme-toggle-disabled');
+        }
+        
+        // 隐藏所有主题切换按钮
+        function hideToggleButtons() {
+            // 隐藏移动端切换按钮
+            const mobileToggle = document.querySelector('.mobile-theme-toggle');
+            if (mobileToggle) mobileToggle.style.display = 'none';
+            
+            // 隐藏导航栏切换按钮
+            const navbarToggle = document.querySelector('.theme-toggle-top');
+            if (navbarToggle) navbarToggle.style.display = 'none';
+            
+            // 隐藏其他可能的切换按钮
+            const toggleTrack = document.getElementById('toggle-track');
+            if (toggleTrack) toggleTrack.style.display = 'none';
+            
+            const originalToggle = document.querySelector('.theme-toggle');
+            if (originalToggle) originalToggle.style.display = 'none';
+        }
+        
+        // 立即执行
+        hideToggleButtons();
+        
+        // Docsify 加载后再次执行（因为导航栏是动态加载的）
+        if (window.$docsify) {
+            window.$docsify.plugins = (window.$docsify.plugins || []).concat([
+                function(hook) {
+                    hook.doneEach(function() {
+                        setTimeout(hideToggleButtons, 100);
+                    });
+                    hook.mounted(function() {
+                        setTimeout(hideToggleButtons, 200);
+                    });
+                }
+            ]);
+        }
+        
+        // DOM 加载完成后也执行一次
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', hideToggleButtons);
+        }
+        
+        return; // 不执行任何切换功能
+    }
+    
     const THEME_KEY = 'theme-preference';
     
     function getCurrentTheme() {
