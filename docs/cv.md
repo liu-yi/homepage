@@ -1,52 +1,53 @@
-<div id="intro">
-  <div class="profile">
-    <div class="image">
-      <div id="avatar"  @click="todo">
-          <img v-show="!hover_avatar" src="public/img/logo.jpg" alt="Yi Liu's profile picture" v-on="{ mouseenter: mouseEnter, mouseleave: mouseLeave }">
-          <img v-show="hover_avatar && todo_num % 2 == 0" src="public/img/logo2.jpg" alt="Yi Liu's alternative profile picture" v-on="{ mouseenter: mouseEnter, mouseleave: mouseLeave }">
-          <img v-show="hover_avatar && todo_num % 2 == 1" src="public/img/logo3.jpg" alt="Yi Liu's third profile picture" v-on="{ mouseenter: mouseEnter, mouseleave: mouseLeave }">
-      </div>
-    </div>
-    <div class="info">
-      <div class="name" @mouseenter="hover_name = true"
-          @mouseleave="hover_name = false">
-        <span>{{ hover_name ? "刘   " : "Yi " }}</span>
-        <span class="last">{{ hover_name ? "逸" : "Liu" }}</span>
-      </div>
-      <div class="socials">
-        <div>
-            <a href="https://scholar.google.com.hk/citations?user=pKOcyg0AAAAJ" target="_blank">
-              <img src="public/icons/google-scholar.svg" alt="Google Scholar"
-              title="Google Scholar" />
-            </a>
-            <a href="https://github.com/liu-yi" target="_blank">
-              <img src="public/icons/github.svg" alt="Github"
-              title="Github" />
-            </a>
-            <a href="https://www.linkedin.com/in/liuyipro" target="_blank">
-              <img src="public/icons/linkedin-mono.svg" alt="LinkedIn"
-              title="LinkedIn" />
-            </a>
-            <a href="https://www.zhihu.com/people/imliuyi" target="_blank">
-              <img src="public/icons/zhihu.svg" alt="知乎"
-              title="知乎" />
-            </a>
+<div class="hero-section" id="hero">
+  <div class="hero-content">
+    <div id="intro">
+      <div class="hero-profile">
+        <div class="hero-image" @click="todo">
+          <div id="avatar">
+            <img v-show="!hover_avatar" src="public/img/logo.jpg" alt="Yi Liu's profile picture" v-on="{ mouseenter: mouseEnter, mouseleave: mouseLeave }">
+            <img v-show="hover_avatar && todo_num % 2 == 0" src="public/img/logo2.jpg" alt="Yi Liu's alternative profile picture" v-on="{ mouseenter: mouseEnter, mouseleave: mouseLeave }">
+            <img v-show="hover_avatar && todo_num % 2 == 1" src="public/img/logo3.jpg" alt="Yi Liu's third profile picture" v-on="{ mouseenter: mouseEnter, mouseleave: mouseLeave }">
+          </div>
         </div>
-      </div>
-      <div class="contact">
-        <div class="email" title="Contact me">i (AT) liuyi.pro, liuyi (AT) jnu.edu.cn</div>
-      </div>
-      <div class="cv">
-        <span v-if="display_todo">[</span><a v-if="display_todo" href="#/miscellaneous/todo">Todo</a><span v-if="display_todo">]</span>
-        [<a target="_blank" style="font-size: 1em" href="public/cv/YiLIU-CV-en.pdf" title="Download my CV">
-          CV
-        </a>|<a target="_blank" style="font-size: 1em" href="public/cv/YiLIU-CV-cn.pdf" title="下载我的中文版简历">
-          简历
-        </a>]
+        <div class="hero-info">
+          <div class="hero-name" @mouseenter="hover_name = true" @mouseleave="hover_name = false">
+            <span>{{ hover_name ? "刘   " : "Yi " }}</span>
+            <span class="last">{{ hover_name ? "逸" : "Liu" }}</span>
+          </div>
+          <div class="hero-contact">
+            <div class="email">i@liuyi.pro · liuyi@jnu.edu.cn</div>
+          </div>
+          <div class="hero-socials">
+            <div>
+              <a href="https://scholar.google.com.hk/citations?user=pKOcyg0AAAAJ" target="_blank" title="Google Scholar">
+                <img src="public/icons/google-scholar.svg" alt="Google Scholar">
+              </a>
+              <a href="https://github.com/liu-yi" target="_blank" title="GitHub">
+                <img src="public/icons/github.svg" alt="Github">
+              </a>
+              <a href="https://www.linkedin.com/in/liuyipro" target="_blank" title="LinkedIn">
+                <img src="public/icons/linkedin-mono.svg" alt="LinkedIn">
+              </a>
+              <a href="https://www.zhihu.com/people/imliuyi" target="_blank" title="知乎">
+                <img src="public/icons/zhihu.svg" alt="知乎">
+              </a>
+            </div>
+          </div>
+          <div class="hero-cv">
+            <span v-if="display_todo"><a href="#/miscellaneous/todo">Todo</a><span class="divider">·</span></span>
+            <a target="_blank" href="public/cv/YiLIU-CV-en.pdf">CV</a><span class="divider">·</span><a target="_blank" href="public/cv/YiLIU-CV-cn.pdf">简历</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+  <button class="scroll-down-btn" onclick="document.getElementById('about-me').scrollIntoView({ behavior: 'smooth' })" title="Scroll down">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 9l6 6 6-6"/>
+    </svg>
+  </button>
 </div>
+
 <script>
   Vue.createApp({
     data: function(){
@@ -60,11 +61,9 @@
     methods: {
       mouseEnter(event) {
         this.hover_avatar = true;
-        // this.hover_name = true; 
       },
       mouseLeave(event) {
         this.hover_avatar = false;
-        // this.hover_name = false; 
       },
       todo(){
         this.todo_num++; 
@@ -76,13 +75,17 @@
   }).mount('#intro');
 </script>
 
+<div id="about-me">
+
+</br>
+
 ?> 
 **Looking for Students**:</br>
 I am available to supervise 2 Master's students each year. I am looking for self-motivated students with a solid background in computer science who are eager to explore research problems in cryptography, security, and privacy. While no prior experience in cryptography or security is required, students should have strong self-learning abilities and a curiosity for acquiring new knowledge. For more information, see [*Information For Prospective Students*](/for-students/). If you are interested, feel free to reach out via email! 
 
 
 ## About Me
-I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.jnu.edu.cn/), [Jinan University (JNU)](https://english.jnu.edu.cn/). My research interests broadly cover cryptography, computer security and privacy. Recently, I’ve been working on **secure multi-party computation**, **zero-knowledge proof**, **timed cryptography**, **blockchain-related applications**, etc.
+I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.jnu.edu.cn/), [Jinan University (JNU)](https://english.jnu.edu.cn/). My research interests broadly cover cryptography, computer security and privacy. Recently, I've been working on **secure multi-party computation**, **zero-knowledge proof**, **timed cryptography**, **blockchain-related applications**, etc.
 
 
 
@@ -101,7 +104,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 ## Research Projects
 - <span title="新型安全多方计算协议设计研究">**Research on the Design of New Secure Multi-Party Computation Protocols**</span> <div class="duration">*2025 – 2026*</div>
   - <span title="项目负责人">Principal Investigator</span>
-  - Supported by the <span title="广州市基础与应用基础研究专题（青年博士“启航”项目）">Guangzhou Municipal Fundamental and Applied Basic Research Special Topic Young Doctoral "Sail" Project</span> (Grant No. 2025A04J2146). 
+  - Supported by the <span title="广州市基础与应用基础研究专题（青年博士"启航"项目）">Guangzhou Municipal Fundamental and Applied Basic Research Special Topic Young Doctoral "Sail" Project</span> (Grant No. 2025A04J2146). 
 - <span title="新型安全模型中的安全多方计算协议设计">**Design of Secure Multi-Party Computation Protocols in New Security Models**</span> <div class="duration">*2024 – 2026*</div>
   - <span title="项目负责人">Principal Investigator</span>
   - Supported by the <span title="国家自然科学基金青年科学基金项目">Young Scientists Fund of the National Natural Science Foundation of China</span> (Grant No. 62302194). 
@@ -226,30 +229,6 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 
 
 
-<!-- ## Experience
-
-- **Teaching Assistant**
-  - COMP2119: Introduction to Data Structures and Algorithms (HKU Fall 2021)
-  - CS403: Cryptography and Network Security (SUSTech Fall 2019, Fall 2020)
-  - COMP7904: Information Security: Attacks and Defense (HKU Spring 2019)
-  - CS304: Software Engineering (SUSTech Spring 2017)
-  - CS201: Discrete Mathematics (SUSTech Fall 2016) 
-  - CS302: Operating System (SUSTech Spring 2016)
-
-- **Research Assistant**
-  - CoCrypto Lab (Adviser: Qi Wang) <div class="duration">*Sept. 2016 – Aug. 2018*</div>
-  - SUSTech Innovation Center for Data Science (Adviser: Rusong Zheng) <div class="duration">*July 2017 – Aug. 2017*</div>
-  - UAV and Sensor Network Lab (Adviser: Qi Hao) <div class="duration">*July 2015 – Sept. 2016*</div> -->
-
-<!-- ## Awards & Honors
-- **Best Thesis Award** Department of Computer Science and Engineering of SUSTech **2018**
-- **SUSTech Outstanding Student Scholarship** (Third Prize) **2017**
-- **SUSTech Outstanding Student Scholarship** (Second Prize) **2016**
-- **College Student Start-Up Scholarship** **2014 – 2018** -->
-
-<!-- ## Skills
-C/C++, Python, LaTeX, Java, HTML/CSS, JavaScript -->
-
 ## Location
 
 <div class="address-wrapper">
@@ -267,5 +246,7 @@ C/C++, Python, LaTeX, Java, HTML/CSS, JavaScript -->
 
 <div id="map-container">
 <div id="amap-container"></div>
-<a href="https://www.amap.com/search?id=B0JBD7XRFY&city=440113&geoobj=113.402929%7C23.011163%7C113.425245%7C23.022489&query_type=IDQ&query=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83%E5%A4%A7%E6%A5%BC&zoom=17" class="map-button" target="_blank">View Map</a>
+<a href="https://www.amap.com/search?id=B0JBD7XRFY&city=440113&geoobj=113.402929%7C23.011163%7C113.425245%7C23.022489&query_type=IDQ&query=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%95%AA%E7%A6%87%E6%A0%A1%E5%8C%BA%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83%E5%A4%A7%E6%A5%BC&zoom=17" class="map-button" target="_blank">View Map</a>
+</div>
+
 </div>

@@ -392,7 +392,267 @@ body[data-page="docs/cv.md"] .markdown-section h2 {
 }
 
 /* ==========================================================================
-   Profile Section
+   Hero Section (Full-page Profile)
+   ========================================================================== */
+
+.hero-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  background-color: var(--bg-color);
+  transition: background-color 0.3s ease;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hero profile - centered vertical layout */
+.hero-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Avatar - ensure perfect circle */
+.hero-image {
+  width: 280px;
+  height: 280px;
+  padding: 0;
+  margin-bottom: 1rem;
+  margin-top: -160px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 8px 32px var(--shadow-color);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.hero-image:hover {
+  box-shadow: 0 12px 48px var(--shadow-color);
+}
+
+.hero-image #avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Hero info section */
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+/* Name styling */
+.hero-name {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 0.8rem;
+  color: var(--text-color);
+}
+
+/* Social links */
+.hero-socials {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.hero-socials > div {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.hero-socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.hero-socials a:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.hero-socials img {
+  width: 22px;
+  height: 22px;
+  transition: all 0.3s ease;
+}
+
+[data-theme="dark"] .hero-socials img {
+  filter: invert(1);
+  opacity: 0.8;
+}
+
+[data-theme="dark"] .hero-socials a:hover img {
+  opacity: 1;
+}
+
+/* Email */
+.hero-contact {
+  margin-bottom: 1rem;
+}
+
+.hero-contact .email {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  letter-spacing: 0.3px;
+  line-height: 1.8;
+}
+
+/* CV links - simple text style */
+.hero-cv {
+  font-size: 0.9rem;
+  margin-top: 1.2rem;
+}
+
+.hero-cv a {
+  color: var(--text-color);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1px;
+  transition: all 0.3s ease;
+}
+
+.hero-cv a:hover {
+  color: var(--theme-color);
+  border-bottom-color: var(--theme-color);
+}
+
+.hero-cv .divider {
+  color: var(--text-muted);
+  margin: 0 0.5rem;
+}
+
+/* Scroll down button */
+.scroll-down-btn {
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: bounce-gentle 2s ease-in-out infinite;
+}
+
+.scroll-down-btn:hover {
+  color: var(--theme-color);
+  transform: translateX(-50%) translateY(-3px);
+}
+
+.scroll-down-btn svg {
+  width: 32px;
+  height: 32px;
+}
+
+@keyframes bounce-gentle {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-8px);
+  }
+}
+
+/* Mobile hero adjustments */
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 1.5rem;
+  }
+
+  .hero-image {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 1.2rem;
+  }
+
+  .hero-name {
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .hero-cv {
+    font-size: 0.85rem;
+  }
+
+  .hero-socials > div {
+    gap: 1rem;
+  }
+
+  .hero-socials a {
+    width: 36px;
+    height: 36px;
+  }
+
+  .hero-socials img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .hero-contact .email {
+    font-size: 0.85rem;
+  }
+
+  .scroll-down-btn {
+    width: 36px;
+    height: 36px;
+    bottom: 80px;
+  }
+  
+  .scroll-down-btn svg {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .hero-image {
+    width: 200px;
+    height: 200px;
+    margin-top: -80px;
+  }
+
+  .scroll-down-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* ==========================================================================
+   Profile Section (Legacy - for non-hero usage)
    ========================================================================== */
 
 .profile {
