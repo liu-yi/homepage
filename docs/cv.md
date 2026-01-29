@@ -41,7 +41,7 @@
       </div>
     </div>
   </div>
-  <button class="scroll-down-btn" onclick="document.getElementById('about-me').scrollIntoView({ behavior: 'smooth' })" title="Scroll down">
+  <button class="scroll-down-btn" onclick="document.getElementById('cv-page').scrollIntoView({ behavior: 'smooth' })" title="Scroll down">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <path d="M6 9l6 6 6-6"/>
     </svg>
@@ -75,7 +75,9 @@
   }).mount('#intro');
 </script>
 
-<div id="about-me">
+<div id="cv-page">
+
+</br>
 
 <div class="student-card">
   <div class="student-card-header">

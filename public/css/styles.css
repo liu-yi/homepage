@@ -51,9 +51,9 @@
   --notice-background: #f8f9fa;
   --notice-border: #e1e5e9;
   --notice-tip-border-color: var(--theme-color);
-  --notice-warning-background: #e8f4fd;
-  --notice-warning-border: #bee5eb;
-  --notice-warning-text: #0c5460;
+  --notice-warning-background: #f8f9fa;
+  --notice-warning-border: #999999;
+  --notice-warning-text: #333333;
 
   /* Accent gradients */
   --gradient-blue-start: #007ccf;
@@ -91,9 +91,9 @@
 
   --notice-background: #1e1e1e;
   --notice-border: #333333;
-  --notice-warning-background: #162030;
-  --notice-warning-border: #2d4a70;
-  --notice-warning-text: #a8d8ff;
+  --notice-warning-background: #1e1e1e;
+  --notice-warning-border: #666666;
+  --notice-warning-text: #cccccc;
 
   --gradient-blue-start: #4da6ff;
   --gradient-blue-end: #3399ff;
@@ -250,32 +250,17 @@ body {
 
 .markdown-section p a:not(.btn):not(.emoji),
 .markdown-section li a:not(.btn):not(.emoji) {
-  position: relative;
   color: var(--link-color);
   text-decoration: none;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1px;
   transition: all 0.3s ease;
 }
 
-.markdown-section p a:not(.btn):not(.emoji)::after,
-.markdown-section li a:not(.btn):not(.emoji)::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: #b22222;
-  transition: width 0.3s ease;
-}
-
-[data-theme="dark"] .markdown-section p a:not(.btn):not(.emoji)::after,
-[data-theme="dark"] .markdown-section li a:not(.btn):not(.emoji)::after {
-  background: #e74c3c;
-}
-
-.markdown-section p a:not(.btn):not(.emoji):hover::after,
-.markdown-section li a:not(.btn):not(.emoji):hover::after {
-  width: 100%;
+.markdown-section p a:not(.btn):not(.emoji):hover,
+.markdown-section li a:not(.btn):not(.emoji):hover {
+  color: var(--theme-color);
+  border-bottom-color: var(--theme-color);
 }
 
 .markdown-section p,
@@ -312,14 +297,15 @@ a.btn:active {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
+/* Unified button style: outline with theme color */
 a.btn-outline-primary {
   color: var(--theme-color);
-  background-color: var(--white-color);
+  background-color: transparent;
   border-color: var(--theme-color);
 }
 
 a.btn-outline-primary:hover {
-  color: var(--white-color);
+  color: var(--bg-color);
   background-color: var(--theme-color);
   border-color: var(--theme-color);
 }
@@ -1076,15 +1062,17 @@ body[data-page="docs/cv.md"] .markdown-section h2 {
   width: 100%;
   padding: 0.2rem 1.5rem;
   background: var(--theme-color);
-  color: var(--white-color) !important;
+  color: var(--bg-color) !important;
   text-align: center;
   font-size: 1rem;
+  border-radius: 0.25rem;
   transition: all 0.3s ease;
 }
 
 .map-button:hover,
 .markdown-section .map-button:hover {
-  background: var(--theme-color-dark);
+  background: var(--theme-color-light);
+  color: var(--bg-color) !important;
 }
 
 .map-button:active {
@@ -1309,6 +1297,34 @@ body[data-page*="publications"] .markdown-section .pubtag a:active {
   transform: translateY(1px);
 }
 
+/* CV Page Selected Publications buttons - unified with publications page */
+body[data-page*="cv"] .markdown-section .pubtag a.btn-outline-primary {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  margin: 0 2px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none !important;
+  vertical-align: baseline;
+  user-select: none;
+  color: var(--theme-color) !important;
+  background: transparent !important;
+  border: 1px solid var(--theme-color) !important;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+body[data-page*="cv"] .markdown-section .pubtag a.btn-outline-primary:hover {
+  color: var(--bg-color) !important;
+  background: var(--theme-color) !important;
+  border-color: var(--theme-color) !important;
+}
+
+body[data-page*="cv"] .markdown-section .pubtag a.btn-outline-primary:active {
+  transform: translateY(1px);
+}
+
 @media (max-width: 480px) {
   body[data-page*="publications"] .markdown-section ol > li {
     padding: 0.5rem;
@@ -1351,6 +1367,13 @@ body[data-page*="publications"] .markdown-section .pubtag a:active {
 /* ==========================================================================
    Mobile Theme Toggle (CV)
    ========================================================================== */
+
+html:not([data-theme-toggle-enabled="true"]) .mobile-theme-toggle,
+html:not([data-theme-toggle-enabled="true"]) .sidebar .theme-toggle-top,
+html:not([data-theme-toggle-enabled="true"]) #toggle-track,
+html:not([data-theme-toggle-enabled="true"]) .theme-toggle {
+  display: none !important;
+}
 
 .mobile-theme-toggle {
   display: none;
@@ -1511,7 +1534,11 @@ body[data-page*="publications"] .markdown-section .pubtag a:active {
 
 .search-input:focus {
   border-color: var(--theme-color);
-  box-shadow: 0 0 0 3px rgba(85, 143, 181, 0.1);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] .search-input:focus {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
 }
 
 .filter-buttons {
@@ -1539,13 +1566,26 @@ body[data-page*="publications"] .markdown-section .pubtag a:active {
 
 .filter-btn:hover,
 .filter-btn.active {
-  color: var(--white-color);
+  color: var(--bg-color);
   background: var(--theme-color);
   border-color: var(--theme-color);
 }
 
 .filter-btn:active {
   transform: translateY(1px);
+}
+
+[data-theme="dark"] .filter-btn {
+  color: var(--theme-color);
+  background: transparent;
+  border-color: var(--theme-color);
+}
+
+[data-theme="dark"] .filter-btn:hover,
+[data-theme="dark"] .filter-btn.active {
+  color: var(--bg-color);
+  background: var(--theme-color);
+  border-color: var(--theme-color);
 }
 
 /* ==========================================================================
@@ -1702,11 +1742,7 @@ body[data-page*="publications"] .markdown-section .pubtag a:active {
   background-color: var(--theme-color) !important;
 }
 
-[data-theme="dark"] a.btn-outline-primary:hover {
-  color: var(--white-color);
-  background-color: var(--theme-color-dark);
-  border-color: var(--theme-color);
-}
+/* Dark mode uses same outline style via variables */
 
 [data-theme="dark"] .profile .image img {
   filter: brightness(0.8);
@@ -1722,13 +1758,15 @@ body[data-page*="publications"] .markdown-section .pubtag a:active {
   opacity: 1;
 }
 
-[data-theme="dark"] .map-button {
+[data-theme="dark"] .map-button,
+[data-theme="dark"] .markdown-section .map-button {
   background: var(--theme-color);
-  color: var(--white-color) !important;
+  color: var(--bg-color) !important;
 }
 
-[data-theme="dark"] .map-button:hover {
-  background: var(--theme-color-dark);
+[data-theme="dark"] .map-button:hover,
+[data-theme="dark"] .markdown-section .map-button:hover {
+  background: var(--theme-color-light);
 }
 
 [data-theme="dark"] .mobile-theme-toggle {
