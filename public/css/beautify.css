@@ -38,33 +38,6 @@
     padding-top: 20px;
 }
 
-/* Custom Scrollbars */
-::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--theme-color-light);
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: var(--theme-color);
-}
-
-[data-theme="dark"] ::-webkit-scrollbar-thumb {
-    background: #444;
-}
-
-[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
-    background: var(--theme-color-light);
-}
-
 /* Smooth Fade-in Animation for Content */
 .markdown-section {
     animation: fadeIn 0.6s ease-out;
