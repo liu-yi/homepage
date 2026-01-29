@@ -34,8 +34,8 @@
             </div>
           </div>
           <div class="hero-cv">
-            <span v-if="display_todo"><a href="#/miscellaneous/todo">Todo</a><span class="divider">·</span></span>
-            <a target="_blank" href="public/cv/YiLIU-CV-en.pdf">CV</a><span class="divider">·</span><a target="_blank" href="public/cv/YiLIU-CV-cn.pdf">简历</a>
+            <span v-if="display_todo"><a href="#/miscellaneous/todo">Todo</a><span class="divider-tight">·</span></span>
+            <a target="_blank" href="public/cv/YiLIU-CV-en.pdf">CV</a><span class="divider-tight">·</span><a target="_blank" href="public/cv/YiLIU-CV-cn.pdf">简历</a><span class="divider-wide">|</span><a href="#/for-students/" class="recruit-link">招生<span class="recruit-dot"></span></a>
           </div>
         </div>
       </div>
@@ -77,11 +77,20 @@
 
 <div id="about-me">
 
-</br>
-
-?> 
-**Looking for Students**:</br>
-I am available to supervise 2 Master's students each year. I am looking for self-motivated students with a solid background in computer science who are eager to explore research problems in cryptography, security, and privacy. While no prior experience in cryptography or security is required, students should have strong self-learning abilities and a curiosity for acquiring new knowledge. For more information, see [*Information For Prospective Students*](/for-students/). If you are interested, feel free to reach out via email! 
+<div class="student-card">
+  <div class="student-card-header">
+    <svg class="student-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+      <path d="M12 14l9-5-9-5-9 5 9 5z"/>
+      <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+      <path d="M12 14l9-5-9-5-9 5 9 5zm0 0v7"/>
+    </svg>
+    <span>Looking for Students</span>
+  </div>
+  <div class="student-card-body">
+    <p>I am available to supervise 2 Master's students each year. I am looking for self-motivated students with a solid background in computer science who are eager to explore research problems in <strong>cryptography</strong>, <strong>security</strong>, and <strong>privacy</strong>.</p>
+    <p>For more information, see <a href="#/for-students/">Information For Prospective Students</a>. If you are interested, feel free to reach out via email!</p>
+  </div>
+</div> 
 
 
 ## About Me
@@ -104,7 +113,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 ## Research Projects
 - <span title="新型安全多方计算协议设计研究">**Research on the Design of New Secure Multi-Party Computation Protocols**</span> <div class="duration">*2025 – 2026*</div>
   - <span title="项目负责人">Principal Investigator</span>
-  - Supported by the <span title="广州市基础与应用基础研究专题（青年博士"启航"项目）">Guangzhou Municipal Fundamental and Applied Basic Research Special Topic Young Doctoral "Sail" Project</span> (Grant No. 2025A04J2146). 
+  - Supported by the <span title="广州市基础与应用基础研究专题（青年博士“启航”项目）">Guangzhou Municipal Fundamental and Applied Basic Research Special Topic Young Doctoral “Sail” Project</span> (Grant No. 2025A04J2146). 
 - <span title="新型安全模型中的安全多方计算协议设计">**Design of Secure Multi-Party Computation Protocols in New Security Models**</span> <div class="duration">*2024 – 2026*</div>
   - <span title="项目负责人">Principal Investigator</span>
   - Supported by the <span title="国家自然科学基金青年科学基金项目">Young Scientists Fund of the National Natural Science Foundation of China</span> (Grant No. 62302194). 

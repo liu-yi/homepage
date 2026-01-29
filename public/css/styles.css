@@ -314,6 +314,91 @@ a.btn-outline-primary:hover {
 }
 
 /* ==========================================================================
+   Student Card (Looking for Students) - Left Border Style
+   ========================================================================== */
+
+.student-card {
+  margin: 2rem 0 2.5rem;
+  background: var(--secondary-bg);
+  border: none;
+  border-radius: 4px;
+  padding: 1.5rem 1.75rem 1.5rem 1.5rem;
+  border-left: 4px solid var(--theme-color);
+  transition: all 0.3s ease;
+}
+
+.student-card:hover {
+  background: var(--hover-bg);
+}
+
+.student-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.student-card-header .student-icon {
+  width: 20px;
+  height: 20px;
+  stroke: var(--theme-color);
+  stroke-width: 2;
+}
+
+.student-card-body p {
+  margin: 0 0 0.75rem;
+  line-height: 1.7;
+  color: var(--text-color);
+}
+
+.student-card-body p:last-child {
+  margin-bottom: 0;
+}
+
+.student-card-body strong {
+  color: var(--theme-color-dark);
+  font-weight: 600;
+}
+
+.student-card-body a {
+  color: var(--theme-color);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border-color);
+  transition: all 0.25s ease;
+}
+
+.student-card-body a:hover {
+  border-bottom-color: var(--theme-color);
+}
+
+@media (max-width: 480px) {
+  .student-card {
+    margin: 1.5rem 0 2rem;
+    padding: 1.25rem 1.25rem 1.25rem 1rem;
+    border-left-width: 3px;
+  }
+  
+  .student-card-header {
+    font-size: 1rem;
+    margin-bottom: 0.875rem;
+  }
+  
+  .student-card-header .student-icon {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .student-card-body p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    margin-bottom: 0.625rem;
+  }
+}
+
+/* ==========================================================================
    CV Page Typography & Lists
    ========================================================================== */
 
@@ -551,6 +636,53 @@ body[data-page="docs/cv.md"] .markdown-section h2 {
   margin: 0 0.5rem;
 }
 
+.hero-cv .divider-tight {
+  color: var(--text-muted);
+  margin: 0 0.25rem;
+}
+
+.hero-cv .divider-wide {
+  color: var(--text-muted);
+  margin: 0 1rem;
+}
+
+/* Recruit link - same row same style with dot indicator */
+.hero-cv .recruit-link {
+  color: var(--text-color);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.hero-cv .recruit-link:hover {
+  color: var(--theme-color);
+  border-bottom-color: var(--theme-color);
+}
+
+.hero-cv .recruit-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #e74c3c;
+  border-radius: 50%;
+  margin-left: 4px;
+  vertical-align: super;
+  animation: dot-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes dot-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(1.8);
+  }
+}
+
 /* Scroll down button */
 .scroll-down-btn {
   position: absolute;
@@ -608,6 +740,23 @@ body[data-page="docs/cv.md"] .markdown-section h2 {
   
   .hero-cv {
     font-size: 0.85rem;
+  }
+  
+  .hero-cv .recruit-link {
+    font-size: 0.9em;
+  }
+  
+  .hero-cv .divider-tight {
+    margin: 0 0.2rem;
+  }
+  
+  .hero-cv .divider-wide {
+    margin: 0 0.75rem;
+  }
+  
+  .hero-cv .recruit-dot {
+    width: 5px;
+    height: 5px;
   }
 
   .hero-socials > div {
