@@ -102,23 +102,73 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 
 ## Education
 
-- **The University of Hong Kong (HKU)**  <div class="duration">*Sept. 2018 – Feb. 2023*</div>
-  - Ph.D. in Cryptography 
-  - Joint Ph.D. Programme with SUSTech
-  - Supervisor: [Siu-Ming Yiu](https://www.cs.hku.hk/index.php/people/academic-staff/smyiu) (HKU) and [Qi Wang](https://dake98.github.io) (SUSTech)
-  - Thesis: Private Function Evaluation: Improvements and Applications <span class="pubtag"><a class="emoji" href="https://hub.hku.hk/handle/10722/327638" target="_blank">:link:</a></span>
-- **Southern University of Science and Technology (SUSTech)** <div class="duration">*Sept. 2014 – July 2018*</div>
-  - B.Eng. in Computer Science and Technology
-  - Thesis: An Evaluation System Based on Blockchain and Linkable Ring Signature
-    - Best Thesis Award in the CSE Department, SUSTech
+<div class="cv-timeline">
+  <div class="cv-timeline-item">
+    <div class="cv-timeline-marker" aria-hidden="true"></div>
+    <div class="cv-timeline-content">
+      <div class="cv-timeline-header">
+        <span class="cv-timeline-title">The University of Hong Kong (HKU)</span>
+        <span class="cv-timeline-date">Sept. 2018 – Feb. 2023</span>
+      </div>
+      <div class="cv-timeline-meta">Ph.D. in Cryptography · Joint Ph.D. Programme with SUSTech</div>
+      <ul class="cv-timeline-list">
+        <li>Supervisor: <a href="https://www.cs.hku.hk/index.php/people/academic-staff/smyiu">Siu-Ming Yiu</a> (HKU) and <a href="https://dake98.github.io">Qi Wang</a> (SUSTech)</li>
+        <li>Thesis: <a href="https://hub.hku.hk/handle/10722/327638" target="_blank">Private Function Evaluation: Improvements and Applications</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="cv-timeline-item">
+    <div class="cv-timeline-marker" aria-hidden="true"></div>
+    <div class="cv-timeline-content">
+      <div class="cv-timeline-header">
+        <span class="cv-timeline-title">Southern University of Science and Technology (SUSTech)</span>
+        <span class="cv-timeline-date">Sept. 2014 – July 2018</span>
+      </div>
+      <div class="cv-timeline-meta">B.Eng. in Computer Science and Technology</div>
+      <ul class="cv-timeline-list">
+        <li>Thesis: An Evaluation System Based on Blockchain and Linkable Ring Signature</li>
+        <ul><li>Best Thesis Award in the CSE Department, SUSTech</li></ul>
+      </ul>
+    </div>
+  </div>
+</div>
 
 ## Research Projects
-- <span title="新型安全多方计算协议设计研究">**Research on the Design of New Secure Multi-Party Computation Protocols**</span> <div class="duration">*2025 – 2026*</div>
-  - <span title="项目负责人">Principal Investigator</span>
-  - Supported by the <span title="广州市基础与应用基础研究专题（青年博士“启航”项目）">Guangzhou Municipal Fundamental and Applied Basic Research Special Topic Young Doctoral “Sail” Project</span> (Grant No. 2025A04J2146). 
-- <span title="新型安全模型中的安全多方计算协议设计">**Design of Secure Multi-Party Computation Protocols in New Security Models**</span> <div class="duration">*2024 – 2026*</div>
-  - <span title="项目负责人">Principal Investigator</span>
-  - Supported by the <span title="国家自然科学基金青年科学基金项目">Young Scientists Fund of the National Natural Science Foundation of China</span> (Grant No. 62302194). 
+<div class="cv-projects">
+  <div class="cv-project-card">
+    <button class="cv-project-lang-toggle" type="button" data-lang-state="en" aria-pressed="false" title="EN / 中文">
+      <span class="cv-toggle-thumb" aria-hidden="true">EN</span>
+    </button>
+    <div class="cv-project-header">
+      <span class="cv-project-title cv-lang" data-en="Research on the Design of New Secure Multi-Party Computation Protocols" data-zh="新型安全多方计算协议设计研究">Research on the Design of New Secure Multi-Party Computation Protocols</span>
+    </div>
+    <div class="cv-project-row">
+      <span class="cv-project-meta cv-lang" data-en="Principal Investigator" data-zh="项目负责人">Principal Investigator</span>
+      <span class="cv-project-date">2025 – 2026</span>
+    </div>
+    <div class="cv-project-support-row">
+      <span class="cv-lang" data-en="Guangzhou Municipal Fundamental and Applied Basic Research Special Topic Young Doctoral “Sail” Project" data-zh="广州市基础与应用基础研究专题（青年博士“启航”项目）">Guangzhou Municipal Fundamental and Applied Basic Research Special Topic Young Doctoral “Sail” Project</span>
+      <span class="cv-project-badge">Grant 2025A04J2146</span>
+    </div>
+  </div>
+  <div class="cv-project-card">
+    <button class="cv-project-lang-toggle" type="button" data-lang-state="en" aria-pressed="false" title="EN / 中文">
+      <span class="cv-toggle-thumb" aria-hidden="true">EN</span>
+    </button>
+    <div class="cv-project-header">
+      <span class="cv-project-title cv-lang" data-en="Design of Secure Multi-Party Computation Protocols in New Security Models" data-zh="新型安全模型中的安全多方计算协议设计">Design of Secure Multi-Party Computation Protocols in New Security Models</span>
+    </div>
+    <div class="cv-project-row">
+      <span class="cv-project-meta cv-lang" data-en="Principal Investigator" data-zh="项目负责人">Principal Investigator</span>
+      <span class="cv-project-date">2024 – 2026</span>
+    </div>
+    <div class="cv-project-support-row">
+      <span class="cv-lang" data-en="Young Scientists Fund of the National Natural Science Foundation of China" data-zh="国家自然科学基金青年科学基金项目">Young Scientists Fund of the National Natural Science Foundation of China</span>
+      <span class="cv-project-badge">Grant 62302194</span>
+    </div>
+  </div>
+</div>
+
 
 ## Selected Publications
 
@@ -198,12 +248,50 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 
 
 ## Teaching
-- **Undergraduate Courses**
-  - C++ Programming (Fall 2025, Fall 2024, Fall 2023)
-  - Public-Key Cryptography (Spring 2025)
-
-- **Graduate Courses**
-  - Advanced Cryptography (Fall 2025, Fall 2024, Fall 2023)
+<div class="cv-teaching-section">
+  <div class="cv-teaching-heading">Undergraduate Courses</div>
+  <div class="cv-teaching-cards">
+    <div class="cv-teaching-card">
+      <div class="cv-teaching-course">Theory of Provable Security</div>
+      <div class="cv-teaching-terms">
+        <span class="cv-teaching-term">Spring 2026</span>
+      </div>
+    </div>
+    <div class="cv-teaching-card">
+      <div class="cv-teaching-course">C++ Programming (+ Lab)</div>
+      <div class="cv-teaching-terms">
+        <span class="cv-teaching-term">Fall 2025</span>
+        <span class="cv-teaching-term">Fall 2024</span>
+        <span class="cv-teaching-term">Fall 2023</span>
+      </div>
+    </div>
+    <div class="cv-teaching-card">
+      <div class="cv-teaching-course">Practice of Advanced Cryptography</div>
+      <div class="cv-teaching-terms">
+        <span class="cv-teaching-term">Fall 2025</span>
+      </div>
+    </div>
+    <div class="cv-teaching-card">
+      <div class="cv-teaching-course">Public-Key Cryptography</div>
+      <div class="cv-teaching-terms">
+        <span class="cv-teaching-term">Spring 2025</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="cv-teaching-section">
+  <div class="cv-teaching-heading">Graduate Courses</div>
+  <div class="cv-teaching-cards">
+    <div class="cv-teaching-card">
+      <div class="cv-teaching-course">Advanced Cryptography</div>
+      <div class="cv-teaching-terms">
+        <span class="cv-teaching-term">Fall 2025</span>
+        <span class="cv-teaching-term">Fall 2024</span>
+        <span class="cv-teaching-term">Fall 2023</span>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 ## Students
@@ -224,34 +312,45 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 
 
 ## Professional Activities
-- **Journal Reviewers**
-  - IEEE Transactions on Dependable and Secure Computing
-  - IEEE Transactions on Industrial Informatics
-  - International Journal of Information Security 
-  - Web Intelligence
-  - Frontiers of Computer Science
-- **Conference Reviewer**
-  - IEEE BSC@QRS (2022, 2021, 2020)
-- **Membership**
-  - IEEE Membership (2025)
-  - IEEE Computer Society Technical Community on Security and Privacy (2025)
-  - IACR Regular Membership (2023)
-  - IACR Student Membership (2022, 2021, 2020, 2019)
+<div class="cv-activities">
+  <div class="cv-activity-group">
+    <div class="cv-activity-heading">Journal Reviewers</div>
+    <div class="cv-activity-tags">
+      <span class="cv-activity-tag">IEEE Transactions on Dependable and Secure Computing</span>
+      <span class="cv-activity-tag">IEEE Transactions on Industrial Informatics</span>
+      <span class="cv-activity-tag">International Journal of Information Security</span>
+      <span class="cv-activity-tag">Web Intelligence</span>
+      <span class="cv-activity-tag">Frontiers of Computer Science</span>
+    </div>
+  </div>
+  <div class="cv-activity-group">
+    <div class="cv-activity-heading">Conference Reviewer</div>
+    <div class="cv-activity-tags">
+      <span class="cv-activity-tag">IEEE BSC@QRS (2022, 2021, 2020)</span>
+    </div>
+  </div>
+  <div class="cv-activity-group">
+    <div class="cv-activity-heading">Membership</div>
+    <div class="cv-activity-tags">
+      <span class="cv-activity-tag">IEEE Membership (2025)</span>
+      <span class="cv-activity-tag">IEEE Computer Society Technical Community on Security and Privacy (2025)</span>
+      <span class="cv-activity-tag">IACR Regular Membership (2023)</span>
+      <span class="cv-activity-tag">IACR Student Membership (2022, 2021, 2020, 2019)</span>
+    </div>
+  </div>
+</div>
 
 
 
 ## Location
 
-<div class="address-wrapper">
-  <div class="address-container" id="address-en" data-lang="en">
-    <span class="room-info">Room 906, Intellectual Property Building</span>
-    Jinan University (Panyu Campus), No. 855 Xingye Avenue East, Panyu District, Guangzhou, Guangdong 511443, P. R. China  
-    <br>
-  </div>
-  <div class="address-container" id="address-cn" data-lang="cn" style="display: none;">
-    <span class="room-info">知识产权大楼906室</span>
-    中华人民共和国 广东省广州市 番禺区新造镇兴业大道东855号 暨南大学（番禺校区）
-    <br>
+<div class="cv-location-card">
+  <button class="cv-location-lang-toggle" type="button" data-lang-state="en" aria-pressed="false" title="EN / 中文">
+    <span class="cv-toggle-thumb" aria-hidden="true">EN</span>
+  </button>
+  <div class="cv-location-body">
+    <div class="cv-location-room cv-lang" data-en="Room 906, Intellectual Property Building" data-zh="知识产权大楼906室">Room 906, Intellectual Property Building</div>
+    <div class="cv-location-address cv-lang" data-en="Jinan University (Panyu Campus), No. 855 Xingye Avenue East, Panyu District, Guangzhou, Guangdong 511443, P. R. China" data-zh="中华人民共和国 广东省广州市 番禺区新造镇兴业大道东855号 暨南大学（番禺校区）">Jinan University (Panyu Campus), No. 855 Xingye Avenue East, Panyu District, Guangzhou, Guangdong 511443, P. R. China</div>
   </div>
 </div>
 
