@@ -135,7 +135,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 
 ## Research Projects
 <div class="cv-projects">
-  <div class="cv-project-card">
+  <!-- <div class="cv-project-card">
     <button class="cv-project-lang-toggle" type="button" data-lang-state="en" aria-pressed="false" title="EN / 中文">
       <span class="cv-toggle-thumb" aria-hidden="true">EN</span>
     </button>
@@ -150,7 +150,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
       <span class="cv-lang" data-en="Guangzhou Municipal Fundamental and Applied Basic Research Special Topic Young Doctoral “Sail” Project" data-zh="广州市基础与应用基础研究专题（青年博士“启航”项目）">Guangzhou Municipal Fundamental and Applied Basic Research Special Topic Young Doctoral “Sail” Project</span>
       <span class="cv-project-badge">Grant 2025A04J2146</span>
     </div>
-  </div>
+  </div> -->
   <div class="cv-project-card">
     <button class="cv-project-lang-toggle" type="button" data-lang-state="en" aria-pressed="false" title="EN / 中文">
       <span class="cv-toggle-thumb" aria-hidden="true">EN</span>
