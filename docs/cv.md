@@ -35,7 +35,7 @@
           </div>
           <div class="hero-cv">
             <span v-if="display_todo"><a href="#/miscellaneous/todo">Todo</a><span class="divider-tight">·</span></span>
-            <a target="_blank" href="public/cv/YiLIU-CV-en.pdf">CV</a><span class="divider-tight">·</span><a target="_blank" href="public/cv/YiLIU-CV-cn.pdf">简历</a><span class="divider-wide">|</span><a href="#/for-students/" class="recruit-link">招生<span class="recruit-dot"></span></a>
+            <a target="_blank" href="public/cv/YiLIU-CV-en.pdf">CV</a><span class="divider-tight">·</span><a target="_blank" href="public/cv/YiLIU-CV-cn.pdf">简历</a><span class="divider-wide">|</span><a href="#/for-students/#main" class="recruit-link">招生<span class="recruit-dot"></span></a>
           </div>
         </div>
       </div>
@@ -90,7 +90,7 @@
   </div>
   <div class="student-card-body">
     <p>I am available to supervise 2 Master's students each year. I am looking for self-motivated students with a solid background in computer science who are eager to explore research problems in <strong>cryptography</strong>, <strong>security</strong>, and <strong>privacy</strong>.</p>
-    <p>For more information, see <a href="#/for-students/">Information For Prospective Students</a>. If you are interested, feel free to reach out via email!</p>
+    <p>For more information, see <a href="#/for-students/#main">Information For Prospective Students</a>. If you are interested, feel free to reach out via email!</p>
   </div>
 </div> 
 
