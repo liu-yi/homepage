@@ -225,6 +225,27 @@
   <script type="text/javascript">
     // Docsify plugin for AMap - only load on CV page
     window.$docsify = window.$docsify || {};
+    // PDF iframe height: match one page (960x540) plus browser toolbar (~40px)
+    window.$docsify.plugins = (window.$docsify.plugins || []).concat([
+      function (hook) {
+        var resizeHandler = null;
+        hook.doneEach(function () {
+          var frame = document.getElementById('zkp-pdf-frame');
+          if (resizeHandler) {
+            window.removeEventListener('resize', resizeHandler);
+            resizeHandler = null;
+          }
+          if (!frame) return;
+          function adjustHeight() {
+            frame.style.height = Math.round(frame.offsetWidth * 540 / 960 + 40) + 'px';
+          }
+          resizeHandler = adjustHeight;
+          window.addEventListener('resize', adjustHeight);
+          adjustHeight();
+        });
+      }
+    ]);
+
     window.$docsify.plugins = (window.$docsify.plugins || []).concat([
       function (hook, vm) {
         let amapInstance = null;

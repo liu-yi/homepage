@@ -30,6 +30,35 @@
 - [神奇的零知识证明：既能保守秘密，又让别人信你](https://www.bilibili.com/video/BV1iacBebE1E)
 - [Amit Sahai介绍零知识证明：计算机科学家从5个不同的难度等级解释一个概念](https://www.bilibili.com/video/BV1K3411E7p1)
 
+
+---
+
+以下是一个关于零知识证明与安全多方计算的科普报告，感兴趣的同学可以参考。
+
+<style>
+  .pdf-mobile-fallback { display: none; }
+  @media (max-width: 768px) {
+    .pdf-embed-wrapper { display: none; }
+    .pdf-mobile-fallback { display: flex; justify-content: center; padding: 1em 0; }
+    .pdf-mobile-fallback a {
+      display: inline-block;
+      padding: 0.6em 1.4em;
+      background: var(--theme-color, #4a9eed);
+      color: #fff;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 0.95em;
+    }
+  }
+</style>
+
+<div class="pdf-embed-wrapper">
+  <iframe id="zkp-pdf-frame" src="/for-students/zkp_mpc.pdf" width="100%" style="border: 1px solid #ddd; border-radius: 4px; display: block;"></iframe>
+</div>
+<div class="pdf-mobile-fallback">
+  <a href="/for-students/zkp_mpc.pdf" target="_blank">下载科普报告 PDF</a>
+</div>
+
 ## 我的代表性成果
 
 以下简要介绍我近期的一些代表性成果，学生可以简单了解相关学术研究内容，如有兴趣了解更详细信息，请查阅[我的论文](/publications/?id=refereed-publications)。
