@@ -20,7 +20,7 @@
 </div>
 
 <div class="filter-buttons">
-  <button class="filter-btn btn btn-outline-primary active" data-filter="all">All Publications</button>
+  <button class="filter-btn active" data-filter="all">All Publications</button>
   <button class="filter-btn" data-filter="conference">Conferences</button>
   <button class="filter-btn" data-filter="journal">Journals</button>
   <button class="filter-btn" data-filter="manuscript">Manuscripts</button>
@@ -86,7 +86,7 @@
 <!-- 2024年论文 -->
 <div class="year-divider"><span>2024</span></div>
 
-5. **Enabling Privacy-Preserving and Publicly Auditable Federated Learning** 
+6. **Enabling Privacy-Preserving and Publicly Auditable Federated Learning** 
 
     <div class="pub-type conference">Conference</div> <span class="impact-badge">ICC 2024</span>
 
@@ -96,7 +96,7 @@
 
     Denver, Colorado. June 9-13, 2024. (Online: Aug. 20, 2024). pp 5178-5183.
 
-6. **MTDCAP: Moving Target Defense-Based CAN Authentication Protocol** 
+7. **MTDCAP: Moving Target Defense-Based CAN Authentication Protocol** 
 
     <div class="pub-type journal">Journal</div> <span class="impact-badge">TITS</span>
 
@@ -109,7 +109,7 @@
 <!-- 2023年论文 -->
 <div class="year-divider"><span>2023</span></div>
 
-7. **Robust Publicly Verifiable Covert Security: Limited Information Leakage and Guaranteed Correctness with Low Overhead** 
+8. **Robust Publicly Verifiable Covert Security: Limited Information Leakage and Guaranteed Correctness with Low Overhead** 
   
     <div class="pub-type conference">Conference</div> <span class="impact-badge">ASIACRYPT 2023</span>
 
@@ -122,7 +122,7 @@
 <!-- 2022年论文 -->
 <div class="year-divider"><span>2022</span></div>
 
-8. **Towards Practical Homomorphic Time-Lock Puzzles: Applicability and Verifiability**
+9. **Towards Practical Homomorphic Time-Lock Puzzles: Applicability and Verifiability**
   
     <div class="pub-type conference">Conference</div> <span class="impact-badge">ESORICS 2022</span>
 
@@ -132,7 +132,7 @@
 
     Copenhagen, Denmark. Sept. 26-30, 2022. (Online: Dec. 25, 2022). pp 424–443.
 
-9. **Making Private Function Evaluation Safer, Faster, and Simpler** 
+10. **Making Private Function Evaluation Safer, Faster, and Simpler** 
   
     <div class="pub-type conference">Conference</div> <span class="impact-badge">PKC 2022</span>
 
@@ -145,7 +145,7 @@
 <!-- 2021年论文 -->
 <div class="year-divider"><span>2021</span></div>
 
-10. **Improved Zero-Knowledge Argument of Encrypted Extended Permutation** 
+11. **Improved Zero-Knowledge Argument of Encrypted Extended Permutation** 
   
     <div class="pub-type conference">Conference</div> <span class="impact-badge">Inscrypt 2021</span>
 
@@ -155,7 +155,7 @@
 
     Virtual. Aug. 12-14, 2021. (Online: Oct. 18, 2021). pp 281–298.
     
-11. **Blind Polynomial Evaluation and Data Trading** 
+12. **Blind Polynomial Evaluation and Data Trading** 
   
     <div class="pub-type conference">Conference</div> <span class="impact-badge">ACNS 2021</span>
 
@@ -168,7 +168,7 @@
 <!-- 2020年论文 -->
 <div class="year-divider"><span>2020</span></div>
 
-12. **An Improvement of Multi-Exponentiation with Encrypted Bases Argument: Smaller and Faster** 
+13. **An Improvement of Multi-Exponentiation with Encrypted Bases Argument: Smaller and Faster** 
   
     <div class="pub-type conference">Conference</div> <span class="impact-badge">Inscrypt 2020</span>
 
@@ -182,7 +182,7 @@
 
 <div class="year-divider"><span>Manuscripts</span></div>
 
-13. **An E-voting Protocol Based on Blockchain** 
+14. **An E-voting Protocol Based on Blockchain** 
   
     <div class="pub-type manuscript">Manuscript</div>
 

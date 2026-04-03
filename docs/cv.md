@@ -77,7 +77,7 @@
 
 <div id="cv-page">
 
-</br>
+<br>
 
 <div class="student-card">
   <div class="student-card-header">
@@ -312,31 +312,30 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 
 
 ## Professional Activities
-<div class="cv-activities">
-  <div class="cv-activity-group">
-    <div class="cv-activity-heading">Journal Reviewers</div>
-    <div class="cv-activity-tags">
-      <span class="cv-activity-tag">IEEE Transactions on Dependable and Secure Computing</span>
-      <span class="cv-activity-tag">IEEE Transactions on Industrial Informatics</span>
-      <span class="cv-activity-tag">International Journal of Information Security</span>
-      <span class="cv-activity-tag">Web Intelligence</span>
-      <span class="cv-activity-tag">Frontiers of Computer Science</span>
-    </div>
+
+<div class="cv-teaching-section">
+  <div class="cv-teaching-heading">Journal Reviewers</div>
+  <div class="cv-activity-tags">
+    <span class="cv-activity-tag">IEEE Transactions on Dependable and Secure Computing</span>
+    <span class="cv-activity-tag">IEEE Transactions on Industrial Informatics</span>
+    <span class="cv-activity-tag">International Journal of Information Security</span>
+    <span class="cv-activity-tag">Web Intelligence</span>
+    <span class="cv-activity-tag">Frontiers of Computer Science</span>
   </div>
-  <div class="cv-activity-group">
-    <div class="cv-activity-heading">Conference Reviewer</div>
-    <div class="cv-activity-tags">
-      <span class="cv-activity-tag">IEEE BSC@QRS (2022, 2021, 2020)</span>
-    </div>
+</div>
+<div class="cv-teaching-section">
+  <div class="cv-teaching-heading">Conference Reviewer</div>
+  <div class="cv-activity-tags">
+    <span class="cv-activity-tag">IEEE BSC@QRS (2022, 2021, 2020)</span>
   </div>
-  <div class="cv-activity-group">
-    <div class="cv-activity-heading">Membership</div>
-    <div class="cv-activity-tags">
-      <span class="cv-activity-tag">IEEE Membership (2025)</span>
-      <span class="cv-activity-tag">IEEE Computer Society Technical Community on Security and Privacy (2025)</span>
-      <span class="cv-activity-tag">IACR Regular Membership (2023)</span>
-      <span class="cv-activity-tag">IACR Student Membership (2022, 2021, 2020, 2019)</span>
-    </div>
+</div>
+<div class="cv-teaching-section">
+  <div class="cv-teaching-heading">Membership</div>
+  <div class="cv-activity-tags">
+    <span class="cv-activity-tag">IEEE Membership (2025)</span>
+    <span class="cv-activity-tag">IEEE Computer Society Technical Community on Security and Privacy (2025)</span>
+    <span class="cv-activity-tag">IACR Regular Membership (2023)</span>
+    <span class="cv-activity-tag">IACR Student Membership (2022, 2021, 2020, 2019)</span>
   </div>
 </div>
 

@@ -159,3 +159,66 @@ body {
     background: rgba(255, 255, 255, 0.05);
     color: #f0f0f0;
 }
+
+/* CV page fixes */
+.student-card {
+    border-left-color: var(--theme-color);
+}
+
+/* Publications page - unify with CV style */
+.pub-type {
+    border-radius: 999px;
+    transition: opacity 0.2s ease;
+}
+
+.pub-type:hover {
+    transform: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0.85;
+}
+
+.year-divider::before {
+    background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+}
+
+.impact-badge {
+    color: var(--text-color);
+    background: transparent;
+    border: 0.75px solid var(--border-color);
+    border-radius: 999px;
+    box-shadow: none;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.impact-badge:hover {
+    transform: none;
+    box-shadow: none;
+    border-color: var(--theme-color-light);
+    color: var(--theme-color-light);
+}
+
+[data-theme="dark"] .impact-badge:hover {
+    border-color: var(--theme-color-light);
+    color: var(--theme-color-light);
+}
+
+
+.stats-bar {
+    border: 0.75px solid var(--border-color);
+    border-radius: 12px;
+    background: transparent;
+    transition: border-color 0.2s ease;
+}
+
+.stats-bar:hover {
+    border-color: var(--theme-color-light);
+}
+
+.search-input:focus {
+    border-color: var(--theme-color) !important;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="dark"] .search-input:focus {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.08);
+}
