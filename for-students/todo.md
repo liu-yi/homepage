@@ -12,7 +12,7 @@
 - **Introduction to Modern Cryptography** – *Jonathan Katz & Yehuda Lindell*  
   本书是现代密码学（强调可证明安全性）的经典入门教材，系统阐述了密码方案的安全性定义与证明方法，是开展密码学研究的必读基础书籍。
 
-- [**The Joy of Cryptography**](https://joyofcryptography.com/) – *Mike Rosulek*  
+- [**The Joy of Cryptography**](https://joyofcryptography.com/)[pdf](http://164.52.217.92:8080/jspui/bitstream/123456789/969/1/Cyrptography.pdf) – *Mike Rosulek*  
   相较于 Katz & Lindell 的著作，本书内容更为直观易懂，采用 hybrid technique 讲解安全性证明，是理解现代密码学基本思想的良好起点。推荐先读此书，再进阶阅读前一本。
 
 - [**Sequences of Games: A Tool for Taming Complexity in Security Proofs**](http://www.shoup.net/papers/games.pdf) – *Victor Shoup*  
