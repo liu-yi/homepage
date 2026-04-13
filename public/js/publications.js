@@ -85,6 +85,34 @@
                 });
                 
                 updateStats();
+                updateYearDividers();
+            }
+            
+            function updateYearDividers() {
+                const yearDividers = document.querySelectorAll('.year-divider');
+                
+                yearDividers.forEach(divider => {
+                    let sibling = divider.nextElementSibling;
+                    let hasVisible = false;
+                    
+                    while (sibling && !sibling.classList.contains('year-divider')) {
+                        const lis = sibling.tagName === 'LI' 
+                            ? [sibling] 
+                            : Array.from(sibling.querySelectorAll('li'));
+                        
+                        for (const li of lis) {
+                            if (li.style.display !== 'none') {
+                                hasVisible = true;
+                                break;
+                            }
+                        }
+                        
+                        if (hasVisible) break;
+                        sibling = sibling.nextElementSibling;
+                    }
+                    
+                    divider.style.display = hasVisible ? '' : 'none';
+                });
             }
             
             function getActiveFilter() {
@@ -110,6 +138,7 @@
             });
             
             updateStats();
+            updateYearDividers();
             console.log('Publications search initialized successfully');
             
         } catch (error) {
