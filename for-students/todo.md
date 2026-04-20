@@ -6,7 +6,7 @@
 
 ## 密码学入门
 
-- **Cryptography and Network Security** – *William Stallings*  
+- **Cryptography and Network Security** – *William Stallings* 
   本书是许多高校本科密码学课程的指定教材，系统介绍了密码学的基础知识及其应用。适合作为入门读物，特别是对尚未接触过密码学课程的读者。如果你已有相关背景，可跳过此书。
 
 - **Introduction to Modern Cryptography** – *Jonathan Katz & Yehuda Lindell*  
