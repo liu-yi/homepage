@@ -287,8 +287,17 @@ body {
   transition: none;
 }
 
-.markdown-section a {
-  transition: color var(--duration-normal);
+.markdown-section a:not(.anchor):not(.btn) {
+  color: var(--text-color);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1px;
+  transition: all var(--duration-normal) ease;
+}
+
+.markdown-section a:not(.anchor):not(.btn):hover {
+  color: var(--theme-color);
+  border-bottom-color: var(--theme-color);
 }
 
 .markdown-section h2 {
@@ -1132,7 +1141,7 @@ body[data-page="docs/cv.md"] .cv-location-lang-toggle[data-lang-state="zh"] .cv-
 
 /* Name styling - pure black */
 .hero-name {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 400;
   line-height: 1.2;
   margin-bottom: 0.8rem;
@@ -1168,8 +1177,8 @@ body[data-page="docs/cv.md"] .cv-location-lang-toggle[data-lang-state="zh"] .cv-
 }
 
 .hero-socials img {
-  width: 22px;
-  height: 22px;
+  width: 26px;
+  height: 26px;
   pointer-events: none;
   transition: all var(--duration-normal) ease;
 }
@@ -1190,7 +1199,7 @@ body[data-page="docs/cv.md"] .cv-location-lang-toggle[data-lang-state="zh"] .cv-
 
 .hero-contact .email {
   font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   color: var(--text-muted);
   letter-spacing: 0.3px;
   line-height: 1.8;
@@ -1198,7 +1207,7 @@ body[data-page="docs/cv.md"] .cv-location-lang-toggle[data-lang-state="zh"] .cv-
 
 /* CV links - simple text style */
 .hero-cv {
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-top: 1.2rem;
 }
 
@@ -1314,12 +1323,12 @@ body[data-page="docs/cv.md"] .cv-location-lang-toggle[data-lang-state="zh"] .cv-
   }
 
   .hero-name {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: 0.6rem;
   }
   
   .hero-cv {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
   }
   
   .hero-cv .recruit-link {
@@ -1349,12 +1358,12 @@ body[data-page="docs/cv.md"] .cv-location-lang-toggle[data-lang-state="zh"] .cv-
   }
 
   .hero-socials img {
-    width: 18px;
-    height: 18px;
+    width: 22px;
+    height: 22px;
   }
 
   .hero-contact .email {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
 
   .scroll-down-btn {
@@ -2244,20 +2253,20 @@ html:not([data-theme-toggle-enabled="true"]) .theme-toggle {
   width: 60px;
 }
 
-/* Smooth link underline animation */
+/* Link underline - static bottom border, unified with hero style */
 .markdown-section p a:not(.btn):not(.emoji),
 .markdown-section li a:not(.btn):not(.emoji) {
-  background-image: linear-gradient(var(--theme-color), var(--theme-color));
-  background-size: 0% 1px;
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-  border-bottom: none;
-  transition: background-size var(--duration-normal) ease, color var(--duration-normal) ease;
+  color: var(--text-color);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1px;
+  transition: all var(--duration-normal) ease;
 }
 
 .markdown-section p a:not(.btn):not(.emoji):hover,
 .markdown-section li a:not(.btn):not(.emoji):hover {
-  background-size: 100% 1px;
+  color: var(--theme-color);
+  border-bottom-color: var(--theme-color);
 }
 
 /* Navbar refinement */
