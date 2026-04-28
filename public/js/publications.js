@@ -128,9 +128,19 @@
                 filterPapers();
             }
             
+            // Debounce wrapper
+            function debounce(fn, delay) {
+                let timer;
+                return function() {
+                    clearTimeout(timer);
+                    timer = setTimeout(fn, delay);
+                };
+            }
+
             // 绑定事件（使用捕获避免重复绑定）
-            searchInput.removeEventListener('input', filterPapers);
-            searchInput.addEventListener('input', filterPapers);
+            const debouncedFilter = debounce(filterPapers, 200);
+            searchInput.removeEventListener('input', debouncedFilter);
+            searchInput.addEventListener('input', debouncedFilter);
             
             filterBtns.forEach(btn => {
                 btn.removeEventListener('click', handleFilter);

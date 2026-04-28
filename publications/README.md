@@ -16,6 +16,10 @@
 
 <!-- 搜索和筛选 -->
 <div class="search-container">
+  <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="11" cy="11" r="8"/>
+    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+  </svg>
   <input type="text" class="search-input" placeholder="Search publications by keyword, venue, or co-author..." id="pubSearch">
 </div>
 
@@ -26,7 +30,6 @@
   <button class="filter-btn" data-filter="manuscript">Manuscripts</button>
 </div>
 
----
 
 <!-- # Refereed Publications -->
 
@@ -39,7 +42,7 @@
 
     <u>**Yi Liu**</u>, Yipeng Song, Anjia Yang, Junzuo Lai
 
-    The 27th International Conference on Information and Communications Security (**ICICS 2025**). <span class="pubtag"><a href="https://doi.org/10.1007/978-981-95-3540-8_8" target="_blank">DOI</a></span> <span class="pubtag"><a href="https://eprint.iacr.org/2025/2146" target="_blank">ePrint</a></span>
+    The 27th International Conference on Information and Communications Security (**ICICS 2025**). <span class="pubtag"><a class="pubtag-link" href="https://doi.org/10.1007/978-981-95-3540-8_8" target="_blank">DOI</a></span> <span class="pubtag"><a class="pubtag-link" href="https://eprint.iacr.org/2025/2146" target="_blank">ePrint</a></span>
     
     Nanjing, China. Oct. 29 - 31 2025. 
 
@@ -49,7 +52,7 @@
     
     Huang Zeng, Anjia Yang, Jian Weng, Min-Rong CHen, Fengjun Xiao, Zilin Liu, <u>**Yi Liu**</u>
 
-    IEEE Transactions on Dependable and Secure Computing, 2025. <span class="pubtag"><a href="https://doi.org/10.1109/tdsc.2025.3609353" target="_blank">DOI</a></span>
+    IEEE Transactions on Dependable and Secure Computing, 2025. <span class="pubtag"><a class="pubtag-link" href="https://doi.org/10.1109/tdsc.2025.3609353" target="_blank">DOI</a></span>
     
 
 3. **Highly Efficient Actively Secure Two-Party Computation with One-Bit Advantage Bound** 
@@ -59,7 +62,7 @@
 
     <u>**Yi Liu**</u>, Junzuo Lai, Peng Yang, Anjia Yang, Qi Wang, Siu-Ming Yiu, Jian Weng
 
-    The 46th IEEE Symposium on Security and Privacy (**S&P 2025**). <span class="pubtag"><a href="https://doi.ieeecomputersociety.org/10.1109/SP61157.2025.00183" target="_blank">DOI</a></span> <span class="pubtag"><a href="https://eprint.iacr.org/2025/614" target="_blank">ePrint</a></span>
+    The 46th IEEE Symposium on Security and Privacy (**S&P 2025**). <span class="pubtag"><a class="pubtag-link" href="https://doi.ieeecomputersociety.org/10.1109/SP61157.2025.00183" target="_blank">DOI</a></span> <span class="pubtag"><a class="pubtag-link" href="https://eprint.iacr.org/2025/614" target="_blank">ePrint</a></span>
     
     San Francisco, CA, USA. May 12 - 15, 2025. pp 2846-2864. 
 
@@ -69,7 +72,7 @@
 
     Xuanwei Hu, Rujia Li, <u>**Yi Liu**</u>, Qi Wang
 
-    The 46th IEEE Symposium on Security and Privacy (**S&P 2025**). <span class="pubtag"><a href="https://doi.ieeecomputersociety.org/10.1109/SP61157.2025.00185" target="_blank">DOI</a></span>
+    The 46th IEEE Symposium on Security and Privacy (**S&P 2025**). <span class="pubtag"><a class="pubtag-link" href="https://doi.ieeecomputersociety.org/10.1109/SP61157.2025.00185" target="_blank">DOI</a></span>
     
     San Francisco, CA, USA. May 12 - 15, 2025. pp 2885-2902. 
 
@@ -79,7 +82,7 @@
 
     Mingtian Zhang, Anjia Yang, Jian Weng, Minrong Chen, Huang Zeng, <u>**Yi Liu**</u>, Xiaoli Liu, Zhihua Xia
 
-    IEEE Transactions on Information Forensics and Security, 2025. <span class="pubtag"><a href="https://doi.org/10.1109/TIFS.2025.3544453" target="_blank">DOI</a></span>
+    IEEE Transactions on Information Forensics and Security, 2025. <span class="pubtag"><a class="pubtag-link" href="https://doi.org/10.1109/TIFS.2025.3544453" target="_blank">DOI</a></span>
     
     Feb. 25, 2025. vol 20, pp 2372 - 2386. 
 
@@ -92,7 +95,7 @@
 
     Huang Zeng, Anjia Yang, Jian Weng, Minrong Chen, Fengjun Xiao, <u>**Yi Liu**</u>, Ye Yao
             
-    IEEE International Conference on Communications (**ICC 2024**). <span class="pubtag"><a href="https://doi.org/10.1109/ICC51166.2024.10622406" target="_blank">DOI</a></span>
+    IEEE International Conference on Communications (**ICC 2024**). <span class="pubtag"><a class="pubtag-link" href="https://doi.org/10.1109/ICC51166.2024.10622406" target="_blank">DOI</a></span>
 
     Denver, Colorado. June 9-13, 2024. (Online: Aug. 20, 2024). pp 5178-5183.
 
@@ -102,7 +105,7 @@
 
     Heng Sun, Huibiao Su, Jian Weng, Zhiquan Liu, Ming Li, <u>**Yi Liu**</u>, Yucheng Zhong, Wenzhen Sun
 
-    IEEE Transactions on Intelligent Transportation Systems, 2024. <span class="pubtag"><a href="https://doi.org/10.1109/TITS.2024.3384054" target="_blank">DOI</a></span>
+    IEEE Transactions on Intelligent Transportation Systems, 2024. <span class="pubtag"><a class="pubtag-link" href="https://doi.org/10.1109/TITS.2024.3384054" target="_blank">DOI</a></span>
 
     April 16, 2024. (Volume: 25, Issue: 9, September 2024). pp 12800-12817. 
 
@@ -115,7 +118,7 @@
 
     <u>**Yi Liu**</u>, Junzuo Lai, Qi Wang, Xianrui Qin, Anjia Yang, Jian Weng 
 
-    The 29th International Conference on the Theory and Application of Cryptology and Information Security (**ASIACRYPT 2023**). <span class="pubtag"><a href="https://doi.org/10.1007/978-981-99-8721-4_9" target="_blank">DOI</a></span> <span class="pubtag"><a href="https://eprint.iacr.org/2023/1392" target="_blank">ePrint</a></span>
+    The 29th International Conference on the Theory and Application of Cryptology and Information Security (**ASIACRYPT 2023**). <span class="pubtag"><a class="pubtag-link" href="https://doi.org/10.1007/978-981-99-8721-4_9" target="_blank">DOI</a></span> <span class="pubtag"><a class="pubtag-link" href="https://eprint.iacr.org/2023/1392" target="_blank">ePrint</a></span>
 
     Guangzhou, China. Dec. 4-8, 2023. (Online: Dec. 18, 2023). pp 272–301. 
 
@@ -128,7 +131,7 @@
 
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
-    The 27th European Symposium on Research in Computer Security (**ESORICS 2022**).  <span class="pubtag"><a href="https://doi.org/10.1007/978-3-031-17140-6_21" target="_blank">DOI</a></span> <span class="pubtag"><a href="https://eprint.iacr.org/2022/585" target="_blank">ePrint</a></span>
+    The 27th European Symposium on Research in Computer Security (**ESORICS 2022**).  <span class="pubtag"><a class="pubtag-link" href="https://doi.org/10.1007/978-3-031-17140-6_21" target="_blank">DOI</a></span> <span class="pubtag"><a class="pubtag-link" href="https://eprint.iacr.org/2022/585" target="_blank">ePrint</a></span>
 
     Copenhagen, Denmark. Sept. 26-30, 2022. (Online: Dec. 25, 2022). pp 424–443.
 
@@ -138,7 +141,7 @@
 
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
-    The 25th International Conference on Practice and Theory of Public-Key Cryptography (**PKC 2022**). <span class="pubtag"><a href="https://doi.org/10.1007/978-3-030-97121-2_13" target="_blank">DOI</a></span> <span class="pubtag"><a href="https://eprint.iacr.org/2021/1682" target="_blank">ePrint</a></span> <span class="pubtag"><a href="https://www.youtube.com/watch?v=Pv8zVTxacr0" target="_blank">Video</a></span>
+    The 25th International Conference on Practice and Theory of Public-Key Cryptography (**PKC 2022**). <span class="pubtag"><a class="pubtag-link" href="https://doi.org/10.1007/978-3-030-97121-2_13" target="_blank">DOI</a></span> <span class="pubtag"><a class="pubtag-link" href="https://eprint.iacr.org/2021/1682" target="_blank">ePrint</a></span> <span class="pubtag"><a class="pubtag-link" href="https://www.youtube.com/watch?v=Pv8zVTxacr0" target="_blank">Video</a></span>
 
     Virtual. March 8-11, 2022. (Online: Feb. 27, 2022). pp 349–378. 
 
@@ -151,7 +154,7 @@
 
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
-    The 17th International Conference on International Conference on Information Security and Cryptology (**Inscrypt 2021**). <span class="pubtag"><a href="https://doi.org/10.1007/978-3-030-88323-2_15" target="_blank">DOI</a></span> <span class="pubtag"><a href="https://eprint.iacr.org/2021/1430" target="_blank">ePrint</a></span>
+    The 17th International Conference on International Conference on Information Security and Cryptology (**Inscrypt 2021**). <span class="pubtag"><a class="pubtag-link" href="https://doi.org/10.1007/978-3-030-88323-2_15" target="_blank">DOI</a></span> <span class="pubtag"><a class="pubtag-link" href="https://eprint.iacr.org/2021/1430" target="_blank">ePrint</a></span>
 
     Virtual. Aug. 12-14, 2021. (Online: Oct. 18, 2021). pp 281–298.
     
@@ -161,7 +164,7 @@
 
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
-    The 19th International Conference on Applied Cryptography and Network Security (**ACNS 2021**). <span class="pubtag"><a href="https://doi.org/10.1007/978-3-030-78372-3_5" target="_blank">DOI</a></span> <span class="pubtag"><a href="https://eprint.iacr.org/2021/413" target="_blank">ePrint</a></span>
+    The 19th International Conference on Applied Cryptography and Network Security (**ACNS 2021**). <span class="pubtag"><a class="pubtag-link" href="https://doi.org/10.1007/978-3-030-78372-3_5" target="_blank">DOI</a></span> <span class="pubtag"><a class="pubtag-link" href="https://eprint.iacr.org/2021/413" target="_blank">ePrint</a></span>
 
     Virtual. June 21-24 2021. (Online: June 9, 2021). pp 100–129. 
 
@@ -174,7 +177,7 @@
 
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
-    The 16th International Conference on International Conference on Information Security and Cryptology (**Inscrypt 2020**). <span class="pubtag"><a href="https://doi.org/10.1007/978-3-030-71852-7_27" target="_blank">DOI</a></span> <span class="pubtag"><a href="https://eprint.iacr.org/2020/567" target="_blank">ePrint</a></span>
+    The 16th International Conference on International Conference on Information Security and Cryptology (**Inscrypt 2020**). <span class="pubtag"><a class="pubtag-link" href="https://doi.org/10.1007/978-3-030-71852-7_27" target="_blank">DOI</a></span> <span class="pubtag"><a class="pubtag-link" href="https://eprint.iacr.org/2020/567" target="_blank">ePrint</a></span>
 
     Guangzhou, China. Dec. 11-14, 2020. (Online: March 13, 2021). pp 397–414.  
 
@@ -188,7 +191,7 @@
 
     <u>**Yi Liu**</u>, Qi Wang
 
-    Manuscript, 2017. <span class="pubtag"><a href="https://eprint.iacr.org/2017/1043" target="_blank">ePrint</a></span>
+    Manuscript, 2017. <span class="pubtag"><a class="pubtag-link" href="https://eprint.iacr.org/2017/1043" target="_blank">ePrint</a></span>
 
 </div>
 

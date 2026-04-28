@@ -79,7 +79,7 @@
 
 <br>
 
-<div class="student-card">
+<!-- <div class="student-card">
   <div class="student-card-header">
     <svg class="student-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
       <path d="M12 14l9-5-9-5-9 5 9 5z"/>
@@ -92,12 +92,12 @@
     <p>I am available to supervise 2 Master's students each year. I am looking for self-motivated students with a solid background in computer science who are eager to explore research problems in <strong>cryptography</strong>, <strong>security</strong>, and <strong>privacy</strong>.</p>
     <p>For more information, see <a href="#/for-students/#main">Information For Prospective Students</a>. If you are interested, feel free to reach out via email!</p>
   </div>
-</div> 
+</div>  -->
 
 
-## About Me
+<!-- ## About Me
 I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.jnu.edu.cn/), [Jinan University (JNU)](https://english.jnu.edu.cn/). My research interests broadly cover cryptography, computer security and privacy. Recently, I've been working on **secure multi-party computation**, **zero-knowledge proof**, **timed cryptography**, **blockchain-related applications**, etc.
-
+ -->
 
 
 ## Education
@@ -181,7 +181,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 
     <u>**Yi Liu**</u>, Yipeng Song, Anjia Yang, Junzuo Lai
 
-    The 27th International Conference on Information and Communications Security (**ICICS 2025**). <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2025/2146" target="_blank">ePrint</a></span>
+    The 27th International Conference on Information and Communications Security (**ICICS 2025**). <span class="pubtag"><a class="pubtag-link" href="https://eprint.iacr.org/2025/2146" target="_blank">ePrint</a></span>
     
     Nanjing, China. Oct. 2025.
 
@@ -190,7 +190,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 
     <u>**Yi Liu**</u>, Junzuo Lai, Peng Yang, Anjia Yang, Qi Wang, Siu-Ming Yiu, Jian Weng
 
-    The 46th IEEE Symposium on Security and Privacy (**S&P 2025**). <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2025/614" target="_blank">ePrint</a></span> <span class="pubtag"><a class="btn btn-outline-primary" href="public/pdf/Oakland25.pdf" target="_blank">Poster</a></span>
+    The 46th IEEE Symposium on Security and Privacy (**S&P 2025**). <span class="pubtag"><a class="pubtag-link" href="https://eprint.iacr.org/2025/614" target="_blank">ePrint</a></span> <span class="pubtag"><a class="pubtag-link" href="public/pdf/Oakland25.pdf" target="_blank">Poster</a></span>
     
     San Francisco, USA. May 2025.
 
@@ -198,7 +198,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
   
     <u>**Yi Liu**</u>, Junzuo Lai, Qi Wang, Xianrui Qin, Anjia Yang, Jian Weng 
 
-    The 29th International Conference on the Theory and Application of Cryptology and Information Security (**ASIACRYPT 2023**). <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2023/1392" target="_blank">ePrint</a></span>
+    The 29th International Conference on the Theory and Application of Cryptology and Information Security (**ASIACRYPT 2023**). <span class="pubtag"><a class="pubtag-link" href="https://eprint.iacr.org/2023/1392" target="_blank">ePrint</a></span>
 
     Guangzhou, China. Dec. 2023.
 
@@ -206,7 +206,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
   
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
-    The 27th European Symposium on Research in Computer Security (**ESORICS 2022**). <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2022/585" target="_blank">ePrint</a></span>
+    The 27th European Symposium on Research in Computer Security (**ESORICS 2022**). <span class="pubtag"><a class="pubtag-link" href="https://eprint.iacr.org/2022/585" target="_blank">ePrint</a></span>
 
     Copenhagen, Denmark. Sept. 2022.
 
@@ -214,7 +214,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
   
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
-    The 25th International Conference on Practice and Theory of Public-Key Cryptography (**PKC 2022**). <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2021/1682" target="_blank">ePrint</a> <a class="btn btn-outline-primary" href="https://www.youtube.com/watch?v=Pv8zVTxacr0" target="_blank">Video</a></span>
+    The 25th International Conference on Practice and Theory of Public-Key Cryptography (**PKC 2022**). <span class="pubtag"><a class="pubtag-link" href="https://eprint.iacr.org/2021/1682" target="_blank">ePrint</a> <a class="btn btn-outline-primary" href="https://www.youtube.com/watch?v=Pv8zVTxacr0" target="_blank">Video</a></span>
 
     Virtual. March 2022.  
 
@@ -222,7 +222,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
   
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
-    The 17th International Conference on International Conference on Information Security and Cryptology (**Inscrypt 2021**). <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2021/1430" target="_blank">ePrint</a></span>
+    The 17th International Conference on International Conference on Information Security and Cryptology (**Inscrypt 2021**). <span class="pubtag"><a class="pubtag-link" href="https://eprint.iacr.org/2021/1430" target="_blank">ePrint</a></span>
 
     Virtual. Aug. 2021. 
     
@@ -230,7 +230,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
   
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
-    The 19th International Conference on Applied Cryptography and Network Security (**ACNS 2021**). <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2021/413" target="_blank">ePrint</a></span>
+    The 19th International Conference on Applied Cryptography and Network Security (**ACNS 2021**). <span class="pubtag"><a class="pubtag-link" href="https://eprint.iacr.org/2021/413" target="_blank">ePrint</a></span>
 
     Virtual. June 2021. 
 
@@ -238,7 +238,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
   
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
-    The 16th International Conference on International Conference on Information Security and Cryptology (**Inscrypt 2020**). <span class="pubtag"><a class="btn btn-outline-primary" href="https://eprint.iacr.org/2020/567" target="_blank">ePrint</a> </span>
+    The 16th International Conference on International Conference on Information Security and Cryptology (**Inscrypt 2020**). <span class="pubtag"><a class="pubtag-link" href="https://eprint.iacr.org/2020/567" target="_blank">ePrint</a> </span>
 
     Guangzhou, China. Dec. 2020. 
 
@@ -296,19 +296,56 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 
 ## Students
 
-- **Postgraduate Students**
-  - Yulong Du (Master, since 2025)
-  - Cuiying Zhao (Master, since 2025)
-  - Yunqi He (Master, since 2024)
-  - Yipeng Song (Master, since 2023)
-
-- **Undergraduate Students**
-  - Tao Jiang (B.Eng. 2026)
-  - Junsong He (B.Eng. 2026)
-  - Yuanhao Zhuang (B.Eng. 2026) 
-  - Jiquan Yang (B.Eng. 2025)
-  - Junjie Li (B.Eng. 2024; first employment: Tencent)
-  - Wanqing Li (B.Eng. 2024; first employment: Midea)
+<div class="cv-teaching-section">
+  <div class="cv-student-heading">Postgraduate Students</div>
+  <div class="cv-student-cards">
+    <div class="cv-student-card cv-student-current">
+      <span class="cv-student-name">Yulong Du</span>
+      <span class="cv-student-meta">Master, since 2025</span>
+    </div>
+    <div class="cv-student-card cv-student-current">
+      <span class="cv-student-name">Cuiying Zhao</span>
+      <span class="cv-student-meta">Master, since 2025</span>
+    </div>
+    <div class="cv-student-card cv-student-current">
+      <span class="cv-student-name">Yunqi He</span>
+      <span class="cv-student-meta">Master, since 2024</span>
+    </div>
+    <div class="cv-student-card cv-student-current">
+      <span class="cv-student-name">Yipeng Song</span>
+      <span class="cv-student-meta">Master, since 2023</span>
+    </div>
+  </div>
+</div>
+<div class="cv-teaching-section">
+  <div class="cv-student-heading">Undergraduate Students</div>
+  <div class="cv-student-cards">
+    <div class="cv-student-card cv-student-current">
+      <span class="cv-student-name">Tao Jiang</span>
+      <span class="cv-student-meta">B.Eng. 2026</span>
+    </div>
+    <div class="cv-student-card cv-student-current">
+      <span class="cv-student-name">Junsong He</span>
+      <span class="cv-student-meta">B.Eng. 2026</span>
+    </div>
+    <div class="cv-student-card cv-student-current">
+      <span class="cv-student-name">Yuanhao Zhuang</span>
+      <span class="cv-student-meta">B.Eng. 2026</span>
+    </div>
+    <div class="cv-student-card">
+      <span class="cv-student-name">Jiquan Yang</span>
+      <span class="cv-student-meta">B.Eng. 2025</span>
+    </div>
+    <div class="cv-student-card">
+      <span class="cv-student-name">Junjie Li</span>
+      <span class="cv-student-meta">B.Eng. 2024 · Tencent</span>
+    </div>
+    <div class="cv-student-card">
+      <span class="cv-student-name">Wanqing Li</span>
+      <span class="cv-student-meta">B.Eng. 2024 · Midea</span>
+    </div>
+  </div>
+</div>
 
 
 ## Professional Activities
