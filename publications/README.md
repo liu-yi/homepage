@@ -50,7 +50,7 @@
     
     <div class="pub-type journal">Journal</div> <span class="impact-badge">TDSC</span>
     
-    Huang Zeng, Anjia Yang, Jian Weng, Min-Rong CHen, Fengjun Xiao, Zilin Liu, <u>**Yi Liu**</u>
+    Huang Zeng, Anjia Yang, Jian Weng, Min-Rong Chen, Fengjun Xiao, Zilin Liu, <u>**Yi Liu**</u>
 
     IEEE Transactions on Dependable and Secure Computing, 2025. <span class="pubtag"><a class="pubtag-link" href="https://doi.org/10.1109/tdsc.2025.3609353" target="_blank">DOI</a></span>
     

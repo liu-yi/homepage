@@ -214,7 +214,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
   
     <u>**Yi Liu**</u>, Qi Wang, Siu-Ming Yiu 
 
-    The 25th International Conference on Practice and Theory of Public-Key Cryptography (**PKC 2022**). <span class="pubtag"><a class="pubtag-link" href="https://eprint.iacr.org/2021/1682" target="_blank">ePrint</a> <a class="btn btn-outline-primary" href="https://www.youtube.com/watch?v=Pv8zVTxacr0" target="_blank">Video</a></span>
+    The 25th International Conference on Practice and Theory of Public-Key Cryptography (**PKC 2022**). <span class="pubtag"><a class="pubtag-link" href="https://eprint.iacr.org/2021/1682" target="_blank">ePrint</a> <a class="pubtag-link" href="https://www.youtube.com/watch?v=Pv8zVTxacr0" target="_blank">Video</a></span>
 
     Virtual. March 2022.  
 
@@ -350,29 +350,31 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 
 ## Professional Activities
 
-<div class="cv-teaching-section">
-  <div class="cv-teaching-heading">Journal Reviewers</div>
-  <div class="cv-activity-tags">
-    <span class="cv-activity-tag">IEEE Transactions on Dependable and Secure Computing</span>
-    <span class="cv-activity-tag">IEEE Transactions on Industrial Informatics</span>
-    <span class="cv-activity-tag">International Journal of Information Security</span>
-    <span class="cv-activity-tag">Web Intelligence</span>
-    <span class="cv-activity-tag">Frontiers of Computer Science</span>
+<div class="cv-activities">
+  <div class="cv-activity-group">
+    <div class="cv-activity-heading">Journal Reviewers</div>
+    <ul class="cv-activity-list">
+      <li>IEEE Transactions on Dependable and Secure Computing</li>
+      <li>IEEE Transactions on Industrial Informatics</li>
+      <li>International Journal of Information Security</li>
+      <li>Web Intelligence</li>
+      <li>Frontiers of Computer Science</li>
+    </ul>
   </div>
-</div>
-<div class="cv-teaching-section">
-  <div class="cv-teaching-heading">Conference Reviewer</div>
-  <div class="cv-activity-tags">
-    <span class="cv-activity-tag">IEEE BSC@QRS (2022, 2021, 2020)</span>
+  <div class="cv-activity-group">
+    <div class="cv-activity-heading">Conference Reviewer</div>
+    <ul class="cv-activity-list">
+      <li>IEEE BSC@QRS (2022, 2021, 2020)</li>
+    </ul>
   </div>
-</div>
-<div class="cv-teaching-section">
-  <div class="cv-teaching-heading">Membership</div>
-  <div class="cv-activity-tags">
-    <span class="cv-activity-tag">IEEE Membership (2025)</span>
-    <span class="cv-activity-tag">IEEE Computer Society Technical Community on Security and Privacy (2025)</span>
-    <span class="cv-activity-tag">IACR Regular Membership (2023)</span>
-    <span class="cv-activity-tag">IACR Student Membership (2022, 2021, 2020, 2019)</span>
+  <div class="cv-activity-group">
+    <div class="cv-activity-heading">Membership</div>
+    <ul class="cv-activity-list">
+      <li>IEEE Membership (2025)</li>
+      <li>IEEE Computer Society Technical Community on Security and Privacy (2025)</li>
+      <li>IACR Regular Membership (2023)</li>
+      <li>IACR Student Membership (2022, 2021, 2020, 2019)</li>
+    </ul>
   </div>
 </div>
 

@@ -8,7 +8,8 @@
       "Bash(git checkout *)",
       "Bash(curl -sL \"https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css\")",
       "WebFetch(domain:localhost)",
-      "Bash(curl -s http://localhost:4173/public/css/styles.min.css)"
+      "Bash(curl -s http://localhost:4173/public/css/styles.min.css)",
+      "Bash(bash *)"
     ]
   }
 }
