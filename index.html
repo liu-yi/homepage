@@ -299,6 +299,11 @@
                     title: '我在这里'
                   });
                   map.add(marker);
+                  // Apply dark map style in dark mode
+                  const isDarkMode = document.documentElement.getAttribute('data-theme') === 'dark';
+                  if (isDarkMode) {
+                    map.setMapStyle('amap://styles/dark');
+                  }
                   amapInstance = map;
                   console.log('AMap initialized successfully');
                 } catch (error) {
@@ -355,6 +360,28 @@
             setTimeout(() => initAMapWithRetry(retryCount + 1), 300 * (retryCount + 1));
           }
         }
+
+        // Watch for theme changes and update map style dynamically
+        const themeObserver = new MutationObserver(function(mutations) {
+          mutations.forEach(function(mutation) {
+            if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
+              const newTheme = document.documentElement.getAttribute('data-theme');
+              if (amapInstance && isCVPage()) {
+                try {
+                  if (newTheme === 'dark') {
+                    amapInstance.setMapStyle('amap://styles/dark');
+                  } else {
+                    amapInstance.setMapStyle('amap://styles/normal');
+                  }
+                  console.log('[AMap] Theme switched to:', newTheme);
+                } catch (e) {
+                  console.error('[AMap] Failed to switch map theme:', e);
+                }
+              }
+            }
+          });
+        });
+        themeObserver.observe(document.documentElement, { attributes: true });
 
         // Hook into docsify lifecycle
         hook.doneEach(function () {

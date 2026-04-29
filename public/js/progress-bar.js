@@ -6,10 +6,10 @@
     const progressBar = document.getElementById('progress-bar');
     if (!progressBar) return;
     
-    // 设置进度条样式
+    // 设置进度条样式 - 使用 accent red 作为统一点缀色
     function setProgressBarStyles() {
-        progressBar.style.background = 'linear-gradient(90deg, #558fb5, #7ba7cc)';
-        progressBar.style.height = '3px';
+        progressBar.style.background = 'var(--accent-red)';
+        progressBar.style.height = '2px';
         progressBar.style.position = 'fixed';
         progressBar.style.top = '0';
         progressBar.style.left = '0';

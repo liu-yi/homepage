@@ -394,7 +394,7 @@ I am Yi Liu (刘逸), a lecturer at [College of Cyber Security](https://cybsec.j
 
 <div id="map-container">
 <div id="amap-container"></div>
-<a href="https://www.amap.com/search?id=B0JBD7XRFY&city=440113&geoobj=113.402929%7C23.011163%7C113.425245%7C23.022489&query_type=IDQ&query=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%95%AA%E7%A6%87%E6%A0%A1%E5%8C%BA%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83%E5%A4%A7%E6%A5%BC&zoom=17" class="map-button" target="_blank">View Map</a>
+<!-- <a href="https://www.amap.com/search?id=B0JBD7XRFY&city=440113&geoobj=113.402929%7C23.011163%7C113.425245%7C23.022489&query_type=IDQ&query=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%95%AA%E7%A6%87%E6%A0%A1%E5%8C%BA%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83%E5%A4%A7%E6%A5%BC&zoom=17" class="map-button" target="_blank">View Map</a> -->
 </div>
 
 </div>
