@@ -6,10 +6,22 @@
     if (!toggle) return;
 
     var nodes = card.querySelectorAll('.cv-lang[data-en][data-zh]');
+
+    // 清理之前的状态
+    window.clearTimeout(card._cvLangTimer);
+    if (card._cvHeightEnd) {
+      card.removeEventListener('transitionend', card._cvHeightEnd);
+      card._cvHeightEnd = null;
+    }
+
+    // 在fade out前记录当前高度（auto状态下的精确值）
+    var oldHeight = card.getBoundingClientRect().height;
+
+    // 开始fade out
     card.classList.add('cv-lang-fading');
 
-    window.clearTimeout(card._cvLangTimer);
     card._cvLangTimer = window.setTimeout(function () {
+      // 更新文本（此时opacity≈0，用户看不到）
       nodes.forEach(function (node) {
         node.textContent = node.getAttribute(lang === 'zh' ? 'data-zh' : 'data-en');
       });
@@ -21,8 +33,36 @@
         thumb.textContent = lang === 'zh' ? '中文' : 'EN';
       }
 
-      card.classList.remove('cv-lang-fading');
-    }, 120);
+      // 在auto状态下测量新高度（精确值，包含border）
+      var newHeight = card.getBoundingClientRect().height;
+      var delta = Math.abs(newHeight - oldHeight);
+
+      if (delta > 0.5) {
+        // 先固定为旧高度
+        card.style.height = oldHeight + 'px';
+
+        // 双rAF确保跨帧触发CSS transition
+        requestAnimationFrame(function () {
+          requestAnimationFrame(function () {
+            card.style.height = newHeight + 'px';
+            card.classList.remove('cv-lang-fading');
+
+            card._cvHeightEnd = function (e) {
+              if (e.propertyName === 'height') {
+                card.removeEventListener('transitionend', card._cvHeightEnd);
+                card._cvHeightEnd = null;
+                card.style.height = '';
+              }
+            };
+            card.addEventListener('transitionend', card._cvHeightEnd);
+          });
+        });
+      } else {
+        // 高度几乎没变，直接恢复
+        card.classList.remove('cv-lang-fading');
+        card.style.height = '';
+      }
+    }, 150);
   }
 
   function initCard(card, toggleSelector) {

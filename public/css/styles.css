@@ -714,7 +714,7 @@ body[data-page="docs/cv.md"] .cv-project-card {
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   background: transparent;
-  transition: border-color var(--duration-fast) ease, box-shadow var(--duration-normal) ease, transform var(--duration-normal) ease;
+  transition: border-color var(--duration-fast) ease, box-shadow var(--duration-normal) ease, transform var(--duration-normal) ease, height 0.3s ease;
 }
 
 body[data-page="docs/cv.md"] .cv-project-card::before {
@@ -1531,7 +1531,7 @@ body[data-page="docs/cv.md"] .cv-location-card {
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   background: transparent;
-  transition: border-color var(--duration-fast) ease;
+  transition: border-color var(--duration-fast) ease, height 0.3s ease;
 }
 
 body[data-page="docs/cv.md"] .cv-location-card:hover {
