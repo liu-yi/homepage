@@ -190,7 +190,7 @@ body {
   src: url('../fonts/zs.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: fallback;
+  font-display: swap;
 }
 
 @media (max-width: 480px) {
