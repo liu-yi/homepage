@@ -40,23 +40,33 @@
   @media (max-width: 768px) {
     .pdf-embed-wrapper { display: none; }
     .pdf-mobile-fallback { display: flex; justify-content: center; padding: 1em 0; }
-    .pdf-mobile-fallback a {
+    .pdf-mobile-fallback a.btn {
       display: inline-block;
       padding: 0.6em 1.4em;
       background: var(--theme-color, #4a9eed);
       color: #fff;
+      border: none;
       border-radius: 4px;
       text-decoration: none;
       font-size: 0.95em;
+      box-shadow: none;
+      font-weight: 500;
+    }
+    .pdf-mobile-fallback a.btn:hover {
+      background: var(--theme-color-light, #4b5563);
+      color: #fff;
+      border: none;
     }
   }
 </style>
 
 <div class="pdf-embed-wrapper">
-  <iframe id="zkp-pdf-frame" src="/for-students/zkp_mpc.pdf" width="100%" style="border: 1px solid #ddd; border-radius: 4px; display: block;"></iframe>
+  <object id="zkp-pdf-frame" data="/for-students/zkp_mpc.pdf" type="application/pdf">
+    <p>无法在浏览器中预览 PDF。<a href="/for-students/zkp_mpc.pdf" target="_blank">点击下载科普报告 PDF</a></p>
+  </object>
 </div>
 <div class="pdf-mobile-fallback">
-  <a href="/for-students/zkp_mpc.pdf" target="_blank">下载科普报告 PDF</a>
+  <a class="btn" href="/for-students/zkp_mpc.pdf" target="_blank">下载科普报告 PDF</a>
 </div>
 
 ## 我的代表性成果
